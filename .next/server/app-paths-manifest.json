@@ -1,3 +1,9 @@
 {
-  "/[locale]/page": "app/[locale]/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/[locale]/dream-application/page": "app/[locale]/dream-application/page.js",
+  "/[locale]/share-journey/page": "app/[locale]/share-journey/page.js",
+  "/[locale]/page": "app/[locale]/page.js",
+  "/[locale]/sobre-cancer/page": "app/[locale]/sobre-cancer/page.js",
+  "/[locale]/sobre-cancer/[id]/page": "app/[locale]/sobre-cancer/[id]/page.js",
+  "/[locale]/donar/page": "app/[locale]/donar/page.js"
 }

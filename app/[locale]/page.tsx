@@ -1,64 +1,100 @@
 'use client';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { Heart, Users, Target, TrendingUp, ArrowRight, Sparkles } from 'lucide-react';
+import { Heart, Users, Target, TrendingUp, ArrowRight, Sparkles, Quote } from 'lucide-react';
 import { useLocale } from 'next-intl';
 
 export default function HomePage() {
   const t = useTranslations();
   const locale = useLocale();
   const prefix = locale === 'es' ? '' : `/${locale}`;
+  
+  //Testimonios de los Warriors
+  const warriors = [
+    {
+      name: "María",
+      age: 34,
+      dream: "Meet her favorite author",
+      story: "Breast cancer warrior who dreamed of meeting her literary hero. We made it happen.",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400"
+    },
+    {
+      name: "Carlos",
+      age: 28,
+      dream: "Record a song",
+      story: "Leukemia fighter who always wanted to record his own music in a professional studio.",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400"
+    },
+    {
+      name: "Ana",
+      age: 45,
+      dream: "See the Northern Lights",
+      story: "Ovarian cancer survivor who fulfilled her lifelong dream of seeing the Aurora Borealis.",
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400"
+    }
+  ];
 
   return (
     <>
-      {/* HERO - Diseño profesional con gradiente SUAVE */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        {/* Fondo gradiente SUAVE */}
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-50 via-purple-50 to-pink-50">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(168,85,247,0.1),transparent_50%)]"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(236,72,153,0.08),transparent_50%)]"></div>
+      {/* ✅ HERO CON VIDEO DE FONDO */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Video Background */}
+        <div className="absolute inset-0 z-0">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source src="https://cdn.pixabay.com/video/2023/12/07/192368-892461845_large.mp4" type="video/mp4" />
+          </video>
+          {/* Overlay oscuro para legibilidad */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
         </div>
 
+        {/* Contenido encima del video */}
         <div className="relative z-10 container mx-auto px-4 py-32 text-center">
-          {/* Badge suave */}
-          <div className="inline-flex items-center gap-2 px-5 py-2 bg-white/80 backdrop-blur-sm rounded-full text-brand-600 text-sm font-medium mb-8 shadow-sm border border-brand-100">
+          <div className="inline-flex items-center gap-2 px-5 py-2 bg-white/20 backdrop-blur-md rounded-full text-white text-sm font-medium mb-8 shadow-lg border border-white/30 animate-pulse">
             <Sparkles className="w-4 h-4" />
             <span>{t('hero.badge')}</span>
           </div>
 
-          {/* Título elegante */}
-          <h1 className="text-5xl md:text-7xl font-bold text-neutral-900 leading-tight mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6 drop-shadow-2xl">
             {t('hero.title1')}
             <br />
-            <span className="text-brand-600">{t('hero.title2')}</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-300 via-purple-300 to-pink-300">
+              {t('hero.title2')}
+            </span>
           </h1>
 
-          {/* Subtítulo */}
-          <p className="text-xl md:text-2xl text-neutral-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/95 max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-lg">
             {t('hero.subtitle')}
           </p>
 
-          {/* Botones elegantes */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href={`${prefix}/donar`}
-              className="group px-8 py-4 bg-brand-600 text-white font-semibold rounded-full shadow-lg shadow-brand-200 hover:bg-brand-700 hover:shadow-xl hover:shadow-brand-300 hover:scale-105 transition-all flex items-center justify-center gap-2"
-            >
+            <Link href={`${prefix}/donar`}
+              className="group px-8 py-4 bg-brand-600 text-white font-semibold rounded-full shadow-2xl hover:bg-brand-700 hover:shadow-brand-300/50 hover:scale-110 transition-all flex items-center justify-center gap-2">
               <Heart className="w-5 h-5" fill="currentColor" />
               {t('hero.ctaDonate')}
             </Link>
-            <Link
-              href={`${prefix}/warriors`}
-              className="px-8 py-4 bg-white text-brand-600 font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all flex items-center justify-center gap-2 border border-brand-100"
-            >
+            <Link href={`${prefix}/warriors`}
+              className="px-8 py-4 bg-white/20 backdrop-blur-md text-white font-semibold rounded-full shadow-2xl hover:bg-white/30 border-2 border-white/40 hover:border-white/60 hover:scale-105 transition-all flex items-center justify-center gap-2">
               {t('hero.ctaStories')}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
+            <div className="w-1.5 h-2 bg-white/70 rounded-full"></div>
+          </div>
+        </div>
       </section>
 
-      {/* IMPACT - Tarjetas elegantes y profesionales */}
+      {/* IMPACT */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -68,7 +104,6 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Card 1 */}
             <div className="group bg-gradient-to-br from-white to-brand-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border border-brand-100">
               <div className="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 mb-4 group-hover:scale-110 transition-transform">
                 <TrendingUp className="w-7 h-7" />
@@ -77,7 +112,6 @@ export default function HomePage() {
               <div className="text-neutral-600 font-medium">{t('impact.donated')}</div>
             </div>
 
-            {/* Card 2 */}
             <div className="group bg-gradient-to-br from-white to-purple-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border border-purple-100">
               <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-4 group-hover:scale-110 transition-transform">
                 <Target className="w-7 h-7" />
@@ -86,7 +120,6 @@ export default function HomePage() {
               <div className="text-neutral-600 font-medium">{t('impact.dreamsFulfilled')}</div>
             </div>
 
-            {/* Card 3 */}
             <div className="group bg-gradient-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border border-pink-100">
               <div className="w-14 h-14 bg-pink-100 rounded-xl flex items-center justify-center text-pink-600 mb-4 group-hover:scale-110 transition-transform">
                 <Heart className="w-7 h-7" fill="currentColor" />
@@ -95,7 +128,6 @@ export default function HomePage() {
               <div className="text-neutral-600 font-medium">{t('impact.warriorsSupported')}</div>
             </div>
 
-            {/* Card 4 */}
             <div className="group bg-gradient-to-br from-white to-indigo-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border border-indigo-100">
               <div className="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 mb-4 group-hover:scale-110 transition-transform">
                 <Users className="w-7 h-7" />
@@ -107,7 +139,69 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA - Sección elegante */}
+      {/* WARRIOR STORIES */}
+      <section className="py-24 bg-gradient-to-b from-white to-neutral-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="inline-block px-4 py-2 bg-brand-100 text-brand-600 rounded-full text-sm font-medium mb-4">
+              Real Stories
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
+              Dreams We've <span className="text-brand-600">Fulfilled</span>
+            </h2>
+            <p className="text-xl text-neutral-600">
+              Every warrior has a unique story of courage, hope, and dreams come true
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {warriors.map((warrior, index) => (
+              <div key={index} className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
+                <div className="relative h-64 overflow-hidden">
+                  <img 
+                    src={warrior.image} 
+                    alt={warrior.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 right-4 px-3 py-1 bg-brand-600 text-white text-xs font-semibold rounded-full">
+                    Dream Fulfilled ✨
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-neutral-900 mb-2">{warrior.name}, {warrior.age}</h3>
+                  <p className="text-brand-600 font-semibold mb-3">{warrior.dream}</p>
+                  <p className="text-neutral-600 leading-relaxed">{warrior.story}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link
+              href={`${prefix}/warriors`}
+              className="inline-flex items-center gap-2 px-8 py-4 bg-brand-600 text-white font-semibold rounded-full hover:bg-brand-700 hover:shadow-lg transition-all"
+            >
+              Read More Stories
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIAL */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <Quote className="w-16 h-16 text-brand-200 mx-auto mb-6" />
+            <blockquote className="text-2xl md:text-3xl font-medium text-neutral-800 mb-8 leading-relaxed">
+              "Fulfilling my dream gave me the strength to keep fighting. I didn't just survive, I <span className="text-brand-600 font-bold">lived again</span>."
+            </blockquote>
+            <cite className="text-neutral-500 not-italic">— An Anonymous Warrior</cite>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
       <section className="py-24 bg-gradient-to-br from-brand-600 via-purple-600 to-brand-700 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,255,255,0.1),transparent_60%)]"></div>
         
