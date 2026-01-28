@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
-import { Menu, X, Globe, ChevronDown } from 'lucide-react';
+import { Menu, X, Globe, ChevronDown, ExternalLink } from 'lucide-react'; // Importamos ExternalLink
 import { useTranslations } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 
@@ -50,6 +50,7 @@ export default function Header({ locale }: { locale: string }) {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  // ✅ AQUÍ ESTÁ LA ACTUALIZACIÓN: Añadida la Newsletter en 'Get Involved'
   const menuItems = [
     { href: `${prefix}/`, label: t('home'), dropdown: null },
     {
@@ -70,6 +71,12 @@ export default function Header({ locale }: { locale: string }) {
         { href: `${prefix}/voluntarios`, label: 'Volunteer' },
         { href: `${prefix}/peer-support`, label: 'Peer Support Program' },
         { href: `${prefix}/support-dream`, label: 'Support a Dream' },
+        // 👇👇 AQUÍ ESTÁ LA NUEVA NEWSLETTER
+        { 
+          href: 'https://paragraph.com/@tutticancerwarriors', 
+          label: 'Newsletter', 
+          external: true // Marca para saber que es externo
+        },
       ]
     },
     {
@@ -78,7 +85,7 @@ export default function Header({ locale }: { locale: string }) {
         { href: `${prefix}/connect-survivor`, label: 'Connect with a Survivor' },
         { href: `${prefix}/dream-application`, label: 'Dream Support Application' },
         { href: `${prefix}/share-journey`, label: 'Share your Journey' },
-        { href: `${prefix}/warrior-mood-boost`, label: 'Warrior Mood Boost' },
+        { href: `${prefix}/warrior-mood-boost`, label: 'Warrior Mood Boost' }, // Asegúrate que esta ruta coincide con tu carpeta
       ]
     },
     {
@@ -103,12 +110,10 @@ export default function Header({ locale }: { locale: string }) {
           : 'bg-white/95 backdrop-blur-sm shadow-md'
     }`}>
       <div className="container mx-auto px-4">
-        {/* ✅ NAVBAR: Un poco más bajo sin scroll */}
         <div className={`flex items-center justify-between transition-all duration-500 ${
           isScrolled ? 'h-24' : 'h-36'
         }`}>
           
-          {/* ✅ LOGO AJUSTADO: Perfecto con scroll (280px), un pelín más pequeño sin scroll (380px) */}
           <Link href={`${prefix}/`} className="flex items-center">
             <Image 
               src="/TCW_LOGO.png" 
@@ -120,7 +125,6 @@ export default function Header({ locale }: { locale: string }) {
             />
           </Link>
           
-          {/* Desktop Menu */}
           <nav className="hidden md:flex items-center gap-6" ref={dropdownRef}>
             {menuItems.map((item, idx) => (
               item.dropdown ? (
@@ -146,14 +150,29 @@ export default function Header({ locale }: { locale: string }) {
                   }`}>
                     <div className="py-2">
                       {item.dropdown.map((subItem, subIdx) => (
-                        <Link
-                          key={subIdx}
-                          href={subItem.href}
-                          className="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 transition-all hover:pl-6"
-                          onClick={() => setOpenDropdown(null)}
-                        >
-                          {subItem.label}
-                        </Link>
+                        // Lógica para detectar si es enlace externo (Newsletter)
+                        subItem.external ? (
+                          <a
+                            key={subIdx}
+                            href={subItem.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 transition-all hover:pl-6 flex items-center justify-between"
+                            onClick={() => setOpenDropdown(null)}
+                          >
+                            {subItem.label}
+                            <ExternalLink className="w-3 h-3 opacity-50" />
+                          </a>
+                        ) : (
+                          <Link
+                            key={subIdx}
+                            href={subItem.href}
+                            className="block px-4 py-3 text-neutral-700 hover:bg-brand-50 hover:text-brand-600 transition-all hover:pl-6"
+                            onClick={() => setOpenDropdown(null)}
+                          >
+                            {subItem.label}
+                          </Link>
+                        )
                       ))}
                     </div>
                   </div>
@@ -174,7 +193,7 @@ export default function Header({ locale }: { locale: string }) {
             ))}
           </nav>
 
-          {/* Right side */}
+          {/* Right side (Idioma y Donar) - Sin cambios */}
           <div className="hidden md:flex items-center gap-4">
             <div className="relative">
               <button
@@ -248,14 +267,28 @@ export default function Header({ locale }: { locale: string }) {
                     }`}>
                       <div className="pl-4 mt-1 space-y-1">
                         {item.dropdown.map((subItem, subIdx) => (
-                          <Link
-                            key={subIdx}
-                            href={subItem.href}
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className="block px-4 py-2 text-sm text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-lg transition-all"
-                          >
-                            {subItem.label}
-                          </Link>
+                          // Lógica para Newsletter en móvil también
+                          subItem.external ? (
+                            <a
+                              key={subIdx}
+                              href={subItem.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={() => setIsMobileMenuOpen(false)}
+                              className="block px-4 py-2 text-sm text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-lg transition-all flex items-center gap-2"
+                            >
+                              {subItem.label} <ExternalLink className="w-3 h-3" />
+                            </a>
+                          ) : (
+                            <Link
+                              key={subIdx}
+                              href={subItem.href}
+                              onClick={() => setIsMobileMenuOpen(false)}
+                              className="block px-4 py-2 text-sm text-neutral-600 hover:text-brand-600 hover:bg-brand-50 rounded-lg transition-all"
+                            >
+                              {subItem.label}
+                            </Link>
+                          )
                         ))}
                       </div>
                     </div>

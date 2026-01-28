@@ -42,6 +42,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'), // <--- ¡Esto es lo que hará la magia en los textos legales!
+  ],
 };
 export default config;
