@@ -1,4 +1,7 @@
 {
+  "metadata": {
+  "description": "Îndeplinim vise și oferim speranță luptătorilor care se confruntă cu cancerul în fiecare zi."
+},
   "nav": {
     "home": "Acasă",
     "aboutCancer": "Despre Cancer",
@@ -8,6 +11,36 @@
     "events": "Evenimente",
     "donate": "Donează Acum",
     "newsletter": "Buletin Informativ"
+  },
+  "warriorsPage": {
+    "title": "Vise pe care le-am",
+    "titleHighlight": "Împlinit",
+    "subtitle": "Fiecare luptător are o poveste unică. Iată viețile pe care le-am atins împreună.",
+    "badge": "Povești Reale",
+    "dreamFulfilled": "Vis Împlinit ✨",
+    "stats": {
+      "dreams": "Vise Împlinite",
+      "investment": "Fonduri Strânse (€)",
+      "volunteers": "Voluntari Activi"
+    },
+    "filters": {
+      "all": "Toate Poveștile",
+      "kids": "Copii",
+      "teens": "Adolescenți",
+      "adults": "Adulți"
+    },
+    "modal": {
+      "close": "Închide povestea",
+      "gallery": "Galeria Visului"
+    },
+    "stories": {
+      "1": { "name": "Maria", "age": "34", "dream": "Să-și întâlnească autorul preferat", "desc": "O luptătoare împotriva cancerului de sân care visa să cunoască scriitorul ce i-a oferit speranță." },
+      "2": { "name": "Carlos", "age": "28", "dream": "Să înregistreze o melodie", "desc": "Luptător cu leucemie care a dorit mereu să înregistreze propriul album. Am făcut acest lucru posibil." },
+      "3": { "name": "Ana", "age": "45", "dream": "Să vadă Aurora Boreală", "desc": "Supraviețuitoare a cancerului ovarian care și-a îndeplinit visul de a vedea luminile nordului." },
+      "4": { "name": "David", "age": "12", "dream": "Pilot pentru o zi", "desc": "Un tânăr curajos care luptă cu limfomul și a zburat pe cer într-o experiență de copilot." },
+      "5": { "name": "Sofia", "age": "22", "dream": "Expoziție de Artă", "desc": "În ciuda diagnosticului, nu s-a oprit niciodată din pictat. I-am organizat prima expoziție." },
+      "6": { "name": "James", "age": "50", "dream": "Reuniune de Familie", "desc": "Reunit cu fiica sa din străinătate după 10 ani, chiar la timp pentru Crăciun." }
+    }
   },
   "common": {
     "backToLibrary": "Înapoi la bibliotecă",

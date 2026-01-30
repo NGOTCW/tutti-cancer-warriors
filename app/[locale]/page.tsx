@@ -47,7 +47,7 @@ export default function HomePage() {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="https://cdn.pixabay.com/video/2023/12/07/192368-892461845_large.mp4" type="video/mp4" />
+            <source src="https://cdn.pixabay.com/video/2023/03/01/152798-803733100_large.mp4" type="video/mp4" />
           </video>
           {/* Overlay oscuro para legibilidad */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
@@ -108,7 +108,7 @@ export default function HomePage() {
               <div className="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 mb-4 group-hover:scale-110 transition-transform">
                 <TrendingUp className="w-7 h-7" />
               </div>
-              <div className="text-4xl font-bold text-brand-600 mb-2">125k€</div>
+              <div className="text-4xl font-bold text-brand-600 mb-2">3.5 k€</div>
               <div className="text-neutral-600 font-medium">{t('impact.donated')}</div>
             </div>
 
@@ -116,7 +116,7 @@ export default function HomePage() {
               <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-4 group-hover:scale-110 transition-transform">
                 <Target className="w-7 h-7" />
               </div>
-              <div className="text-4xl font-bold text-purple-600 mb-2">156</div>
+              <div className="text-4xl font-bold text-purple-600 mb-2">45</div>
               <div className="text-neutral-600 font-medium">{t('impact.dreamsFulfilled')}</div>
             </div>
 
@@ -124,7 +124,7 @@ export default function HomePage() {
               <div className="w-14 h-14 bg-pink-100 rounded-xl flex items-center justify-center text-pink-600 mb-4 group-hover:scale-110 transition-transform">
                 <Heart className="w-7 h-7" fill="currentColor" />
               </div>
-              <div className="text-4xl font-bold text-pink-600 mb-2">847</div>
+              <div className="text-4xl font-bold text-pink-600 mb-2">45</div>
               <div className="text-neutral-600 font-medium">{t('impact.warriorsSupported')}</div>
             </div>
 
@@ -132,7 +132,7 @@ export default function HomePage() {
               <div className="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 mb-4 group-hover:scale-110 transition-transform">
                 <Users className="w-7 h-7" />
               </div>
-              <div className="text-4xl font-bold text-indigo-600 mb-2">93</div>
+              <div className="text-4xl font-bold text-indigo-600 mb-2">60</div>
               <div className="text-neutral-600 font-medium">{t('impact.activeVolunteers')}</div>
             </div>
           </div>

@@ -1,4 +1,7 @@
 {
+  "metadata": {
+  "description": "We fulfill dreams and give hope to warriors fighting cancer every day. Join our mission."
+},
   "nav": {
     "home": "Home",
     "aboutCancer": "About Cancer",
@@ -8,6 +11,36 @@
     "events": "Events",
     "donate": "Donate Now",
     "newsletter": "Newsletter"
+  },
+  "warriorsPage": {
+    "title": "Dreams We've",
+    "titleHighlight": "Fulfilled",
+    "subtitle": "Every warrior has a unique story of courage. Here are the lives we've touched together.",
+    "badge": "Real Stories",
+    "dreamFulfilled": "Dream Fulfilled ✨",
+    "stats": {
+      "dreams": "Dreams Fulfilled",
+      "investment": "Funds Raised (€)",
+      "volunteers": "Active Volunteers"
+    },
+    "filters": {
+      "all": "All Stories",
+      "kids": "Kids",
+      "teens": "Teens",
+      "adults": "Adults"
+    },
+    "modal": {
+      "close": "Close story",
+      "gallery": "Dream Gallery"
+    },
+    "stories": {
+      "1": { "name": "Maria", "age": "34", "dream": "Meet her favorite author", "desc": "Breast cancer warrior who dreamed of meeting the writer who gave her hope during chemo." },
+      "2": { "name": "Carlos", "age": "28", "dream": "Record a song", "desc": "Leukemia fighter who always wanted to record his own album. We made it happen in a pro studio." },
+      "3": { "name": "Ana", "age": "45", "dream": "See the Northern Lights", "desc": "Ovarian cancer survivor who fulfilled her lifelong dream of seeing the aurora borealis in Norway." },
+      "4": { "name": "David", "age": "12", "dream": "Become a Pilot for a day", "desc": "A brave young warrior battling lymphoma who took to the skies with a co-pilot experience." },
+      "5": { "name": "Sofia", "age": "22", "dream": "Art Exhibition", "desc": "Despite her diagnosis, she never stopped painting. We organized her first solo gallery show." },
+      "6": { "name": "James", "age": "50", "dream": "Family Reunion", "desc": "Reunited with his daughter from overseas after 10 years apart, just in time for Christmas." }
+    }
   },
   "common": {
     "backToLibrary": "Back to library",

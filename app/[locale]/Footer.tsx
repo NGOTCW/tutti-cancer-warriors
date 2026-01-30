@@ -86,7 +86,7 @@ export default function Footer() {
             <ul className="space-y-4 text-neutral-400 text-sm">
               <li className="flex items-start gap-3">
                 <div className="p-2 bg-neutral-800 rounded-lg text-brand-500 shrink-0"><Mail className="w-4 h-4" /></div>
-                <a href="mailto:info@tutticancerwarriors.org" className="hover:text-white transition-colors mt-1 break-all">info@tutticancerwarriors.org</a>
+                <a href="mailto:info@tutticancerwarriors.org" className="hover:text-white transition-colors mt-1 break-all">tcw@tutticancerwarriors.org</a>
               </li>
               <li className="flex items-start gap-3">
                 <div className="p-2 bg-neutral-800 rounded-lg text-brand-500 shrink-0"><MapPin className="w-4 h-4" /></div>

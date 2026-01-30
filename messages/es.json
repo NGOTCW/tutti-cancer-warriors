@@ -1,4 +1,7 @@
 {
+  "metadata": {
+  "description": "Cumplimos sueños y damos esperanza a warriors que luchan contra el cáncer cada día. Únete a nuestra misión."
+},
   "nav": {
     "home": "Inicio",
     "aboutCancer": "Sobre el Cáncer",
@@ -8,6 +11,36 @@
     "events": "Eventos",
     "donate": "Donar Ahora",
     "newsletter": "Boletín"
+  },
+  "warriorsPage": {
+    "title": "Sueños que hemos",
+    "titleHighlight": "Cumplido",
+    "subtitle": "Cada warrior tiene una historia única de coraje. Estas son las vidas que hemos tocado juntos.",
+    "badge": "Historias Reales",
+    "dreamFulfilled": "Sueño Cumplido ✨",
+    "stats": {
+      "dreams": "Sueños Cumplidos",
+      "investment": "Fondos Recaudados (€)", 
+      "volunteers": "Voluntarios Activos"
+    },
+    "filters": {
+      "all": "Todas las Historias",
+      "kids": "Niños",
+      "teens": "Adolescentes",
+      "adults": "Adultos"
+    },
+    "modal": {
+      "close": "Cerrar historia",
+      "gallery": "Galería del Sueño"
+    },
+    "stories": {
+      "1": { "name": "María", "age": "34", "dream": "Conocer a su autora favorita", "desc": "Warrior de cáncer de mama que soñaba con conocer a la escritora que le dio esperanza durante la quimio." },
+      "2": { "name": "Carlos", "age": "28", "dream": "Grabar una canción", "desc": "Luchador contra la leucemia que siempre quiso grabar su propio álbum. Lo hicimos realidad en un estudio profesional." },
+      "3": { "name": "Ana", "age": "45", "dream": "Ver la Aurora Boreal", "desc": "Superviviente de cáncer de ovario que cumplió su sueño de toda la vida de ver las auroras en Noruega." },
+      "4": { "name": "David", "age": "12", "dream": "Ser Piloto por un día", "desc": "Un joven valiente luchando contra el linfoma que surcó los cielos con una experiencia de copiloto." },
+      "5": { "name": "Sofía", "age": "22", "dream": "Exposición de Arte", "desc": "A pesar de su diagnóstico, nunca dejó de pintar. Organizamos su primera exposición en una galería." },
+      "6": { "name": "Jaime", "age": "50", "dream": "Reunión Familiar", "desc": "Reunido con su hija del extranjero después de 10 años separados, justo a tiempo para Navidad." }
+    }
   },
   "common": {
     "backToLibrary": "Volver a la biblioteca",
