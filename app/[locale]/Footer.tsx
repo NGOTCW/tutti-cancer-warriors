@@ -19,7 +19,6 @@ export default function Footer() {
           {/* 1. Brand & Social & PARTNERS */}
           <div className="space-y-6">
             <Link href={`${prefix}/`} className="block">
-                {/* ✅ CAMBIO: Contenedor más grande para el logo */}
                 <div className="relative h-32 w-80"> 
                     <Image 
                     src="/TCW_LOGO.png" 
@@ -86,7 +85,7 @@ export default function Footer() {
             <ul className="space-y-4 text-neutral-400 text-sm">
               <li className="flex items-start gap-3">
                 <div className="p-2 bg-neutral-800 rounded-lg text-brand-500 shrink-0"><Mail className="w-4 h-4" /></div>
-                <a href="mailto:info@tutticancerwarriors.org" className="hover:text-white transition-colors mt-1 break-all">tcw@tutticancerwarriors.org</a>
+                <a href="mailto:tcw@tutticancerwarriors.org" className="hover:text-white transition-colors mt-1 break-all">tcw@tutticancerwarriors.org</a>
               </li>
               <li className="flex items-start gap-3">
                 <div className="p-2 bg-neutral-800 rounded-lg text-brand-500 shrink-0"><MapPin className="w-4 h-4" /></div>
@@ -94,12 +93,15 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <div className="p-2 bg-neutral-800 rounded-lg text-brand-500 shrink-0"><Phone className="w-4 h-4" /></div>
-                <span className="mt-1">+34 (Coming Soon)</span>
+                {/* ✅ CAMBIO: Enlace click-to-call */}
+                <a href="tel:+40721048183" className="mt-1 hover:text-white transition-colors hover:underline decoration-brand-500 underline-offset-4">
+                    +40 721 048 183
+                </a>
               </li>
             </ul>
           </div>
 
-          {/* 4. CTA Box - ✅ AJUSTADO: Menos padding y margenes */}
+          {/* 4. CTA Box */}
           <div className="bg-neutral-800/50 rounded-2xl p-5 border border-neutral-700 h-fit">
             <h3 className="font-bold text-lg mb-2 text-white">Support Us</h3>
             <p className="text-neutral-400 text-sm mb-4 leading-relaxed">
