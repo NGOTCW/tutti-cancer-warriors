@@ -64,7 +64,7 @@ export default function PeerSupportPage() {
                         <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 text-center border border-white/20">
                              <h3 className="text-2xl font-bold mb-4">{t('ctaTitle')}</h3>
                              <p className="mb-8 text-neutral-300">{t('ctaText')}</p>
-                             <a href="mailto:peersupport@tutticancerwarriors.org" className="inline-block w-full py-4 bg-white text-neutral-900 font-bold rounded-xl hover:bg-cyan-50 transition-colors">
+                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZUQy99dDIVPANAOwnA75LIeStuVYooZ3T1iqmM-K9pBvsjA/viewform" className="inline-block w-full py-4 bg-white text-neutral-900 font-bold rounded-xl hover:bg-cyan-50 transition-colors">
                                 {t('ctaButton')}
                              </a>
                         </div>

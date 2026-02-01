@@ -24,18 +24,34 @@ const iconMap: Record<string, any> = {
   'align-center': AlignCenter, 'flower-2': Flower2, 'mic-2': Mic2
 };
 
+// IDs permitidos
+const validIds = [
+    'breast', 'lung', 'colorectal', 'prostate', 'skin', 'kidney', 
+    'leukemia', 'liver', 'pancreatic', 'ovarian', 'childhood', 
+    'brain', 'bladder', 'cervical', 'stomach', 'testicular',
+    'thyroid', 'uterine', 'lymphoma', 'myeloma', 'esophageal',
+    'head-neck', 'bone', 'sarcoma', 'gallbladder', 'bile-duct',
+    'anal', 'penile', 'vaginal', 'vulvar', 'eye', 'oral',
+    'throat', 'small-intestine', 'thymus'
+];
+
 export default function CancerDetailPage({ params }: { params: { id: string, locale: string } }) {
+  // 1. Evitar crash si la URL es inventada
+  if (!validIds.includes(params.id)) {
+    notFound();
+  }
+
   const cancerData = getCancerData(params.id);
-  const t = useTranslations(`cancerDetails.${params.id}`);
+  const t = useTranslations(`cancerDetails.${params.id}`); // OJO: Si esta clave no existe en el JSON, devolverá texto plano
   const tCommon = useTranslations('common'); 
+  const prefix = params.locale === 'es' ? '' : `/${params.locale}`;
 
   if (!cancerData) {
     notFound();
   }
 
   const HeroIcon = iconMap[cancerData.icon] || Activity;
-
-  // IMAGEN DE CONTENIDO (Usamos la nueva propiedad o un fallback genérico)
+  // Imagen por defecto si falla
   const contentImg = cancerData.contentImage || 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800';
 
   return (
@@ -45,7 +61,7 @@ export default function CancerDetailPage({ params }: { params: { id: string, loc
       <div className="relative h-[50vh] md:h-[60vh] w-full overflow-hidden">
         <Image
           src={cancerData.image}
-          alt={t('title')}
+          alt={params.id}
           fill
           className="object-cover"
           priority
@@ -55,7 +71,7 @@ export default function CancerDetailPage({ params }: { params: { id: string, loc
         <div className="absolute bottom-0 left-0 w-full p-6 md:p-16 text-white">
           <div className="container mx-auto">
             <Link 
-              href="/sobre-cancer" 
+              href={`${prefix}/sobre-cancer`} 
               className="inline-flex items-center text-white/80 hover:text-white mb-4 md:mb-6 transition-colors hover:-translate-x-1 duration-300 group"
             >
               <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
@@ -64,14 +80,16 @@ export default function CancerDetailPage({ params }: { params: { id: string, loc
             
             <div className="flex items-end gap-4 animate-fade-in-up">
               <HeroIcon className="w-12 h-12 md:w-16 md:h-16 text-brand-300 mb-1 hidden sm:block" />
-              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
-                {t('title')}
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight capitalize">
+                {/* Usamos un fallback visual por si la traducción falla */}
+                {t('title') === `cancerDetails.${params.id}.title` ? params.id.replace('-', ' ') : t('title')}
               </h1>
             </div>
 
-            <p className="mt-4 text-lg md:text-2xl text-brand-100 max-w-2xl animate-fade-in-up delay-100 leading-relaxed">
-              {t('shortDescription')}
-            </p>
+            <div className="mt-4 text-lg md:text-2xl text-brand-100 max-w-2xl animate-fade-in-up delay-100 leading-relaxed">
+              {/* ⚠️ CAMBIO CLAVE: Usamos div en lugar de p */}
+              <div>{t('shortDescription')}</div>
+            </div>
           </div>
         </div>
       </div>
@@ -80,10 +98,10 @@ export default function CancerDetailPage({ params }: { params: { id: string, loc
       <div className="container mx-auto px-4 -mt-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
-          {/* --- LEFT COLUMN (MAIN INFO) --- */}
+          {/* --- LEFT COLUMN --- */}
           <div className="lg:col-span-2 space-y-6 md:space-y-8">
             
-            {/* 1. Overview Card - AHORA CON FOTO INTEGRADA */}
+            {/* Overview Card */}
             <div className="bg-white rounded-3xl p-6 md:p-8 shadow-xl animate-fade-in-up delay-200 border border-brand-100/50 overflow-hidden">
               <div className="flex items-center gap-3 mb-4 md:mb-6">
                 <div className="p-3 bg-brand-100 rounded-xl text-brand-600 shadow-sm">
@@ -92,14 +110,13 @@ export default function CancerDetailPage({ params }: { params: { id: string, loc
                 <h2 className="text-xl md:text-2xl font-bold text-neutral-800">{t('overviewTitle')}</h2>
               </div>
               
-              {/* Layout dividido: Texto Izquierda | Foto Derecha */}
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-1">
-                    <p className="text-neutral-600 leading-relaxed text-base md:text-lg">
+                    {/* ⚠️ CAMBIO CLAVE: div para evitar el error de removeChild */}
+                    <div className="text-neutral-600 leading-relaxed text-base md:text-lg">
                         {t('overviewText')}
-                    </p>
+                    </div>
                 </div>
-                {/* Imagen decorativa/ilustrativa dentro de la tarjeta */}
                 <div className="w-full md:w-1/3 h-48 md:h-auto relative rounded-xl overflow-hidden shadow-md shrink-0 aspect-video md:aspect-square">
                     <Image 
                         src={contentImg} 
@@ -111,7 +128,7 @@ export default function CancerDetailPage({ params }: { params: { id: string, loc
               </div>
             </div>
 
-            {/* 2. Symptoms (Grid Responsive) */}
+            {/* Symptoms */}
             <div className="bg-white rounded-3xl p-6 md:p-8 shadow-xl animate-fade-in-up delay-300 border border-brand-100/50">
               <div className="flex items-center gap-3 mb-4 md:mb-6">
                 <div className="p-3 bg-red-100 rounded-xl text-red-500 shadow-sm">
@@ -126,13 +143,16 @@ export default function CancerDetailPage({ params }: { params: { id: string, loc
                         <div className="mt-1 min-w-[20px] h-[20px] rounded-full bg-brand-200 flex items-center justify-center group-hover:bg-brand-300 transition-colors">
                             <div className="w-2 h-2 rounded-full bg-brand-600"></div>
                         </div>
-                        <span className="text-neutral-700 font-medium text-sm md:text-base">{t(`symptoms.symptom${i}`)}</span>
+                        {/* ⚠️ CAMBIO CLAVE: span o div, nunca p dentro de li si hay dudas */}
+                        <div className="text-neutral-700 font-medium text-sm md:text-base">
+                          {t(`symptoms.symptom${i}`)}
+                        </div>
                     </li>
                 ))}
               </ul>
             </div>
 
-            {/* 3. Treatments */}
+            {/* Treatments */}
             <div className="bg-white rounded-3xl p-6 md:p-8 shadow-xl animate-fade-in-up delay-400 border border-brand-100/50">
                <div className="flex items-center gap-3 mb-4 md:mb-6">
                 <div className="p-3 bg-blue-100 rounded-xl text-blue-600 shadow-sm">
@@ -141,24 +161,24 @@ export default function CancerDetailPage({ params }: { params: { id: string, loc
                 <h2 className="text-xl md:text-2xl font-bold text-neutral-800">{t('treatmentsTitle')}</h2>
               </div>
               <div className="space-y-4">
-                 <p className="text-neutral-600 mb-6 text-base md:text-lg">{t('treatmentsIntro')}</p>
+                 {/* ⚠️ CAMBIO CLAVE: div en vez de p */}
+                 <div className="text-neutral-600 mb-6 text-base md:text-lg">{t('treatmentsIntro')}</div>
                  
                  <div className="flex flex-col md:flex-row gap-4">
                      <div className="flex-1 p-5 border-l-4 border-brand-500 bg-brand-50 rounded-r-xl hover:shadow-md transition-shadow">
                         <h3 className="font-bold text-brand-800 mb-2 text-lg">{t('treatment1.title')}</h3>
-                        <p className="text-brand-700 text-sm leading-relaxed">{t('treatment1.desc')}</p>
+                        <div className="text-brand-700 text-sm leading-relaxed">{t('treatment1.desc')}</div>
                      </div>
                      <div className="flex-1 p-5 border-l-4 border-blue-500 bg-blue-50 rounded-r-xl hover:shadow-md transition-shadow">
                         <h3 className="font-bold text-blue-800 mb-2 text-lg">{t('treatment2.title')}</h3>
-                        <p className="text-blue-700 text-sm leading-relaxed">{t('treatment2.desc')}</p>
+                        <div className="text-blue-700 text-sm leading-relaxed">{t('treatment2.desc')}</div>
                      </div>
                  </div>
               </div>
             </div>
-
           </div>
 
-          {/* --- RIGHT COLUMN (SIDEBAR) --- */}
+          {/* --- RIGHT COLUMN --- */}
           <div className="space-y-6 animate-fade-in-up delay-200">
             {/* Stats */}
             <div className="bg-white rounded-3xl p-6 shadow-xl border border-brand-100/50 lg:sticky lg:top-28">
@@ -179,28 +199,13 @@ export default function CancerDetailPage({ params }: { params: { id: string, loc
                <div className="mt-8 pt-6 border-t border-neutral-100">
                  <h4 className="font-semibold text-neutral-800 mb-4 text-center">{t('ctaSidebarTitle')}</h4>
                  <Link 
-                   href="/donar"
+                   href={`${prefix}/donar`}
                    className="w-full flex items-center justify-center gap-2 py-4 bg-brand-600 text-white rounded-xl font-bold hover:bg-brand-700 hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-brand-200"
                  >
                    <Heart className="w-5 h-5 fill-current animate-pulse" />
                    {tCommon('donateNow')}
                  </Link>
                </div>
-            </div>
-
-            {/* Support Box */}
-            <div className="bg-gradient-to-br from-purple-600 to-indigo-600 rounded-3xl p-8 shadow-xl text-white relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-white/20 transition-colors"></div>
-                <Calendar className="w-10 h-10 mb-6 opacity-90 relative z-10" />
-                <h3 className="text-xl font-bold mb-3 relative z-10">{t('appointmentTitle')}</h3>
-                <p className="text-white/80 text-sm mb-6 leading-relaxed relative z-10">{t('appointmentText')}</p>
-                <Link 
-                    href="/preguntas-doctor" 
-                    className="inline-flex items-center text-sm font-semibold text-white border-b border-white/30 pb-1 hover:border-white transition-colors relative z-10"
-                >
-                    {t('appointmentLink')}
-                    <ArrowLeft className="w-4 h-4 ml-2 rotate-180" />
-                </Link>
             </div>
           </div>
         </div>

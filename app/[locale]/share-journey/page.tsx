@@ -42,7 +42,7 @@ export default function ShareJourneyPage() {
 
             <div className="text-center">
                 <h2 className="text-3xl font-bold mb-8">{t('ctaTitle')}</h2>
-                <a href="mailto:stories@tutticancerwarriors.org" className="inline-flex items-center gap-3 px-10 py-5 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 hover:scale-105 transition-all shadow-lg shadow-blue-200">
+                <a href="mailto:tcw@tutticancerwarriors.org" className="inline-flex items-center gap-3 px-10 py-5 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 hover:scale-105 transition-all shadow-lg shadow-blue-200">
                     <Mail className="w-5 h-5" />
                     {t('ctaButton')}
                 </a>

@@ -11,11 +11,6 @@
       "static/css/app/[locale]/layout.css",
       "static/chunks/app/[locale]/layout.js"
     ],
-    "/[locale]/donar/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/donar/page.js"
-    ],
     "/[locale]/sobre-cancer/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -25,6 +20,81 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/sobre-cancer/[id]/page.js"
+    ],
+    "/[locale]/donar/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/donar/page.js"
+    ],
+    "/[locale]/entender-diagnostico/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/entender-diagnostico/page.js"
+    ],
+    "/[locale]/voluntarios/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/voluntarios/page.js"
+    ],
+    "/[locale]/preguntas-doctor/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/preguntas-doctor/page.js"
+    ],
+    "/[locale]/bienestar-emocional/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/bienestar-emocional/page.js"
+    ],
+    "/[locale]/calendario-cancer/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/calendario-cancer/page.js"
+    ],
+    "/[locale]/involucrate/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/involucrate/page.js"
+    ],
+    "/[locale]/peer-support/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/peer-support/page.js"
+    ],
+    "/[locale]/support-dream/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/support-dream/page.js"
+    ],
+    "/[locale]/connect-survivor/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/connect-survivor/page.js"
+    ],
+    "/[locale]/peer-policy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/peer-policy/page.js"
+    ],
+    "/[locale]/share-journey/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/share-journey/page.js"
+    ],
+    "/[locale]/warrior-mood-boost/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/warrior-mood-boost/page.js"
+    ],
+    "/[locale]/mens-health-week/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/mens-health-week/page.js"
+    ],
+    "/[locale]/world-kidney-cancer-day/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/world-kidney-cancer-day/page.js"
     ]
   }
 }
