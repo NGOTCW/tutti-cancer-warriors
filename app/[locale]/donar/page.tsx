@@ -65,7 +65,7 @@ export default function DonatePage() {
               </p>
               <div className="flex items-center gap-4 mb-6 p-4 bg-blue-50 rounded-xl">
                 <div className="w-16 h-16 flex-shrink-0">
-                  <img src="public/logo.png" alt="Better Giving" className="w-full h-full rounded-lg" />
+                  <img src="/logo.png" alt="Better Giving" className="w-full h-full rounded-lg" />
                 </div>
                 <div>
                   <div className="font-bold text-neutral-900">Tutti Cancer Warriors</div>
