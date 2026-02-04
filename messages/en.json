@@ -27,37 +27,60 @@
     "mensHealth": "Men's Health Week",
     "kidneyCancer": "World Kidney Cancer Day"
   },
-  "warriorsPage": {
-    "title": "Dreams We've",
-    "titleHighlight": "Fulfilled",
-    "subtitle": "Every warrior has a unique story of courage. Here are the lives we've touched together.",
-    "badge": "Real Stories",
+"warriorsPage": {
+    "title": "Restoring Hope,",
+    "titleHighlight": "One Dream at a Time",
+    "subtitle": "Behind every diagnosis, there is a human spirit refusing to break. Witness the power of your kindness in the lives of these brave warriors.",
+    "readStory": "Read Story",
     "dreamFulfilled": "Dream Fulfilled ✨",
-    "stats": {
-      "dreams": "Dreams Fulfilled",
-      "investment": "Funds Raised (€)",
-      "team": "Team Members"
-    },
-    "filters": {
-      "all": "All Stories",
-      "kids": "Kids",
-      "teens": "Teens",
-      "adults": "Adults"
-    },
-    "modal": {
-      "close": "Close story",
-      "gallery": "Dream Gallery"
-    },
-    "stories": {
-      "1": { "name": "Maria", "age": "34", "dream": "Meet her favorite author", "desc": "Breast cancer warrior who dreamed of meeting the writer who gave her hope during chemo." },
-      "2": { "name": "Carlos", "age": "28", "dream": "Record a song", "desc": "Leukemia fighter who always wanted to record his own album. We made it happen in a pro studio." },
-      "3": { "name": "Ana", "age": "45", "dream": "See the Northern Lights", "desc": "Ovarian cancer survivor who fulfilled her lifelong dream of seeing the aurora borealis in Norway." },
-      "4": { "name": "David", "age": "12", "dream": "Become a Pilot for a day", "desc": "A brave young warrior battling lymphoma who took to the skies with a co-pilot experience." },
-      "5": { "name": "Sofia", "age": "22", "dream": "Art Exhibition", "desc": "Despite her diagnosis, she never stopped painting. We organized her first solo gallery show." },
-      "6": { "name": "James", "age": "50", "dream": "Family Reunion", "desc": "Reunited with his daughter from overseas after 10 years apart, just in time for Christmas." }
+    "close": "Close story",
+    "supportBtn": "Support more dreams like this",
+    "featured": {
+      "anetra": {
+        "name": "Anetra",
+        "age": "46",
+        "dream": "Mental Health Retreat",
+        "shortDesc": "Diagnosed with Stage 3C Triple-Negative Breast Cancer while battling heart issues.",
+        "fullStory": "Already a long-term cardiac patient, she was admitted to the hospital in January 2022 for what appeared to be a heart attack. A CT scan revealed three masses, leading to a diagnosis of Stage 3C Triple-Negative Breast Cancer (TNBC). Despite managing ongoing health challenges, she has dedicated her three years of remission to advocacy. Known as the 'Big Momma' of her family, she balances caregiving for her children and grandchildren with her own intensive physical therapy.\n\nTHE IMPACT: The grant provides a necessary physical and mental 'reset.' For a caregiver and advocate who is constantly pouring into others, this staycation offers the rest required to lower her stress levels and refresh her spirit."
+      },
+      "janelle": {
+        "name": "Janelle",
+        "age": "40",
+        "dream": "Attend YSC Summit",
+        "shortDesc": "Living with cancer for 16 years, recently confirming spread to her brain.",
+        "fullStory": "Diagnosed with Stage 2B breast cancer in 2010 at age 24, Janelle has lived with cancer for nearly 16 years. In 2012, her cancer became metastatic. Following a period of stability during which she and her husband welcomed twin boys via surrogate, she recently experienced a seizure confirming the cancer has spread to her brain.\n\nTHE IMPACT: The grant will support Janelle’s transition into advocacy. She aims to connect with the Metastatic Breast Cancer (MBC) community at the summit to begin sharing her journey and providing hope to others facing similar diagnoses."
+      },
+      "jeanelle": {
+        "name": "Jeanelle",
+        "age": "37",
+        "dream": "Wellness Kit for Survivors",
+        "shortDesc": "Misdiagnosed for being 'too young', she battled Stage 3 TNBC. Now a yoga instructor.",
+        "fullStory": "After nearly two years of being misdiagnosed because she was considered 'too young', Jeanelle was diagnosed at age 33 with Stage 3, Grade 3 Triple-Negative Breast Cancer. She endured 23 rounds of chemotherapy and immunotherapy, followed by a double mastectomy. Now serving her community as a patient advocate and yoga instructor.\n\nTHE IMPACT: The grant provides tangible tools (yoga mats, blocks) to offer free, trauma-informed wellness programs in Newark. It allows her to provide a safe space for women to manage neuropathy, chronic pain, and mental health challenges."
+      },
+      "susan": {
+        "name": "Susan Jean",
+        "age": "42",
+        "dream": "Art Journal Circles",
+        "shortDesc": "Professional artist who refused to let a diagnosis dim her creativity.",
+        "fullStory": "A professional artist who refused to let a diagnosis dim her creativity. Diagnosed in her late 30s as a mother of a 4th grader, she faced the sudden 'curveball' of cancer at the tail end of a pandemic. Today, while she is grateful to have clear scans, she continues to manage the long-term side effects of a 10-year daily treatment plan.\n\nTHE IMPACT: With her grant, Susan hosts Art Journal Circles, gifting supplies to local communities in Las Vegas. She has made it through the metaphorical fire and is now dedicated to bringing 'buckets of water' to those still in the thick of it."
+      },
+      "taya": {
+        "name": "Taya",
+        "age": "28",
+        "dream": "Trip to Harry Potter World",
+        "shortDesc": "Diagnosed at 26, only ten days before her birthday. Now in remission.",
+        "fullStory": "Diagnosed at just 26 years old, Taya’s life was suddenly redefined by Stage 2A Invasive Ductal Carcinoma. While pursuing her degree and working full-time, she underwent an aggressive treatment plan. The journey grew even more challenging when post-surgery pathology shifted her diagnosis to Stage 3. In October 2025, she officially entered remission.\n\nTHE IMPACT: During treatment, Taya was too ill to celebrate her son’s birthday. Now in recovery, her dream is to reclaim that lost time by taking her son to the Wizarding World of Harry Potter. This grant allows Taya to focus entirely on her son and create a lasting, happy memory with her 'living angel'."
+      },
+      "anonymous": {
+        "name": "Warrior",
+        "age": "44",
+        "dream": "Essential Living Expenses",
+        "shortDesc": "Carries a heavy family history of the disease. Currently unable to work due to treatment.",
+        "fullStory": "Diagnosed with Stage 2B breast cancer, she carries a heavy family history of the disease, having lost her mother to it. Her treatment journey has been marked by severe chemotherapy-induced fatigue, which has prevented her from working and caused significant financial strain. Her primary focus remains on her recovery and being present for her daughter.\n\nTHE IMPACT: The grant provides immediate relief from the stress of meeting basic needs (food and bills). By easing the financial burden until she can safely return to work, this support allows her to focus entirely on completing her treatment and regaining her health."
+      }
     }
   },
-  "aboutCancer": {
+    "aboutCancer": {
     "title": "Learn about Cancer",
     "subtitle": "Comprehensive information on types, symptoms, and early detection.",
     "types": {

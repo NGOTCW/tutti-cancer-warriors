@@ -27,37 +27,60 @@
     "mensHealth": "Săptămâna Sănătății Bărbaților",
     "kidneyCancer": "Ziua Mondială a Cancerului Renal"
   },
-  "warriorsPage": {
-    "title": "Vise pe care le-am",
-    "titleHighlight": "Împlinit",
-    "subtitle": "Fiecare luptător are o poveste unică. Iată viețile pe care le-am atins împreună.",
-    "badge": "Povești Reale",
+"warriorsPage": {
+    "title": "Redăm Speranța,",
+    "titleHighlight": "Un Vis pe Rând",
+    "subtitle": "În spatele fiecărui diagnostic există un spirit uman care refuză să cedeze. Fii martorul puterii bunătății tale în viețile acestor luptători curajoși.",
+    "readStory": "Citește Povestea",
     "dreamFulfilled": "Vis Împlinit ✨",
-    "stats": {
-      "dreams": "Vise Împlinite",
-      "investment": "Fonduri Strânse (€)",
-      "team": "Miembri ai Echipei"
-    },
-    "filters": {
-      "all": "Toate Poveștile",
-      "kids": "Copii",
-      "teens": "Adolescenți",
-      "adults": "Adulți"
-    },
-    "modal": {
-      "close": "Închide povestea",
-      "gallery": "Galeria Visului"
-    },
-    "stories": {
-      "1": { "name": "Maria", "age": "34", "dream": "Să-și întâlnească autorul preferat", "desc": "O luptătoare împotriva cancerului de sân care visa să cunoască scriitorul ce i-a oferit speranță." },
-      "2": { "name": "Carlos", "age": "28", "dream": "Să înregistreze o melodie", "desc": "Luptător cu leucemie care a dorit mereu să înregistreze propriul album. Am făcut acest lucru posibil." },
-      "3": { "name": "Ana", "age": "45", "dream": "Să vadă Aurora Boreală", "desc": "Supraviețuitoare a cancerului ovarian care și-a îndeplinit visul de a vedea luminile nordului." },
-      "4": { "name": "David", "age": "12", "dream": "Pilot pentru o zi", "desc": "Un tânăr curajos care luptă cu limfomul și a zburat pe cer într-o experiență de copilot." },
-      "5": { "name": "Sofia", "age": "22", "dream": "Expoziție de Artă", "desc": "În ciuda diagnosticului, nu s-a oprit niciodată din pictat. I-am organizat prima expoziție." },
-      "6": { "name": "James", "age": "50", "dream": "Reuniune de Familie", "desc": "Reunit cu fiica sa din străinătate după 10 ani, chiar la timp pentru Crăciun." }
+    "close": "Închide povestea",
+    "supportBtn": "Susține mai multe vise ca acesta",
+    "featured": {
+      "anetra": {
+        "name": "Anetra",
+        "age": "46",
+        "dream": "Retragere pentru Sănătate Mintală",
+        "shortDesc": "Diagnosticată cu cancer mamar triplu negativ în stadiul 3C în timp ce se lupta cu probleme cardiace.",
+        "fullStory": "Fiind deja pacient cardiac pe termen lung, a fost internată în 2022 pentru ceea ce părea un infarct. Un CT a dezvăluit trei mase, ducând la diagnosticul de Cancer Mamar Triplu Negativ Stadiul 3C. În ciuda provocărilor, și-a dedicat cei trei ani de remisie apărării pacienților. Cunoscută ca 'Marea Mamă' a familiei, ea echilibrează îngrijirea altora cu propria terapie fizică.\n\nIMPACTUL: Bursa oferă un 'reset' fizic și mental necesar. Pentru cineva care se dedică constant altora, această pauză oferă odihna necesară pentru a reduce stresul și a-și reîmprospăta spiritul."
+      },
+      "janelle": {
+        "name": "Janelle",
+        "age": "40",
+        "dream": "Participare la Summit-ul YSC",
+        "shortDesc": "Trăind cu cancer de 16 ani, recent confirmându-se răspândirea la creier.",
+        "fullStory": "Diagnosticată cu cancer mamar Stadiul 2B în 2010 la 24 de ani, Janelle trăiește cu cancer de aproape 16 ani. În 2012 a devenit metastatic. După o perioadă de stabilitate în care a avut gemeni prin mamă surogat, recent a suferit o criză confirmând că cancerul s-a răspândit la creier.\n\nIMPACTUL: Bursa va sprijini tranziția lui Janelle către advocacy. Ea își propune să se conecteze cu comunitatea de Cancer Mamar Metastatic la summit pentru a împărtăși speranță."
+      },
+      "jeanelle": {
+        "name": "Jeanelle",
+        "age": "37",
+        "dream": "Kit de Wellness pentru Supraviețuitori",
+        "shortDesc": "Diagnosticată greșit pentru că era 'prea tânără', a luptat cu cancer TNBC stadiul 3. Acum instructor de yoga.",
+        "fullStory": "După aproape doi ani de diagnostice greșite fiind considerată 'prea tânără', a fost diagnosticată la 33 de ani cu Cancer Mamar Triplu Negativ Stadiul 3. A îndurat 23 de runde de chimio și o dublă mastectomie. Acum servește comunitatea ca instructor de yoga.\n\nIMPACTUL: Bursa oferă instrumente tangibile (saltele, blocuri) pentru programe gratuite de wellness în Newark. Îi permite să creeze un spațiu sigur pentru femei pentru a gestiona durerea cronică și sănătatea mintală."
+      },
+      "susan": {
+        "name": "Susan Jean",
+        "age": "42",
+        "dream": "Cercuri de Jurnal de Artă",
+        "shortDesc": "Artist profesionist care a refuzat să lase un diagnostic să-i întunece creativitatea.",
+        "fullStory": "Un artist profesionist diagnosticat la sfârșitul anilor 30. S-a confruntat cu cancerul la sfârșitul unei pandemii. Astăzi, deși este recunoscătoare că are scanări curate, continuă să gestioneze efectele secundare pe termen lung ale unui plan de tratament zilnic de 10 ani.\n\nIMPACTUL: Cu bursa ei, Susan găzduiește Cercuri de Jurnal de Artă, dăruind provizii comunităților locale din Las Vegas. Ea a trecut prin focul metaforic și acum este dedicată aducerii de 'găleți cu apă' celor care sunt încă în mijlocul luptei."
+      },
+      "taya": {
+        "name": "Taya",
+        "age": "28",
+        "dream": "Călătorie la Lumea Harry Potter",
+        "shortDesc": "Diagnosticată la 26 de ani, cu doar zece zile înainte de ziua ei. Acum în remisie.",
+        "fullStory": "Diagnosticată la doar 26 de ani, viața Tayei a fost redefinită brusc de Carcinom Ductal Invaziv Stadiul 2A. În timp ce studia și lucra, a urmat un plan de tratament agresiv. Călătoria a devenit și mai dificilă când patologia post-chirurgicală a schimbat diagnosticul la Stadiul 3. În octombrie 2025, a intrat oficial în remisie.\n\nIMPACTUL: În timpul tratamentului, Taya a fost prea bolnavă pentru a sărbători ziua fiului ei. Acum, în recuperare, visul ei este să recupereze acel timp pierdut ducându-l la Lumea Vrăjitoare a lui Harry Potter. Această bursă îi permite Tayei să se concentreze în întregime pe fiul ei și să creeze o amintire fericită și durabilă cu 'îngerul ei viu'."
+      },
+      "anonymous": {
+        "name": "Luptător",
+        "age": "44",
+        "dream": "Cheltuieli Esențiale de Trai",
+        "shortDesc": "Poartă o istorie familială grea a bolii. Momentan incapabilă să lucreze din cauza tratamentului.",
+        "fullStory": "Diagnosticată cu cancer mamar stadiul 2B, poartă o istorie familială grea a bolii, pierzându-și mama din această cauză. Călătoria ei de tratament a fost marcată de o oboseală severă indusă de chimioterapie, care a împiedicat-o să lucreze. Obiectivul ei principal rămâne recuperarea și prezența pentru fiica ei.\n\nIMPACTUL: Bursa oferă o ușurare imediată a stresului de a satisface nevoile de bază. Prin ușurarea poverii financiare până când se poate întoarce la muncă în siguranță, acest sprijin îi permite să se concentreze pe finalizarea tratamentului."
+      }
     }
   },
-  "aboutCancer": {
+      "aboutCancer": {
     "title": "Află despre Cancer",
     "subtitle": "Informații complete despre tipuri, simptome și depistare precoce.",
     "types": {

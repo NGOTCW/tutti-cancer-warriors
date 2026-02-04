@@ -27,37 +27,59 @@
     "mensHealth": "Semana de la Salud Masculina",
     "kidneyCancer": "Cáncer de Riñón"
   },
-  "warriorsPage": {
-    "title": "Sueños que hemos",
-    "titleHighlight": "Cumplido",
-    "subtitle": "Cada warrior tiene una historia única de coraje. Estas son las vidas que hemos tocado juntos.",
-    "badge": "Historias Reales",
+"warriorsPage": {
+    "title": "Restaurando la Esperanza,",
+    "titleHighlight": "Un Sueño a la Vez",
+    "subtitle": "Detrás de cada diagnóstico hay un espíritu humano que se niega a romperse. Sé testigo del poder de tu bondad en las vidas de estos valientes guerreros.",
+    "readStory": "Leer Historia",
     "dreamFulfilled": "Sueño Cumplido ✨",
-    "stats": {
-      "dreams": "Sueños Cumplidos",
-      "investment": "Fondos Recaudados (€)", 
-      "team": "Miembros del Equipo"
-    },
-    "filters": {
-      "all": "Todas las Historias",
-      "kids": "Niños",
-      "teens": "Adolescentes",
-      "adults": "Adultos"
-    },
-    "modal": {
-      "close": "Cerrar historia",
-      "gallery": "Galería del Sueño"
-    },
-    "stories": {
-      "1": { "name": "María", "age": "34", "dream": "Conocer a su autora favorita", "desc": "Warrior de cáncer de mama que soñaba con conocer a la escritora que le dio esperanza durante la quimio." },
-      "2": { "name": "Carlos", "age": "28", "dream": "Grabar una canción", "desc": "Luchador contra la leucemia que siempre quiso grabar su propio álbum. Lo hicimos realidad en un estudio profesional." },
-      "3": { "name": "Ana", "age": "45", "dream": "Ver la Aurora Boreal", "desc": "Superviviente de cáncer de ovario que cumplió su sueño de toda la vida de ver las auroras en Noruega." },
-      "4": { "name": "David", "age": "12", "dream": "Ser Piloto por un día", "desc": "Un joven valiente luchando contra el linfoma que surcó los cielos con una experiencia de copiloto." },
-      "5": { "name": "Sofía", "age": "22", "dream": "Exposición de Arte", "desc": "A pesar de su diagnóstico, nunca dejó de pintar. Organizamos su primera exposición en una galería." },
-      "6": { "name": "Jaime", "age": "50", "dream": "Reunión Familiar", "desc": "Reunido con su hija del extranjero después de 10 años separados, justo a tiempo para Navidad." }
+    "close": "Cerrar historia",
+    "supportBtn": "Apoyar más sueños como este",    "featured": {
+      "anetra": {
+        "name": "Anetra",
+        "age": "46",
+        "dream": "Retiro de Salud Mental",
+        "shortDesc": "Diagnosticada con cáncer de mama triple negativo en estadio 3C mientras luchaba contra problemas cardíacos.",
+        "fullStory": "Siendo ya paciente cardíaca de larga duración, ingresó en 2022 por lo que parecía un infarto. Un TAC reveló tres masas, llevando al diagnóstico de Cáncer de Mama Triple Negativo Estadio 3C. A pesar de sus desafíos, ha dedicado sus tres años de remisión a la defensa del paciente. Conocida como la 'Gran Mamá' de su familia, equilibra el cuidado de sus nietos con su propia terapia física.\n\nEL IMPACTO: La beca proporciona un 'reinicio' físico y mental necesario. Para una cuidadora que siempre se vuelca en los demás, esta estancia ofrece el descanso necesario para reducir su estrés y renovar su espíritu."
+      },
+      "janelle": {
+        "name": "Janelle",
+        "age": "40",
+        "dream": "Asistir a la Cumbre YSC",
+        "shortDesc": "Viviendo con cáncer desde hace 16 años, confirmándose recientemente metástasis cerebral.",
+        "fullStory": "Diagnosticada con cáncer de mama Estadio 2B en 2010 a los 24 años, Janelle ha vivido con cáncer casi 16 años. En 2012 se volvió metastásico. Tras un periodo de estabilidad donde tuvo gemelos por gestación subrogada, recientemente sufrió una convulsión confirmando que el cáncer se extendió al cerebro.\n\nEL IMPACTO: La beca apoyará la transición de Janelle hacia la defensa del paciente. Busca conectar con la comunidad de Cáncer de Mama Metastásico en la cumbre para compartir su viaje y dar esperanza a otros."
+      },
+      "jeanelle": {
+        "name": "Jeanelle",
+        "age": "37",
+        "dream": "Kit de Bienestar para Supervivientes",
+        "shortDesc": "Mal diagnosticada por ser 'demasiado joven', luchó contra un cáncer TNBC en estadio 3. Ahora instructora de yoga.",
+        "fullStory": "Tras casi dos años de diagnósticos erróneos por ser considerada 'demasiado joven', fue diagnosticada a los 33 años con Cáncer de Mama Triple Negativo Estadio 3. Soportó 23 rondas de quimio e inmunoterapia y una doble mastectomía. Ahora sirve a su comunidad como instructora de yoga.\n\nEL IMPACTO: La beca proporciona herramientas tangibles (esterillas, bloques) para ofrecer programas de bienestar gratuitos en Newark. Le permite crear un espacio seguro para que las mujeres gestionen el dolor crónico y la salud mental."
+      },
+      "susan": {
+        "name": "Susan Jean",
+        "age": "42",
+        "dream": "Círculos de Arte",
+        "shortDesc": "Artista profesional que se negó a dejar que un diagnóstico apagara su creatividad.",
+        "fullStory": "Artista profesional diagnosticada a finales de sus 30 siendo madre de un niño de primaria. Se enfrentó a la repentina 'bola curva' del cáncer al final de la pandemia. Hoy, aunque agradecida por tener escáneres limpios, continúa gestionando los efectos secundarios de un plan de tratamiento diario de 10 años.\n\nEL IMPACTO: Con su beca, Susan organiza Círculos de Diario de Arte, regalando suministros a comunidades locales en Las Vegas. Ha atravesado el fuego metafórico y ahora se dedica a llevar 'cubos de agua' a quienes todavía están en medio de él."
+      },
+      "taya": {
+        "name": "Taya",
+        "age": "28",
+        "dream": "Viaje al Mundo de Harry Potter",
+        "shortDesc": "Diagnosticada a los 26, solo diez días antes de su cumpleaños. Ahora en remisión.",
+        "fullStory": "Diagnosticada con solo 26 años, la vida de Taya fue redefinida por un Carcinoma Ductal Invasivo en Estadio 2A. Mientras estudiaba y trabajaba, se sometió a un tratamiento agresivo. El viaje se complicó cuando la patología postquirúrgica cambió su diagnóstico a Estadio 3. En octubre de 2025, entró oficialmente en remisión.\n\nEL IMPACTO: Durante el tratamiento, Taya estaba demasiado enferma para celebrar el cumpleaños de su hijo. Ahora en recuperación, su sueño es recuperar ese tiempo perdido llevándolo al Mundo Mágico de Harry Potter. Esta beca permite a Taya concentrarse totalmente en su hijo y crear un recuerdo feliz y duradero con su 'ángel viviente'."
+      },
+      "anonymous": {
+        "name": "Warrior",
+        "age": "44",
+        "dream": "Gastos Esenciales de Vida",
+        "shortDesc": "Lleva una pesada historia familiar de la enfermedad. Actualmente no puede trabajar debido al tratamiento.",
+        "fullStory": "Diagnosticada con cáncer de mama en estadio 2B, lleva una pesada historia familiar de la enfermedad, habiendo perdido a su madre por ella. Su tratamiento ha estado marcado por una fatiga severa inducida por la quimioterapia, lo que le ha impedido trabajar y ha causado una gran tensión financiera. Su enfoque principal sigue siendo su recuperación y estar presente para su hija.\n\nEL IMPACTO: La beca proporciona alivio inmediato del estrés de cubrir necesidades básicas. Al aliviar la carga financiera hasta que pueda volver a trabajar de manera segura, este apoyo le permite concentrarse completamente en completar su tratamiento."
+      }
     }
   },
-  "aboutCancer": {
+    "aboutCancer": {
     "title": "Aprende sobre el Cáncer",
     "subtitle": "Información completa sobre tipos, síntomas y detección temprana.",
     "types": {
