@@ -40,6 +40,21 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/preguntas-doctor/page.js"
+    ],
+    "/[locale]/bienestar-emocional/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/bienestar-emocional/page.js"
+    ],
+    "/[locale]/calendario-cancer/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/calendario-cancer/page.js"
+    ],
+    "/[locale]/involucrate/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/involucrate/page.js"
     ]
   }
 }

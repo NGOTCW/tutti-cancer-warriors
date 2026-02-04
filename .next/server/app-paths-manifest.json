@@ -1,8 +1,7 @@
 {
-  "/[locale]/page": "app/[locale]/page.js",
-  "/[locale]/sobre-cancer/page": "app/[locale]/sobre-cancer/page.js",
-  "/[locale]/sobre-cancer/[id]/page": "app/[locale]/sobre-cancer/[id]/page.js",
   "/[locale]/entender-diagnostico/page": "app/[locale]/entender-diagnostico/page.js",
-  "/[locale]/voluntarios/page": "app/[locale]/voluntarios/page.js",
-  "/[locale]/preguntas-doctor/page": "app/[locale]/preguntas-doctor/page.js"
+  "/[locale]/preguntas-doctor/page": "app/[locale]/preguntas-doctor/page.js",
+  "/[locale]/bienestar-emocional/page": "app/[locale]/bienestar-emocional/page.js",
+  "/[locale]/calendario-cancer/page": "app/[locale]/calendario-cancer/page.js",
+  "/[locale]/involucrate/page": "app/[locale]/involucrate/page.js"
 }
