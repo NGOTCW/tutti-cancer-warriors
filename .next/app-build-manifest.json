@@ -90,6 +90,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/peer-policy/page.js"
+    ],
+    "/[locale]/warriors/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/warriors/page.js"
     ]
   }
 }

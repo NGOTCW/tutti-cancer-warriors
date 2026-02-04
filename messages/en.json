@@ -1463,12 +1463,21 @@
     "tag": "Dream Fulfilled ✨",
     "readMore": "Read More Stories"
   },
-  "warriorsList": {
-    "maria": { "dream": "Meet her favorite author", "story": "Breast cancer warrior who dreamed of meeting her literary hero. We made it happen." },
-    "carlos": { "dream": "Record a song", "story": "Leukemia fighter who always wanted to record his own music in a professional studio." },
-    "ana": { "dream": "See the Northern Lights", "story": "Ovarian cancer survivor who fulfilled her lifelong dream of seeing the Aurora Borealis." }
-  },
-  "testimonial": {
+"warriorsList": {
+      "anetra": {
+        "dream": "Mental Health Retreat",
+        "story": "Diagnosed with Stage 3C Triple-Negative Breast Cancer while battling heart issues, Anetra is a true fighter. Known as the 'Big Momma' of her family, she balances caregiving with her own recovery."
+      },
+      "janelle": {
+        "dream": "Attend YSC Summit",
+        "story": "Living with cancer for 16 years, Janelle is a metastatic thriver. Despite cancer spreading to her brain, she aims to connect with others and share hope at the summit."
+      },
+      "jeanelle": {
+        "dream": "Wellness Kit for Survivors",
+        "story": "Misdiagnosed for being 'too young', she battled Stage 3 TNBC. Now a yoga instructor, she wants to create safe wellness spaces for overlooked survivors in her community."
+      }
+    },
+      "testimonial": {
     "quote": "Fulfilling my dream gave me the strength to keep fighting. I didn't just survive, I <bold>lived again</bold>.",
     "author": "— An Anonymous Warrior"
   },

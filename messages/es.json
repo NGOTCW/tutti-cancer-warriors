@@ -1640,12 +1640,21 @@
     "tag": "Sueño Cumplido ✨",
     "readMore": "Leer Más Historias"
   },
-  "warriorsList": {
-    "maria": { "dream": "Conocer a su autor favorito", "story": "Guerrera de cáncer de mama que soñaba con conocer a su héroe literario. Lo hicimos realidad." },
-    "carlos": { "dream": "Grabar una canción", "story": "Luchador contra la leucemia que siempre quiso grabar su propia música en un estudio profesional." },
-    "ana": { "dream": "Ver la Aurora Boreal", "story": "Superviviente de cáncer de ovario que cumplió el sueño de su vida de ver la Aurora Boreal." }
-  },
-  "testimonial": {
+"warriorsList": {
+      "anetra": {
+        "dream": "Retiro de Salud Mental",
+        "story": "Diagnosticada con cáncer de mama triple negativo en estadio 3C mientras luchaba contra problemas cardíacos. Conocida como la 'Gran Mamá' de su familia, equilibra el cuidado de otros con su propia recuperación."
+      },
+      "janelle": {
+        "dream": "Asistir a la Cumbre YSC",
+        "story": "Viviendo con cáncer desde hace 16 años, Janelle es una superviviente metastásica. A pesar de que el cáncer se extendió a su cerebro, busca conectar con otros y compartir esperanza en la cumbre."
+      },
+      "jeanelle": {
+        "dream": "Kit de Bienestar para Supervivientes",
+        "story": "Mal diagnosticada por ser 'demasiado joven', luchó contra un cáncer TNBC en estadio 3. Ahora instructora de yoga, quiere crear espacios de bienestar seguros para supervivientes olvidados en su comunidad."
+      }
+    },
+    "testimonial": {
     "quote": "Cumplir mi sueño me dio fuerzas para seguir luchando. No solo sobreviví, <bold>volví a vivir</bold>.",
     "author": "— Un Guerrero Anónimo"
   },

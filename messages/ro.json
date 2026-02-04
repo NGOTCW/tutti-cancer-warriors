@@ -1636,12 +1636,21 @@
     "tag": "Vis Împlinit ✨",
     "readMore": "Citește Mai Multe Povești"
   },
-  "warriorsList": {
-    "maria": { "dream": "Să-și întâlnească autorul preferat", "story": "Luptătoare împotriva cancerului de sân care visa să-și întâlnească eroul literar. Am făcut să se întâmple." },
-    "carlos": { "dream": "Să înregistreze un cântec", "story": "Luptător cu leucemia care a dorit întotdeauna să-și înregistreze propria muzică într-un studio profesional." },
-    "ana": { "dream": "Să vadă Aurora Boreală", "story": "Supraviețuitoare a cancerului ovarian care și-a îndeplinit visul de o viață de a vedea Aurora Boreală." }
-  },
-  "testimonial": {
+"warriorsList": {
+      "anetra": {
+        "dream": "Retragere pentru Sănătate Mintală",
+        "story": "Diagnosticată cu cancer mamar triplu negativ în stadiul 3C în timp ce se lupta cu probleme cardiace. Cunoscută ca 'Marea Mamă' a familiei, ea echilibrează îngrijirea altora cu propria recuperare."
+      },
+      "janelle": {
+        "dream": "Participare la Summit-ul YSC",
+        "story": "Trăind cu cancer de 16 ani, Janelle este o supraviețuitoare metastatică. Deși cancerul s-a răspândit la creier, ea își propune să se conecteze cu alții și să împărtășească speranță la summit."
+      },
+      "jeanelle": {
+        "dream": "Kit de Wellness pentru Supraviețuitori",
+        "story": "Diagnosticată greșit pentru că era 'prea tânără', a luptat cu cancer TNBC stadiul 3. Acum instructor de yoga, vrea să creeze spații sigure de wellness pentru supraviețuitorii trecuți cu vederea."
+      }
+    },
+      "testimonial": {
     "quote": "Îndeplinirea visului mi-a dat puterea să continui lupta. Nu doar am supraviețuit, <bold>am trăit din nou</bold>.",
     "author": "— Un Luptător Anonim"
   },

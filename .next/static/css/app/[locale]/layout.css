@@ -1499,6 +1499,9 @@ video {
 .h-px{
   height: 1px;
 }
+.h-80{
+  height: 20rem;
+}
 .max-h-0{
   max-height: 0px;
 }
@@ -2660,6 +2663,18 @@ video {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+.object-center{
+  -o-object-position: center;
+     object-position: center;
+}
+.object-top{
+  -o-object-position: top;
+     object-position: top;
+}
+.object-\[center_25\%\]{
+  -o-object-position: center 25%;
+     object-position: center 25%;
 }
 .p-1{
   padding: 0.25rem;

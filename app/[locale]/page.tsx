@@ -9,31 +9,31 @@ export default function HomePage() {
   const locale = useLocale();
   const prefix = locale === 'es' ? '' : `/${locale}`;
   
-  // ✅ AHORA LOS DATOS VIENEN DE LAS TRADUCCIONES, NO ESTÁN EN INGLÉS
+  // ✅ DATOS DE LOS NUEVOS WARRIORS (Anetra, Janelle, Jeanelle)
   const warriors = [
     {
-      name: "María",
-      age: 34,
-      dream: t('warriorsList.maria.dream'),
-      story: t('warriorsList.maria.story'),
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400"
+      name: "Anetra",
+      age: 46,
+      dream: t('warriorsList.anetra.dream'),
+      story: t('warriorsList.anetra.story'),
+      image: "/anetra-home.jpg" // <--- Asegúrate de tener esta foto en public
     },
     {
-      name: "Carlos",
-      age: 28,
-      dream: t('warriorsList.carlos.dream'),
-      story: t('warriorsList.carlos.story'),
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400"
+      name: "Janelle",
+      age: 40,
+      dream: t('warriorsList.janelle.dream'),
+      story: t('warriorsList.janelle.story'),
+      image: "/janelle-home.jpg" // <--- Asegúrate de tener esta foto en public
     },
     {
-      name: "Ana",
-      age: 45,
-      dream: t('warriorsList.ana.dream'),
-      story: t('warriorsList.ana.story'),
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400"
+      name: "Jeanelle",
+      age: 37,
+      dream: t('warriorsList.jeanelle.dream'),
+      story: t('warriorsList.jeanelle.story'),
+      image: "/jeanelle-home.jpg" // <--- Asegúrate de tener esta foto en public
     }
   ];
-
+  
   return (
     <>
       {/* HERO SECTION */}
@@ -132,7 +132,6 @@ export default function HomePage() {
               {t('stories.badge')}
             </div>
             
-            {/* Uso de Rich Text para el color */}
             <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
               {t.rich('stories.title', {
                 highlight: (chunks) => <span className="text-brand-600">{chunks}</span>
@@ -147,14 +146,21 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {warriors.map((warrior, index) => (
               <div key={index} className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
-                <div className="relative h-64 overflow-hidden">
+                {/* CAMBIO IMPORTANTE: He subido la altura de h-64 a h-80 para que la foto "respire" más.
+                   Y he ajustado el object-position específicamente para Anetra y Janelle.
+                */}
+                <div className="relative h-80 overflow-hidden">
                   <img 
                     src={warrior.image} 
                     alt={warrior.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${
+                        index === 0 ? 'object-[center_25%]' : // ANETRA: Enfoca un poco más abajo del borde superior (cara)
+                        index === 1 ? 'object-top' :          // JANELLE: Enfoca arriba para no cortar cabezas
+                        'object-center'                       // JEANELLE: Centro
+                    }`}
                   />
                   <div className="absolute top-4 right-4 px-3 py-1 bg-brand-600 text-white text-xs font-semibold rounded-full">
-                     {t('stories.tag')}
+                      {t('stories.tag')}
                   </div>
                 </div>
                 <div className="p-6">
@@ -178,13 +184,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* TESTIMONIAL SECTION (AHORA TRADUCIDA) */}
+      {/* TESTIMONIAL SECTION */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Quote className="w-16 h-16 text-brand-200 mx-auto mb-6" />
             <blockquote className="text-2xl md:text-3xl font-medium text-neutral-800 mb-8 leading-relaxed">
-               {/* Uso de Rich Text para la negrita */}
                "{t.rich('testimonial.quote', {
                   bold: (chunks) => <span className="text-brand-600 font-bold">{chunks}</span>
                })}"
@@ -194,7 +199,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA FINAL (AHORA TRADUCIDA) */}
+      {/* CTA FINAL */}
       <section className="py-24 bg-gradient-to-br from-brand-600 via-purple-600 to-brand-700 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,255,255,0.1),transparent_60%)]"></div>
         
