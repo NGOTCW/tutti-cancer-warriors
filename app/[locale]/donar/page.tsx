@@ -1,9 +1,10 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { Heart, CreditCard, Building2, Bitcoin, ArrowRight, Check, FileText, Download } from 'lucide-react';
+import { Heart, CreditCard, Building2, Bitcoin, ArrowRight, Check, FileText } from 'lucide-react';
 import { useState } from 'react';
 
 export default function DonatePage() {
+  const t = useTranslations('donatePage'); // Usamos el hook de traducción
   const [copied, setCopied] = useState('');
 
   const copyToClipboard = (text: string, type: string) => {
@@ -46,10 +47,10 @@ export default function DonatePage() {
             <Heart className="w-8 h-8 text-brand-600 fill-current" />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-neutral-900 mb-6 tracking-tight">
-            Donate Now
+            {t('title')}
           </h1>
           <p className="text-xl md:text-2xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
-            Your support transforms lives. Every donation helps us fulfill dreams and provide hope to cancer warriors.
+            {t('subtitle')}
           </p>
         </div>
       </section>
@@ -62,13 +63,16 @@ export default function DonatePage() {
                 <div className="absolute top-0 right-0 w-64 h-64 bg-brand-50 rounded-full -mr-32 -mt-32 opacity-50 group-hover:scale-110 transition-transform" />
                 
                 <h2 className="text-3xl font-bold text-neutral-900 mb-6 relative z-10 text-center md:text-left">
-                  Donate via Better Giving
+                  {t('betterGivingTitle')}
                 </h2>
                 
                 <div className="md:flex gap-8 items-center relative z-10">
                     <div className="flex-1">
-                         <p className="text-lg text-neutral-600 mb-6 leading-relaxed">
-                            Through <a href="https://better.giving/donate/1293778" target="_blank" rel="noopener noreferrer" className="text-brand-600 font-bold hover:underline decoration-2 underline-offset-2">Better Giving</a>, you can donate with <strong>zero platform fees</strong>. Choose from crypto, stocks, or DAFs to ensure 100% of your gift supports our mission.
+                          <p className="text-lg text-neutral-600 mb-6 leading-relaxed">
+                            {t.rich('betterGivingDesc', {
+                                link: (chunks) => <a href="https://better.giving/donate/1293778" target="_blank" rel="noopener noreferrer" className="text-brand-600 font-bold hover:underline decoration-2 underline-offset-2">{chunks}</a>,
+                                strong: (chunks) => <strong>{chunks}</strong>
+                            })}
                         </p>
                         <a
                             href="https://better.giving/donate/1293778"
@@ -76,14 +80,14 @@ export default function DonatePage() {
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center gap-2 w-full md:w-auto px-8 py-4 bg-brand-600 text-white font-bold rounded-xl shadow-lg hover:bg-brand-700 hover:shadow-brand-200 hover:-translate-y-1 transition-all"
                         >
-                            Donate with Better Giving
+                            {t('btnBetterGiving')}
                             <ArrowRight className="w-5 h-5" />
                         </a>
                     </div>
                     <div className="hidden md:block w-px h-32 bg-neutral-200" />
                     <div className="mt-8 md:mt-0 flex flex-col items-center justify-center shrink-0">
-                         <img src="/logo.png" alt="Better Giving" className="w-20 h-20 rounded-2xl shadow-md mb-3" />
-                         <span className="font-bold text-neutral-900">Verified Nonprofit</span>
+                          <img src="/logo.png" alt="Better Giving" className="w-20 h-20 rounded-2xl shadow-md mb-3" />
+                          <span className="font-bold text-neutral-900">{t('verified')}</span>
                     </div>
                 </div>
             </div>
@@ -101,13 +105,15 @@ export default function DonatePage() {
                     {/* Lado Izquierdo: Información */}
                     <div className="p-10 md:w-3/5 flex flex-col justify-center">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider w-fit mb-4 border border-blue-100">
-                            🇷🇴 For Romanian Residents
+                           🇷🇴 {t('taxBadge')}
                         </div>
                         <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-                            Redirect 3.5% Tax
+                            {t('taxTitle')}
                         </h2>
                         <p className="text-neutral-600 mb-8 leading-relaxed">
-                            Direct 3.5% of your income tax to Tutti Cancer Warriors at <strong>no extra cost</strong> to you. It takes less than 2 minutes to fill out Form 230 online.
+                            {t.rich('taxDesc', {
+                                strong: (chunks) => <strong>{chunks}</strong>
+                            })}
                         </p>
                         <a 
                             href="https://redirectioneaza.ro/tutticancerwarriors/"
@@ -115,7 +121,7 @@ export default function DonatePage() {
                             rel="noopener noreferrer"
                             className="group flex items-center justify-center gap-3 px-8 py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"
                         >
-                            <span>Fill Form 230 Online</span>
+                            <span>{t('btnTax')}</span>
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </a>
                     </div>
@@ -131,7 +137,7 @@ export default function DonatePage() {
                                 <FileText className="w-10 h-10 text-white" />
                             </div>
                             <div className="text-6xl font-black tracking-tighter mb-1">230</div>
-                            <div className="text-blue-100 font-medium tracking-widest uppercase text-sm">Formular</div>
+                            <div className="text-blue-100 font-medium tracking-widest uppercase text-sm">Form</div>
                         </div>
                     </div>
                 </div>
@@ -149,9 +155,9 @@ export default function DonatePage() {
                 <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-6 text-[#003087]">
                     <CreditCard className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-neutral-900 mb-3">PayPal</h3>
+                <h3 className="text-2xl font-bold text-neutral-900 mb-3">{t('paypalTitle')}</h3>
                 <p className="text-neutral-600 mb-8 flex-grow">
-                    Quick, secure, and easy. Donate any amount instantly via your PayPal account.
+                    {t('paypalDesc')}
                 </p>
                 <a
                 href="https://www.paypal.com/donate/?hosted_button_id=6JXEDTNATW3PS"
@@ -159,7 +165,7 @@ export default function DonatePage() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-[#FFC439] hover:bg-[#F6B828] text-neutral-900 font-bold rounded-xl transition-colors shadow-sm"
                 >
-                    <span>Donate with PayPal</span>
+                    <span>{t('btnPaypal')}</span>
                 </a>
             </div>
 
@@ -168,35 +174,35 @@ export default function DonatePage() {
                 <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-6 text-gray-700">
                     <Building2 className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-neutral-900 mb-3">Bank Transfer</h3>
+                <h3 className="text-2xl font-bold text-neutral-900 mb-3">{t('bankTitle')}</h3>
                 
                 <div className="space-y-4 mb-6 flex-grow">
                     <div className="p-3 bg-neutral-50 rounded-lg border border-neutral-100">
-                        <div className="text-xs font-bold text-neutral-400 uppercase mb-1">USD Account</div>
+                        <div className="text-xs font-bold text-neutral-400 uppercase mb-1">{t('usdAccount')}</div>
                         <div className="flex justify-between items-center">
                             <span className="font-mono text-sm font-medium text-neutral-800 break-all mr-2">RO36BTRLUSDCRTOCS5281601</span>
                             <button onClick={() => copyToClipboard('RO36BTRLUSDCRTOCS5281601', 'usd')} className="text-blue-600 hover:bg-blue-50 p-1 rounded">
-                                {copied === 'usd' ? <Check size={16} /> : <span className="text-xs font-bold">COPY</span>}
+                                {copied === 'usd' ? <Check size={16} /> : <span className="text-xs font-bold">{t('copy')}</span>}
                             </button>
                         </div>
                     </div>
                     
                     <div className="p-3 bg-neutral-50 rounded-lg border border-neutral-100">
-                        <div className="text-xs font-bold text-neutral-400 uppercase mb-1">EUR Account</div>
+                        <div className="text-xs font-bold text-neutral-400 uppercase mb-1">{t('eurAccount')}</div>
                         <div className="flex justify-between items-center">
                             <span className="font-mono text-sm font-medium text-neutral-800 break-all mr-2">RO24BTRLEURCRTOCS5281601</span>
                             <button onClick={() => copyToClipboard('RO24BTRLEURCRTOCS5281601', 'eur')} className="text-blue-600 hover:bg-blue-50 p-1 rounded">
-                                {copied === 'eur' ? <Check size={16} /> : <span className="text-xs font-bold">COPY</span>}
+                                {copied === 'eur' ? <Check size={16} /> : <span className="text-xs font-bold">{t('copy')}</span>}
                             </button>
                         </div>
                     </div>
 
                     <div className="p-3 bg-neutral-50 rounded-lg border border-neutral-100">
-                        <div className="text-xs font-bold text-neutral-400 uppercase mb-1">SWIFT Code</div>
+                        <div className="text-xs font-bold text-neutral-400 uppercase mb-1">{t('swiftCode')}</div>
                         <div className="flex justify-between items-center">
                             <span className="font-mono text-sm font-medium text-neutral-800">BTRLRO22</span>
                             <button onClick={() => copyToClipboard('BTRLRO22', 'swift')} className="text-blue-600 hover:bg-blue-50 p-1 rounded">
-                                {copied === 'swift' ? <Check size={16} /> : <span className="text-xs font-bold">COPY</span>}
+                                {copied === 'swift' ? <Check size={16} /> : <span className="text-xs font-bold">{t('copy')}</span>}
                             </button>
                         </div>
                     </div>
@@ -215,10 +221,10 @@ export default function DonatePage() {
                 <div className="inline-block p-2 rounded-full border border-purple-500/30 bg-purple-500/10 mb-4">
                     <Bitcoin className="w-6 h-6 text-purple-400" />
                 </div>
-                <h2 className="text-4xl font-bold mb-4">Crypto Donations</h2>
+                <h2 className="text-4xl font-bold mb-4">{t('cryptoTitle')}</h2>
                 <div className="flex items-center justify-center gap-2 text-neutral-400">
                     <img src="/kraken-badge.jpg" alt="Kraken" className="w-6 h-6 rounded-full grayscale opacity-70" />
-                    <span className="text-sm">Verified Nonprofit on Kraken</span>
+                    <span className="text-sm">{t('krakenVerified')}</span>
                 </div>
             </div>
 
@@ -241,7 +247,7 @@ export default function DonatePage() {
                     onClick={() => copyToClipboard(crypto.address, crypto.name)}
                     className="ml-4 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg text-sm font-bold transition-colors shrink-0"
                   >
-                    {copied === crypto.name ? <Check size={16} /> : 'COPY'}
+                    {copied === crypto.name ? <Check size={16} /> : t('copy')}
                   </button>
                 </div>
               ))}

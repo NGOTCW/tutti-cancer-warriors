@@ -1724,29 +1724,48 @@
        "bladder": "Bladder Cancer"
     }
   },
-    "donatePage": {
+"donatePage": {
     "title": "Donate Now",
-    "subtitle": "Your support transforms lives. Every donation helps us fulfill dreams.",
+    "subtitle": "Your support transforms lives. Every donation helps us fulfill dreams and provide hope to cancer warriors.",
     "betterGivingTitle": "Donate via Better Giving",
-    "betterGivingDesc": "Through Better Giving, you can donate with zero platform fees.",
+    "betterGivingDesc": "Through <link>Better Giving</link>, you can donate with <strong>zero platform fees</strong>. Choose from crypto, stocks, or DAFs to ensure 100% of your gift supports our mission.",
     "btnBetterGiving": "Donate with Better Giving",
     "verified": "Verified Nonprofit",
-    "taxTitle": "Redirect 3.5% Tax",
     "taxBadge": "For Romanian Residents",
-    "taxDesc": "Direct 3.5% of your income tax to us at no extra cost.",
+    "taxTitle": "Redirect 3.5% Tax",
+    "taxDesc": "Direct 3.5% of your income tax to Tutti Cancer Warriors at <strong>no extra cost</strong> to you. It takes less than 2 minutes to fill out Form 230 online.",
     "btnTax": "Fill Form 230 Online",
-    "paypalDesc": "Quick, secure, and easy.",
+    "paypalTitle": "PayPal",
+    "paypalDesc": "Quick, secure, and easy. Donate any amount instantly via your PayPal account.",
     "btnPaypal": "Donate with PayPal",
     "bankTitle": "Bank Transfer",
-    "cryptoTitle": "Crypto Donations"
+    "usdAccount": "USD Account",
+    "eurAccount": "EUR Account",
+    "swiftCode": "SWIFT Code",
+    "copy": "COPY",
+    "cryptoTitle": "Crypto Donations",
+    "krakenVerified": "Verified Nonprofit on Kraken"
   },
-  "supportDreamPage": {
+"supportDream": {
+    "title": "Support a Dream",
+    "subtitle": "Help us make dreams come true for brave warriors.",
+    "dream1": "Music Lessons",
+    "dream2": "Family Trip",
+    "dream3": "Record a Song",
+    "dream4": "Art Supplies",
+    "waysTitle": "Ways to Support",
+    "way1": "Direct Donation",
+    "way1Desc": "Contribute with any amount.",
+    "way2": "Sponsor a Dream",
+    "way2Desc": "Fully fund a warrior's dream.",
+    "way3": "Host a Fundraiser",
+    "way3Desc": "Create a campaign with family or friends.",
     "susanTitle": "Donate to Susan's Dream",
     "susanDesc": "Help us make Susan's wish come true. Your direct support makes an immediate impact.",
     "btnSusan": "Donate to Susan",
     "btnGeneral": "General Donation"
   },
-  "connectSurvivorPage": {
+    "connectSurvivorPage": {
     "readyTitle": "Ready to connect?",
     "btnConnect": "Connect with a Survivor",
     "btnPolicy": "Read Policy & Guidelines"

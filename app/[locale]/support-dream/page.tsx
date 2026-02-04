@@ -1,7 +1,7 @@
 'use client';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { Star, Heart, Gift, ArrowRight } from 'lucide-react';
+import { Star, Heart, Gift } from 'lucide-react';
 
 export default function SupportDreamPage() {
   const t = useTranslations('supportDream');
@@ -50,12 +50,12 @@ export default function SupportDreamPage() {
                 })}
             </div>
 
-            {/* CTA Especial Susan */}
+            {/* CTA Especial Susan - AHORA TRADUCIDO */}
             <div className="bg-gradient-to-r from-brand-600 to-purple-800 rounded-[2.5rem] p-12 text-center text-white relative overflow-hidden shadow-2xl">
                 <div className="relative z-10">
-                    <h3 className="text-4xl font-bold mb-6">Donate to Susan's Dream</h3>
+                    <h3 className="text-4xl font-bold mb-6">{t('susanTitle')}</h3>
                     <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-                        Help us make Susan's wish come true. Your direct support makes an immediate impact.
+                        {t('susanDesc')}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                          <a 
@@ -64,10 +64,10 @@ export default function SupportDreamPage() {
                             rel="noopener noreferrer"
                             className="px-10 py-4 bg-white text-brand-600 font-bold rounded-full hover:scale-105 transition-transform shadow-lg"
                         >
-                            Donate to Susan
+                            {t('btnSusan')}
                         </a>
                         <Link href="/donar" className="px-10 py-4 bg-brand-500/30 backdrop-blur border border-white/30 text-white font-bold rounded-full hover:bg-brand-500/50 transition-colors">
-                            General Donation
+                            {t('btnGeneral')}
                         </Link>
                     </div>
                 </div>
