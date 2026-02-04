@@ -2,12 +2,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
-import { Menu, X, Globe, ChevronDown, ExternalLink } from 'lucide-react'; // Importamos ExternalLink
+import { Menu, X, Globe, ChevronDown, ExternalLink } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 
 export default function Header({ locale }: { locale: string }) {
-  const t = useTranslations('nav');
+  const t = useTranslations('nav'); // Usamos las traducciones del bloque "nav"
   const router = useRouter();
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,10 +27,20 @@ export default function Header({ locale }: { locale: string }) {
 
   const currentLang = languages.find(lang => lang.code === locale) || languages[0];
 
+  // ✅ LÓGICA DE CAMBIO DE IDIOMA (MANTENIDA)
   const switchLanguage = (newLocale: string) => {
-    const pathWithoutLocale = pathname.replace(/^\/(es|en|ro)/, '') || '/';
-    const newPath = newLocale === 'es' ? pathWithoutLocale : `/${newLocale}${pathWithoutLocale}`;
+    const segments = pathname.split('/');
+    if (['es', 'en', 'ro'].includes(segments[1])) {
+      segments.splice(1, 1);
+    }
+    const pathWithoutLocale = segments.join('/') || '/';
+    const newPath = newLocale === 'es' 
+      ? pathWithoutLocale 
+      : `/${newLocale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`;
+
+    document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=Lax`;
     router.push(newPath);
+    router.refresh();
     setIsLangOpen(false);
   };
 
@@ -50,49 +60,49 @@ export default function Header({ locale }: { locale: string }) {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // ✅ AQUÍ ESTÁ LA ACTUALIZACIÓN: Añadida la Newsletter en 'Get Involved'
+  // ✅ MENÚ TRADUCIDO AL 100%
+  // Ahora usamos t('clave') en lugar de texto en inglés
   const menuItems = [
     { href: `${prefix}/`, label: t('home'), dropdown: null },
     {
       label: t('aboutCancer'),
       dropdown: [
-        { href: `${prefix}/sobre-cancer`, label: 'Learn about Cancer' },
-        { href: `${prefix}/entender-diagnostico`, label: 'Understanding Your Diagnosis' },
-        { href: `${prefix}/preguntas-doctor`, label: 'Questions to ask your Doctor' },
-        { href: `${prefix}/bienestar-emocional`, label: 'Emotional Well-being' },
-        { href: `${prefix}/calendario-cancer`, label: 'Cancer Awareness Calendar' },
+        { href: `${prefix}/sobre-cancer`, label: t('learnAboutCancer') },
+        { href: `${prefix}/entender-diagnostico`, label: t('understandingDiagnosis') },
+        { href: `${prefix}/preguntas-doctor`, label: t('questionsForDoctor') },
+        { href: `${prefix}/bienestar-emocional`, label: t('emotionalWellBeing') },
+        { href: `${prefix}/calendario-cancer`, label: t('awarenessCalendar') },
       ]
     },
     {
-      label: 'Get Involved',
+      label: t('getInvolved'), // Traducido
       dropdown: [
-        { href: `${prefix}/involucrate`, label: 'Get Involved' },
-        { href: `${prefix}/donar`, label: 'Donate' },
-        { href: `${prefix}/voluntarios`, label: 'Volunteer' },
-        { href: `${prefix}/peer-support`, label: 'Peer Support Program' },
-        { href: `${prefix}/support-dream`, label: 'Support a Dream' },
-        // 👇👇 AQUÍ ESTÁ LA NUEVA NEWSLETTER
+        { href: `${prefix}/involucrate`, label: t('getInvolved') },
+        { href: `${prefix}/donar`, label: t('donate') },
+        { href: `${prefix}/voluntarios`, label: t('volunteer') },
+        { href: `${prefix}/peer-support`, label: t('peerSupport') },
+        { href: `${prefix}/support-dream`, label: t('supportDream') },
         { 
           href: 'https://paragraph.com/@tutticancerwarriors', 
-          label: 'Newsletter', 
-          external: true // Marca para saber que es externo
+          label: t('newsletter'), 
+          external: true 
         },
       ]
     },
     {
-      label: 'Warriors Hub',
+      label: t('warriorsHub'), // Traducido
       dropdown: [
-        { href: `${prefix}/connect-survivor`, label: 'Connect with a Survivor' },
-        { href: `${prefix}/dream-application`, label: 'Dream Support Application' },
-        { href: `${prefix}/share-journey`, label: 'Share your Journey' },
-        { href: `${prefix}/warrior-mood-boost`, label: 'Warrior Mood Boost' }, // Asegúrate que esta ruta coincide con tu carpeta
+        { href: `${prefix}/connect-survivor`, label: t('connectSurvivor') },
+        { href: `${prefix}/dream-application`, label: t('dreamApplication') },
+        { href: `${prefix}/share-journey`, label: t('shareJourney') },
+        { href: `${prefix}/warrior-mood-boost`, label: t('moodBoost') },
       ]
     },
     {
-      label: 'Events',
+      label: t('events'), // Traducido
       dropdown: [
-        { href: `${prefix}/mens-health-week`, label: "Men's Health Week" },
-        { href: `${prefix}/world-kidney-cancer-day`, label: 'World Kidney Cancer Day' },
+        { href: `${prefix}/mens-health-week`, label: t('mensHealth') },
+        { href: `${prefix}/world-kidney-cancer-day`, label: t('kidneyCancer') },
       ]
     },
   ];
@@ -150,7 +160,6 @@ export default function Header({ locale }: { locale: string }) {
                   }`}>
                     <div className="py-2">
                       {item.dropdown.map((subItem, subIdx) => (
-                        // Lógica para detectar si es enlace externo (Newsletter)
                         subItem.external ? (
                           <a
                             key={subIdx}
@@ -193,7 +202,7 @@ export default function Header({ locale }: { locale: string }) {
             ))}
           </nav>
 
-          {/* Right side (Idioma y Donar) - Sin cambios */}
+          {/* Right side (Idioma y Donar) */}
           <div className="hidden md:flex items-center gap-4">
             <div className="relative">
               <button
@@ -267,7 +276,6 @@ export default function Header({ locale }: { locale: string }) {
                     }`}>
                       <div className="pl-4 mt-1 space-y-1">
                         {item.dropdown.map((subItem, subIdx) => (
-                          // Lógica para Newsletter en móvil también
                           subItem.external ? (
                             <a
                               key={subIdx}

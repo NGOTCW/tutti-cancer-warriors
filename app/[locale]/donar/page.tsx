@@ -1,6 +1,6 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { Heart, CreditCard, Building2, Bitcoin, ArrowRight, Check } from 'lucide-react';
+import { Heart, CreditCard, Building2, Bitcoin, ArrowRight, Check, FileText, Download } from 'lucide-react';
 import { useState } from 'react';
 
 export default function DonatePage() {
@@ -36,195 +36,220 @@ export default function DonatePage() {
   ];
 
   return (
-    <div className="pt-20 min-h-screen bg-gradient-to-b from-white to-brand-50">
-      {/* Hero */}
-      <section className="py-20 bg-gradient-to-br from-brand-50 to-purple-50">
-        <div className="container mx-auto px-4 text-center">
-          <div className="w-20 h-20 mx-auto mb-6 animate-pulse">
-            <Heart className="w-full h-full text-brand-600" fill="currentColor" />
+    <div className="pt-20 min-h-screen bg-neutral-50">
+      
+      {/* Hero Section */}
+      <section className="relative py-24 bg-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-50 via-purple-50 to-white opacity-70" />
+        <div className="container relative mx-auto px-4 text-center">
+          <div className="inline-flex items-center justify-center p-3 bg-brand-100 rounded-full mb-8 animate-pulse">
+            <Heart className="w-8 h-8 text-brand-600 fill-current" />
           </div>
-          <h1 className="text-6xl font-bold text-neutral-900 mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold text-neutral-900 mb-6 tracking-tight">
             Donate Now
           </h1>
-          <p className="text-2xl text-neutral-600 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
             Your support transforms lives. Every donation helps us fulfill dreams and provide hope to cancer warriors.
           </p>
         </div>
       </section>
 
       {/* Better Giving Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-neutral-900 mb-6 text-center">
-              Donate via Better Giving
-            </h2>
-            <div className="bg-gradient-to-br from-white to-brand-50 rounded-2xl p-8 border-2 border-brand-200 hover:shadow-2xl transition-all">
-              <p className="text-lg text-neutral-600 mb-6">
-                Through <a href="https://better.giving/donate/1293778" target="_blank" rel="noopener noreferrer" className="text-brand-600 font-semibold hover:underline">Better Giving</a>, you can donate with zero platform fees. You can choose from multiple options such as <strong>crypto, DAFs, stocks</strong>, and more. This ensures that more of your donation goes directly toward supporting our mission.
-              </p>
-              <div className="flex items-center gap-4 mb-6 p-4 bg-blue-50 rounded-xl">
-                <div className="w-16 h-16 flex-shrink-0">
-                  <img src="/logo.png" alt="Better Giving" className="w-full h-full rounded-lg" />
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-neutral-100 relative overflow-hidden group hover:shadow-2xl transition-all duration-300">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-brand-50 rounded-full -mr-32 -mt-32 opacity-50 group-hover:scale-110 transition-transform" />
+                
+                <h2 className="text-3xl font-bold text-neutral-900 mb-6 relative z-10 text-center md:text-left">
+                  Donate via Better Giving
+                </h2>
+                
+                <div className="md:flex gap-8 items-center relative z-10">
+                    <div className="flex-1">
+                         <p className="text-lg text-neutral-600 mb-6 leading-relaxed">
+                            Through <a href="https://better.giving/donate/1293778" target="_blank" rel="noopener noreferrer" className="text-brand-600 font-bold hover:underline decoration-2 underline-offset-2">Better Giving</a>, you can donate with <strong>zero platform fees</strong>. Choose from crypto, stocks, or DAFs to ensure 100% of your gift supports our mission.
+                        </p>
+                        <a
+                            href="https://better.giving/donate/1293778"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center gap-2 w-full md:w-auto px-8 py-4 bg-brand-600 text-white font-bold rounded-xl shadow-lg hover:bg-brand-700 hover:shadow-brand-200 hover:-translate-y-1 transition-all"
+                        >
+                            Donate with Better Giving
+                            <ArrowRight className="w-5 h-5" />
+                        </a>
+                    </div>
+                    <div className="hidden md:block w-px h-32 bg-neutral-200" />
+                    <div className="mt-8 md:mt-0 flex flex-col items-center justify-center shrink-0">
+                         <img src="/logo.png" alt="Better Giving" className="w-20 h-20 rounded-2xl shadow-md mb-3" />
+                         <span className="font-bold text-neutral-900">Verified Nonprofit</span>
+                    </div>
                 </div>
-                <div>
-                  <div className="font-bold text-neutral-900">Tutti Cancer Warriors</div>
-                  <div className="text-sm text-neutral-600">Born to Thrive</div>
-                </div>
-              </div>
-              <a
-                href="https://better.giving/donate/1293778"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full px-10 py-5 bg-gradient-to-r from-brand-600 to-purple-600 text-white text-center font-bold rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
-              >
-                Donate with Better Giving →
-              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* PayPal Section */}
-      <section className="py-16 bg-gradient-to-b from-white to-yellow-50">
+      {/* ✅ NUEVO DISEÑO FORMULARIO 230 (Rumanía) */}
+      <section className="py-10">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-neutral-900 mb-6 text-center">
-              PayPal
-            </h2>
-            <div className="bg-white rounded-2xl p-8 border-2 border-yellow-200 hover:shadow-2xl transition-all">
-              <p className="text-lg text-neutral-600 mb-6 text-center">
-                Use PayPal for a quick and secure donation. No matter the amount, your contribution makes a real difference.
-              </p>
-              <a
+            <div className="max-w-4xl mx-auto">
+                {/* Tarjeta con diseño dividido */}
+                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+                    
+                    {/* Lado Izquierdo: Información */}
+                    <div className="p-10 md:w-3/5 flex flex-col justify-center">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider w-fit mb-4 border border-blue-100">
+                            🇷🇴 For Romanian Residents
+                        </div>
+                        <h2 className="text-3xl font-bold text-neutral-900 mb-4">
+                            Redirect 3.5% Tax
+                        </h2>
+                        <p className="text-neutral-600 mb-8 leading-relaxed">
+                            Direct 3.5% of your income tax to Tutti Cancer Warriors at <strong>no extra cost</strong> to you. It takes less than 2 minutes to fill out Form 230 online.
+                        </p>
+                        <a 
+                            href="https://redirectioneaza.ro/tutticancerwarriors/"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="group flex items-center justify-center gap-3 px-8 py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"
+                        >
+                            <span>Fill Form 230 Online</span>
+                            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        </a>
+                    </div>
+
+                    {/* Lado Derecho: Visual Atractivo */}
+                    <div className="bg-gradient-to-br from-blue-600 to-indigo-700 p-10 md:w-2/5 flex flex-col items-center justify-center text-white relative overflow-hidden">
+                        {/* Círculos decorativos de fondo */}
+                        <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-2xl -mr-10 -mt-10 pointer-events-none"></div>
+                        <div className="absolute bottom-0 left-0 w-32 h-32 bg-black/10 rounded-full blur-xl -ml-10 -mb-10 pointer-events-none"></div>
+                        
+                        <div className="relative z-10 text-center">
+                            <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-inner border border-white/30">
+                                <FileText className="w-10 h-10 text-white" />
+                            </div>
+                            <div className="text-6xl font-black tracking-tighter mb-1">230</div>
+                            <div className="text-blue-100 font-medium tracking-widest uppercase text-sm">Formular</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      {/* PayPal & Bank Transfer Grid */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            
+            {/* PayPal Card */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg border border-neutral-100 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
+                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-6 text-[#003087]">
+                    <CreditCard className="w-6 h-6" />
+                </div>
+                <h3 className="text-2xl font-bold text-neutral-900 mb-3">PayPal</h3>
+                <p className="text-neutral-600 mb-8 flex-grow">
+                    Quick, secure, and easy. Donate any amount instantly via your PayPal account.
+                </p>
+                <a
                 href="https://www.paypal.com/donate/?hosted_button_id=6JXEDTNATW3PS"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full px-10 py-5 bg-[#FFC439] hover:bg-[#FFB700] text-neutral-900 text-center font-bold rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all flex items-center justify-center gap-3"
-              >
-                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 3.72c.074-.428.456-.72.847-.72h8.646c2.916 0 4.973 1.299 5.338 3.867.198 1.415-.047 2.589-.681 3.463-.785 1.091-2.135 1.64-3.968 1.64h-2.516a.793.793 0 0 0-.784.68l-.924 5.395-.031.18a.44.44 0 0 1-.433.378z"/>
-                </svg>
-                Donate with PayPal
-              </a>
+                className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-[#FFC439] hover:bg-[#F6B828] text-neutral-900 font-bold rounded-xl transition-colors shadow-sm"
+                >
+                    <span>Donate with PayPal</span>
+                </a>
             </div>
+
+            {/* Bank Transfer Card - IBAN Updated */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg border border-neutral-100 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
+                <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-6 text-gray-700">
+                    <Building2 className="w-6 h-6" />
+                </div>
+                <h3 className="text-2xl font-bold text-neutral-900 mb-3">Bank Transfer</h3>
+                
+                <div className="space-y-4 mb-6 flex-grow">
+                    <div className="p-3 bg-neutral-50 rounded-lg border border-neutral-100">
+                        <div className="text-xs font-bold text-neutral-400 uppercase mb-1">USD Account</div>
+                        <div className="flex justify-between items-center">
+                            <span className="font-mono text-sm font-medium text-neutral-800 break-all mr-2">RO36BTRLUSDCRTOCS5281601</span>
+                            <button onClick={() => copyToClipboard('RO36BTRLUSDCRTOCS5281601', 'usd')} className="text-blue-600 hover:bg-blue-50 p-1 rounded">
+                                {copied === 'usd' ? <Check size={16} /> : <span className="text-xs font-bold">COPY</span>}
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div className="p-3 bg-neutral-50 rounded-lg border border-neutral-100">
+                        <div className="text-xs font-bold text-neutral-400 uppercase mb-1">EUR Account</div>
+                        <div className="flex justify-between items-center">
+                            <span className="font-mono text-sm font-medium text-neutral-800 break-all mr-2">RO24BTRLEURCRTOCS5281601</span>
+                            <button onClick={() => copyToClipboard('RO24BTRLEURCRTOCS5281601', 'eur')} className="text-blue-600 hover:bg-blue-50 p-1 rounded">
+                                {copied === 'eur' ? <Check size={16} /> : <span className="text-xs font-bold">COPY</span>}
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="p-3 bg-neutral-50 rounded-lg border border-neutral-100">
+                        <div className="text-xs font-bold text-neutral-400 uppercase mb-1">SWIFT Code</div>
+                        <div className="flex justify-between items-center">
+                            <span className="font-mono text-sm font-medium text-neutral-800">BTRLRO22</span>
+                            <button onClick={() => copyToClipboard('BTRLRO22', 'swift')} className="text-blue-600 hover:bg-blue-50 p-1 rounded">
+                                {copied === 'swift' ? <Check size={16} /> : <span className="text-xs font-bold">COPY</span>}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
           </div>
         </div>
       </section>
 
-      {/* Bank Transfer Section */}
-      <section className="py-16 bg-white">
+      {/* Crypto Section */}
+      <section className="py-20 bg-neutral-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-neutral-900 mb-6 text-center">
-              Bank Transfer
-            </h2>
-            <div className="bg-gradient-to-br from-white to-blue-50 rounded-2xl p-8 border-2 border-blue-200">
-              <div className="space-y-6">
-                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
-                  <h3 className="text-lg font-bold text-neutral-900 mb-4">IBAN</h3>
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between p-4 bg-blue-50 rounded-lg">
-                      <div>
-                        <div className="text-sm font-semibold text-blue-600">USD Account</div>
-                        <div className="text-neutral-900 font-mono">RO36BTRLUS DCRT OCS5281601</div>
-                      </div>
-                      <button
-                        onClick={() => copyToClipboard('RO36BTRLUSDCRTOCS5281601', 'usd')}
-                        className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-                      >
-                        {copied === 'usd' ? <Check className="w-5 h-5" /> : 'Copy'}
-                      </button>
-                    </div>
-                    <div className="flex items-center justify-between p-4 bg-blue-50 rounded-lg">
-                      <div>
-                        <div className="text-sm font-semibold text-blue-600">EUR Account</div>
-                        <div className="text-neutral-900 font-mono">RO24BTRLEURCRTOCS5281601</div>
-                      </div>
-                      <button
-                        onClick={() => copyToClipboard('RO24BTRLEURCRTOCS5281601', 'eur')}
-                        className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-                      >
-                        {copied === 'eur' ? <Check className="w-5 h-5" /> : 'Copy'}
-                      </button>
-                    </div>
-                  </div>
+            <div className="text-center mb-12">
+                <div className="inline-block p-2 rounded-full border border-purple-500/30 bg-purple-500/10 mb-4">
+                    <Bitcoin className="w-6 h-6 text-purple-400" />
                 </div>
-
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h3 className="text-lg font-bold text-neutral-900 mb-4">SWIFT Code</h3>
-                  <div className="flex items-center justify-between p-4 bg-blue-50 rounded-lg">
-                    <div className="text-neutral-900 font-mono text-lg">BTRLRO22</div>
-                    <button
-                      onClick={() => copyToClipboard('BTRLRO22', 'swift')}
-                      className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-                    >
-                      {copied === 'swift' ? <Check className="w-5 h-5" /> : 'Copy'}
-                    </button>
-                  </div>
+                <h2 className="text-4xl font-bold mb-4">Crypto Donations</h2>
+                <div className="flex items-center justify-center gap-2 text-neutral-400">
+                    <img src="/kraken-badge.jpg" alt="Kraken" className="w-6 h-6 rounded-full grayscale opacity-70" />
+                    <span className="text-sm">Verified Nonprofit on Kraken</span>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Crypto Section - ANIMATED */}
-      <section className="py-16 bg-gradient-to-b from-purple-50 to-brand-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-neutral-900 mb-6 text-center">
-              Crypto Donations
-            </h2>
-            <div className="mb-6 text-center">
-              <img 
-                src="https://tutticancerwarriors.org/wp-content/uploads/2025/03/chatgpt-image-oct-7-2025-09_59_32-am.png" 
-                alt="Verified Nonprofit on Kraken" 
-                className="w-32 h-32 mx-auto rounded-full"
-              />
-              <p className="text-sm text-neutral-600 mt-2">Verified Nonprofit on Kraken</p>
-            </div>
-            <div className="space-y-4">
+            <div className="grid gap-4">
               {cryptoAddresses.map((crypto, idx) => (
                 <div 
                   key={idx} 
-                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all border-2 border-purple-100 hover:border-purple-300 group"
+                  className="bg-white/5 hover:bg-white/10 rounded-xl p-5 border border-white/10 flex items-center justify-between transition-colors group"
                 >
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-brand-600 rounded-full flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
-                        {crypto.icon}
-                      </div>
-                      <div>
-                        <h3 className="font-bold text-neutral-900">{crypto.name}</h3>
-                        <div className="text-sm text-neutral-600 font-mono break-all">{crypto.address}</div>
-                      </div>
+                  <div className="flex items-center gap-4 overflow-hidden">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center text-lg font-bold shrink-0">
+                      {crypto.icon}
                     </div>
-                    <button
-                      onClick={() => copyToClipboard(crypto.address, crypto.name)}
-                      className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors flex-shrink-0"
-                    >
-                      {copied === crypto.name ? <Check className="w-5 h-5" /> : 'Copy'}
-                    </button>
+                    <div className="min-w-0">
+                      <h3 className="font-bold text-white text-sm md:text-base truncate">{crypto.name}</h3>
+                      <p className="text-neutral-400 font-mono text-xs md:text-sm truncate">{crypto.address}</p>
+                    </div>
                   </div>
+                  <button
+                    onClick={() => copyToClipboard(crypto.address, crypto.name)}
+                    className="ml-4 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg text-sm font-bold transition-colors shrink-0"
+                  >
+                    {copied === crypto.name ? <Check size={16} /> : 'COPY'}
+                  </button>
                 </div>
               ))}
             </div>
           </div>
         </div>
       </section>
-
-      {/* Thank You Section */}
-      <section className="py-20 bg-gradient-to-br from-brand-600 to-purple-600">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-5xl font-bold text-white mb-6 animate-pulse">
-            Thank You! 💜
-          </h2>
-          <p className="text-2xl text-white/90 max-w-2xl mx-auto">
-            Your generosity brings hope and makes dreams come true for warriors fighting cancer every day.
-          </p>
-        </div>
-      </section>
+      
     </div>
   );
 }

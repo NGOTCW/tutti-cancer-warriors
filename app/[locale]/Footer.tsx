@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
-import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, Heart } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, Heart, FileText } from 'lucide-react';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -19,19 +19,20 @@ export default function Footer() {
           {/* 1. Brand & Social & PARTNERS */}
           <div className="space-y-6">
             <Link href={`${prefix}/`} className="block">
-                <div className="relative h-32 w-80"> 
+                {/* Contenedor del Logo */}
+                <div className="relative h-48 w-full max-w-md"> 
                     <Image 
                     src="/TCW_LOGO.png" 
                     alt="Tutti Cancer Warriors" 
                     fill
-                    className="object-contain object-left brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
+                    className="object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
                     />
                 </div>
             </Link>
             <p className="text-neutral-400 text-sm leading-relaxed max-w-sm">
               {t('description')}
             </p>
-            
+                        
             {/* Social Icons */}
             <div className="flex gap-4 pt-2">
               <a href="https://www.facebook.com/people/Tutti-Cancer-Warriors/61574889407716/#" target="_blank" rel="noopener noreferrer" 
@@ -51,7 +52,7 @@ export default function Footer() {
             {/* PARTNERS / CERTIFICACIONES */}
             <div className="pt-6 border-t border-neutral-800 mt-6">
                 <p className="text-xs text-neutral-500 font-bold uppercase tracking-wider mb-3">
-                    Verified & Member of
+                    {t('verified')}
                 </p>
                 <div className="flex items-center gap-4">
                     <a href="https://www.kraken.com/" target="_blank" rel="noopener noreferrer" className="block transition-transform hover:scale-105">
@@ -70,18 +71,25 @@ export default function Footer() {
 
           {/* 2. Quick Links */}
           <div>
-            <h3 className="font-bold text-lg mb-6 text-white border-b border-brand-600 inline-block pb-1">Quick Links</h3>
+            <h3 className="font-bold text-lg mb-6 text-white border-b border-brand-600 inline-block pb-1">
+                {t('quickLinks')}
+            </h3>
             <ul className="space-y-3 text-neutral-400 text-sm">
               <li><Link href={`${prefix}/sobre-cancer`} className="hover:text-brand-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-brand-500 rounded-full"></span>{tNav('aboutCancer')}</Link></li>
               <li><Link href={`${prefix}/warriors`} className="hover:text-brand-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-brand-500 rounded-full"></span>{tNav('warriors')}</Link></li>
               <li><Link href={`${prefix}/voluntarios`} className="hover:text-brand-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-brand-500 rounded-full"></span>{tNav('volunteers')}</Link></li>
-              <li><Link href={`${prefix}/events`} className="hover:text-brand-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-brand-500 rounded-full"></span>{tNav('events')}</Link></li>
+              
+              {/* OCULTADO TEMPORALMENTE (EVENTS) */}
+              {/* <li><Link href={`${prefix}/events`} className="hover:text-brand-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-brand-500 rounded-full"></span>{tNav('events')}</Link></li> */}
+            
             </ul>
           </div>
 
           {/* 3. Contact Info */}
           <div>
-            <h3 className="font-bold text-lg mb-6 text-white border-b border-brand-600 inline-block pb-1">Contact</h3>
+            <h3 className="font-bold text-lg mb-6 text-white border-b border-brand-600 inline-block pb-1">
+                {t('contact')}
+            </h3>
             <ul className="space-y-4 text-neutral-400 text-sm">
               <li className="flex items-start gap-3">
                 <div className="p-2 bg-neutral-800 rounded-lg text-brand-500 shrink-0"><Mail className="w-4 h-4" /></div>
@@ -89,11 +97,13 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <div className="p-2 bg-neutral-800 rounded-lg text-brand-500 shrink-0"><MapPin className="w-4 h-4" /></div>
-                <span className="mt-1">Marbella, Spain</span>
+                <div className="mt-1">
+                    <span className="block">{t('address')}</span>
+                    <span className="text-xs text-neutral-500 mt-1 block">CIF: 50156252</span>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <div className="p-2 bg-neutral-800 rounded-lg text-brand-500 shrink-0"><Phone className="w-4 h-4" /></div>
-                {/* ✅ CAMBIO: Enlace click-to-call */}
                 <a href="tel:+40721048183" className="mt-1 hover:text-white transition-colors hover:underline decoration-brand-500 underline-offset-4">
                     +40 721 048 183
                 </a>
@@ -103,9 +113,9 @@ export default function Footer() {
 
           {/* 4. CTA Box */}
           <div className="bg-neutral-800/50 rounded-2xl p-5 border border-neutral-700 h-fit">
-            <h3 className="font-bold text-lg mb-2 text-white">Support Us</h3>
+            <h3 className="font-bold text-lg mb-2 text-white">{t('supportTitle')}</h3>
             <p className="text-neutral-400 text-sm mb-4 leading-relaxed">
-              Your donation helps us fulfill dreams and support warriors daily.
+              {t('supportText')}
             </p>
             <Link
               href={`${prefix}/donar`}
@@ -121,11 +131,26 @@ export default function Footer() {
         <div className="border-t border-neutral-800 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-neutral-500">
             <p>&copy; {new Date().getFullYear()} Tutti Cancer Warriors. {t('copyright')}</p>
-            <div className="flex flex-wrap justify-center gap-6">
+            
+            {/* Lista de enlaces legales + Financials */}
+            <div className="flex flex-wrap justify-center gap-6 items-center">
               <Link href={`${prefix}/privacy`} className="hover:text-white transition-colors">{t('privacy')}</Link>
               <Link href={`${prefix}/terms`} className="hover:text-white transition-colors">{t('terms')}</Link>
               <Link href={`${prefix}/peer-policy`} className="hover:text-white transition-colors">{t('peerPolicy')}</Link>
+              
+              {/* Separador visual */}
+              <span className="hidden md:inline text-neutral-700">|</span>
+              
+              {/* ✅ ENLACE A FINANCIALS (Activo) */}
+              <Link 
+                href={`${prefix}/financials`} 
+                className="hover:text-brand-400 transition-colors flex items-center gap-1 font-semibold text-neutral-400"
+              >
+                <FileText className="w-3 h-3" />
+                {t('financials')}
+              </Link>
             </div>
+            
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import { Download, BookOpen, Activity, Users } from 'lucide-react';
 
 export default function UnderstandingDiagnosisPage() {
-  const t = useTranslations('diagnosis');
+  const t = useTranslations('diagnosisPage'); // USAMOS EL NUEVO NAMESPACE
 
   return (
     <div className="pt-20 min-h-screen bg-white">
@@ -12,12 +12,10 @@ export default function UnderstandingDiagnosisPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold text-neutral-900 mb-6">
-              Understanding Your Diagnosis
+              {t('title')}
             </h1>
             <p className="text-xl text-neutral-600 leading-relaxed">
-              Getting a cancer diagnosis can feel like a storm has suddenly rolled into your life. 
-              It's completely normal to feel overwhelmed, confused, and scared. While this news is 
-              never easy, understanding what it means can help you feel more in control.
+              {t('heroDesc')}
             </p>
           </div>
         </div>
@@ -34,13 +32,10 @@ export default function UnderstandingDiagnosisPage() {
                 </div>
                 <div>
                   <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-                    What Is Cancer?
+                    {t('whatIsCancerTitle')}
                   </h2>
                   <p className="text-neutral-600 leading-relaxed text-lg">
-                    Cancer is a word that covers a wide range of diseases where cells in the body 
-                    start growing uncontrollably. Each type of cancer affects different parts of the 
-                    body and may behave in unique ways. Knowing the specifics about your type of cancer 
-                    helps in understanding your treatment options and what you might expect.
+                    {t('whatIsCancerDesc')}
                   </p>
                 </div>
               </div>
@@ -54,24 +49,23 @@ export default function UnderstandingDiagnosisPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl font-bold text-neutral-900 mb-4 text-center">
-              Staging and Grading: What They Mean
+              {t('stagingTitle')}
             </h2>
             <h3 className="text-2xl font-semibold text-purple-600 mb-6 text-center">
-              What is Staging?
+              {t('stagingSub')}
             </h3>
             <p className="text-neutral-600 leading-relaxed mb-8 text-center max-w-3xl mx-auto text-lg">
-              Staging is like a map that shows how far the cancer has traveled. It starts from Stage 0 
-              (where cancer is localized) to Stage IV (where it has spread to other parts of the body).
+              {t('stagingDesc')}
             </p>
             
             {/* Stage Cards with Animation */}
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12">
               {[
-                { stage: '0', label: 'Localized', color: 'from-green-400 to-green-600' },
-                { stage: 'I', label: 'Early', color: 'from-blue-400 to-blue-600' },
-                { stage: 'II', label: 'Regional', color: 'from-yellow-400 to-yellow-600' },
-                { stage: 'III', label: 'Advanced', color: 'from-orange-400 to-orange-600' },
-                { stage: 'IV', label: 'Metastatic', color: 'from-red-400 to-red-600' }
+                { stage: '0', label: t('stages.0'), color: 'from-green-400 to-green-600' },
+                { stage: 'I', label: t('stages.I'), color: 'from-blue-400 to-blue-600' },
+                { stage: 'II', label: t('stages.II'), color: 'from-yellow-400 to-yellow-600' },
+                { stage: 'III', label: t('stages.III'), color: 'from-orange-400 to-orange-600' },
+                { stage: 'IV', label: t('stages.IV'), color: 'from-red-400 to-red-600' }
               ].map((item, idx) => (
                 <div 
                   key={idx} 
@@ -89,12 +83,10 @@ export default function UnderstandingDiagnosisPage() {
             {/* Grading */}
             <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-8 border border-pink-100">
               <h3 className="text-2xl font-semibold text-pink-600 mb-4">
-                What Is Grading?
+                {t('gradingTitle')}
               </h3>
               <p className="text-neutral-600 leading-relaxed text-lg">
-                Grading tells you how much the cancer cells differ from normal cells. It can give you 
-                insight into how quickly the cancer is likely to grow. The grade ranges from low (cells 
-                look quite similar to normal cells) to high (cells look very different).
+                {t('gradingDesc')}
               </p>
             </div>
           </div>
@@ -110,11 +102,9 @@ export default function UnderstandingDiagnosisPage() {
                 <Users className="w-8 h-8 text-white" />
               </div>
               <div>
-                <h2 className="text-4xl font-bold mb-4">You're Not Alone</h2>
+                <h2 className="text-4xl font-bold mb-4">{t('aloneTitle')}</h2>
                 <p className="text-xl text-white/90 leading-relaxed mb-6">
-                  It's essential to remember that you don't have to go through this alone. 
-                  There are many resources and people who want to support you. Connecting with 
-                  support groups, seeking counseling, and talking to loved ones can make a big difference.
+                  {t('aloneDesc')}
                 </p>
               </div>
             </div>
@@ -124,7 +114,7 @@ export default function UnderstandingDiagnosisPage() {
                 href="/voluntarios"
                 className="px-8 py-4 bg-white text-brand-600 font-bold rounded-full hover:shadow-2xl hover:scale-105 transition-all"
               >
-                Find Support
+                {t('btnSupport')}
               </a>
               <a 
                 href="/understanding-your-diagnosis.pdf"
@@ -132,7 +122,7 @@ export default function UnderstandingDiagnosisPage() {
                 className="px-8 py-4 bg-white/20 backdrop-blur-sm border-2 border-white text-white font-bold rounded-full hover:bg-white/30 transition-all flex items-center gap-2"
               >
                 <Download className="w-5 h-5" />
-                Download Guide (PDF)
+                {t('btnDownload')}
               </a>
             </div>
           </div>

@@ -2,15 +2,30 @@
   "metadata": {
   "description": "We fulfill dreams and give hope to warriors fighting cancer every day. Join our mission."
 },
-  "nav": {
+"nav": {
     "home": "Home",
     "aboutCancer": "About Cancer",
     "warriors": "Warriors",
     "volunteers": "Volunteers",
-    "blog": "Blog",
     "events": "Events",
-    "donate": "Donate Now",
-    "newsletter": "Newsletter"
+    "donate": "Donate",
+    "learnAboutCancer": "Learn about Cancer",
+    "understandingDiagnosis": "Understanding Your Diagnosis",
+    "questionsForDoctor": "Questions to ask your Doctor",
+    "emotionalWellBeing": "Emotional Well-being",
+    "awarenessCalendar": "Cancer Awareness Calendar",
+    "getInvolved": "Get Involved",
+    "volunteer": "Volunteer",
+    "peerSupport": "Peer Support Program",
+    "supportDream": "Support a Dream",
+    "newsletter": "Newsletter",
+    "warriorsHub": "Warriors Hub",
+    "connectSurvivor": "Connect with a Survivor",
+    "dreamApplication": "Dream Support Application",
+    "shareJourney": "Share your Journey",
+    "moodBoost": "Warrior Mood Boost",
+    "mensHealth": "Men's Health Week",
+    "kidneyCancer": "World Kidney Cancer Day"
   },
   "warriorsPage": {
     "title": "Dreams We've",
@@ -101,7 +116,7 @@
     "donated": "Donated in 2024",
     "dreamsFulfilled": "Dreams Fulfilled",
     "warriorsSupported": "Warriors Supported",
-    "activeVolunteers": "Active Volunteers"
+    "activeVolunteers": "Team Members"
   },
   "cancer": {
     "badge": "Knowledge is Power",
@@ -1234,13 +1249,21 @@
     }
   },
 
-  "footer": {
+"footer": {
     "description": "Together against cancer. We fulfill dreams and give hope to warriors fighting every day.",
     "copyright": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions",
-    "peerPolicy": "Peer Support Policy"
+    "peerPolicy": "Peer Support Policy",
+    "financials": "Financial Reports",
+    "verified": "Verified & Member of",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "address": "Bucharest, Romania",
+    "supportTitle": "Support Us",
+    "supportText": "Your donation helps us fulfill dreams and support warriors daily."
   },
+
   "legal": {
 "terms": {
       "title": "Tutti Cancer Warriors Grant Policy",
@@ -1425,5 +1448,140 @@
     "socialTitle": "Social Media Content",
     "socialText": "Use these sample captions and the hashtag #WorldKidneyCancerDay.",
     "quote1": "“Think kidney cancer is rare? It’s one of the top 10 most common cancers. Know the signs.”"
+  },
+  "financialsPage": {
+    "title": "Financials",
+    "p1": "2024 was our first year as a nonprofit. We were officially established by court in May 2024 and registered under the Registry of Foundations and Associations and the Financial Institution in June 2024.",
+    "p2": "This foundational year was focused on building the roots of our mission. We began our work in cancer awareness, offered peer support to those affected, and laid the groundwork for long-term impact.",
+    "p3": "In April 2025, we proudly opened the <bold>Dream Support Application</bold>, giving cancer warriors a way to share their hopes — a major step in making our vision of 'dreams come true' a reality.",
+    "download": "Download 2024 Financial Report (PDF)"
+  },
+  "stories": {
+    "badge": "Real Stories",
+    "title": "Dreams We've <highlight>Fulfilled</highlight>",
+    "subtitle": "Every warrior has a unique story of courage, hope, and dreams come true",
+    "tag": "Dream Fulfilled ✨",
+    "readMore": "Read More Stories"
+  },
+  "warriorsList": {
+    "maria": { "dream": "Meet her favorite author", "story": "Breast cancer warrior who dreamed of meeting her literary hero. We made it happen." },
+    "carlos": { "dream": "Record a song", "story": "Leukemia fighter who always wanted to record his own music in a professional studio." },
+    "ana": { "dream": "See the Northern Lights", "story": "Ovarian cancer survivor who fulfilled her lifelong dream of seeing the Aurora Borealis." }
+  },
+  "testimonial": {
+    "quote": "Fulfilling my dream gave me the strength to keep fighting. I didn't just survive, I <bold>lived again</bold>.",
+    "author": "— An Anonymous Warrior"
+  },
+  "finalCta": {
+    "title": "Born to Thrive",
+    "subtitle": "Every donation, every hour of volunteering, every word of support counts. Together we are stronger.",
+    "button": "Make a Difference Today"
+  },
+  "aboutCancerPage": {
+    "heroTag": "Knowledge is Power",
+    "title": "Learn about <highlight>Cancer</highlight>",
+    "subtitle": "Comprehensive information about cancer types, symptoms, early detection, and treatments. We're here to support you every step of the way.",
+    "countText": "35 cancer types with complete information",
+    "infoGuide": "Info Guide",
+    "medicalInfo": "Medical Info",
+    "readMore": "Read more",
+    "types": {
+      "breast": { "title": "Breast Cancer", "shortDesc": "Early detection saves lives." },
+      "lung": { "title": "Lung Cancer", "shortDesc": "Understanding risk factors is key." }
+    }
+  },
+  "diagnosisPage": {
+    "title": "Understanding Your Diagnosis",
+    "heroDesc": "Getting a cancer diagnosis can feel like a storm has suddenly rolled into your life. It's completely normal to feel overwhelmed. Understanding what it means can help you feel more in control.",
+    "whatIsCancerTitle": "What Is Cancer?",
+    "whatIsCancerDesc": "Cancer is a word that covers a wide range of diseases where cells in the body start growing uncontrollably.",
+    "stagingTitle": "Staging and Grading: What They Mean",
+    "stagingSub": "What is Staging?",
+    "stagingDesc": "Staging is like a map that shows how far the cancer has traveled. It starts from Stage 0 to Stage IV.",
+    "gradingTitle": "What Is Grading?",
+    "gradingDesc": "Grading tells you how much the cancer cells differ from normal cells.",
+    "aloneTitle": "You're Not Alone",
+    "aloneDesc": "It's essential to remember that you don't have to go through this alone. There are many resources and people who want to support you.",
+    "btnSupport": "Find Support",
+    "btnDownload": "Download Guide (PDF)",
+    "stages": {
+      "0": "Localized", "I": "Early", "II": "Regional", "III": "Advanced", "IV": "Metastatic"
+    }
+  },
+  "questionsPage": {
+    "title": "Questions to Ask Your Doctor",
+    "subtitle": "Getting a cancer diagnosis can feel overwhelming. Talking to your doctor can help you understand what's happening.",
+    "videoTitle": "Coming Soon: Video Calls with Medical Experts",
+    "videoDesc": "Soon you'll be able to speak directly with medical specialists via Zoom or Google Meet.",
+    "videoNote": "How to enable: Once launched, you'll be able to book appointments through our platform.",
+    "tipsTitle": "Get the Inside Scoop on Your Care",
+    "downloadTitle": "Download the Complete Guide",
+    "downloadDesc": "Take this list with you to your next appointment.",
+    "btnDownload": "Download PDF Guide",
+    "tips": {
+      "1": { "title": "Stay Informed", "text": "Make sure you understand all the details." },
+      "2": { "title": "Choose Best", "text": "Ask questions to make the best choice." },
+      "3": { "title": "Don't Be Shy", "text": "If something isn't clear, speak up!" },
+      "4": { "title": "Family", "text": "Encourage your loved ones to ask questions too." }
+    },
+    "sections": {
+      "general": "General Questions",
+      "tests": "Questions About Tests",
+      "treatment": "Questions About Treatment",
+      "advanced": "If Your Cancer is Advanced",
+      "trials": "Clinical Trials"
+    },
+    "qList": {
+        "q1": "What type of cancer do I have?",
+        "q2": "How fast is my cancer growing?",
+        "q3": "Where exactly is the cancer?",
+        "q4": "Can it be cured?"
+    }
+  },
+  "emotionalPage": {
+    "title": "Emotional Well-Being",
+    "subtitle": "Caring for your emotional health is just as important as managing the physical side of cancer.",
+    "anxiety": "Coping with Anxiety",
+    "depression": "Dealing with Depression",
+    "positivity": "Maintaining Positivity",
+    "network": "Support Networks",
+    "signs": "Signs of Depression:",
+    "help": "Seeking Help:",
+    "downloadTitle": "Download the Complete Guide",
+    "downloadDesc": "Take these emotional well-being strategies with you.",
+    "btnDownload": "Download PDF Guide"
+  },
+  "calendarPage": {
+    "title": "Awareness Calendar",
+    "subtitle": "Each month is dedicated to raising awareness about different types of cancer. Join the fight.",
+    "awarenessMonth": "Awareness Month",
+    "keyDates": "Key Dates"
+  },
+  "donatePage": {
+    "title": "Donate Now",
+    "subtitle": "Your support transforms lives. Every donation helps us fulfill dreams.",
+    "betterGivingTitle": "Donate via Better Giving",
+    "betterGivingDesc": "Through Better Giving, you can donate with zero platform fees.",
+    "btnBetterGiving": "Donate with Better Giving",
+    "verified": "Verified Nonprofit",
+    "taxTitle": "Redirect 3.5% Tax",
+    "taxBadge": "For Romanian Residents",
+    "taxDesc": "Direct 3.5% of your income tax to us at no extra cost.",
+    "btnTax": "Fill Form 230 Online",
+    "paypalDesc": "Quick, secure, and easy.",
+    "btnPaypal": "Donate with PayPal",
+    "bankTitle": "Bank Transfer",
+    "cryptoTitle": "Crypto Donations"
+  },
+  "supportDreamPage": {
+    "susanTitle": "Donate to Susan's Dream",
+    "susanDesc": "Help us make Susan's wish come true. Your direct support makes an immediate impact.",
+    "btnSusan": "Donate to Susan",
+    "btnGeneral": "General Donation"
+  },
+  "connectSurvivorPage": {
+    "readyTitle": "Ready to connect?",
+    "btnConnect": "Connect with a Survivor",
+    "btnPolicy": "Read Policy & Guidelines"
   }
 }

@@ -11,6 +11,51 @@
       "static/css/app/[locale]/layout.css",
       "static/chunks/app/[locale]/layout.js"
     ],
+    "/[locale]/privacy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/privacy/page.js"
+    ],
+    "/[locale]/terms/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/terms/page.js"
+    ],
+    "/[locale]/financials/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/financials/page.js"
+    ],
+    "/[locale]/mens-health-week/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/mens-health-week/page.js"
+    ],
+    "/[locale]/peer-policy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/peer-policy/page.js"
+    ],
+    "/[locale]/voluntarios/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/voluntarios/page.js"
+    ],
+    "/[locale]/peer-support/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/peer-support/page.js"
+    ],
+    "/[locale]/support-dream/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/support-dream/page.js"
+    ],
+    "/[locale]/warrior-mood-boost/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/warrior-mood-boost/page.js"
+    ],
     "/[locale]/sobre-cancer/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -21,20 +66,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/sobre-cancer/[id]/page.js"
     ],
-    "/[locale]/donar/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/donar/page.js"
-    ],
     "/[locale]/entender-diagnostico/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/entender-diagnostico/page.js"
-    ],
-    "/[locale]/voluntarios/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/voluntarios/page.js"
     ],
     "/[locale]/preguntas-doctor/page": [
       "static/chunks/webpack.js",
@@ -56,40 +91,30 @@
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/involucrate/page.js"
     ],
-    "/[locale]/peer-support/page": [
+    "/[locale]/donar/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/peer-support/page.js"
+      "static/chunks/app/[locale]/donar/page.js"
     ],
-    "/[locale]/support-dream/page": [
+    "/[locale]/warriors/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/support-dream/page.js"
+      "static/chunks/app/[locale]/warriors/page.js"
     ],
     "/[locale]/connect-survivor/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/connect-survivor/page.js"
     ],
-    "/[locale]/peer-policy/page": [
+    "/[locale]/dream-application/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/peer-policy/page.js"
+      "static/chunks/app/[locale]/dream-application/page.js"
     ],
     "/[locale]/share-journey/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/share-journey/page.js"
-    ],
-    "/[locale]/warrior-mood-boost/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/warrior-mood-boost/page.js"
-    ],
-    "/[locale]/mens-health-week/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/mens-health-week/page.js"
     ],
     "/[locale]/world-kidney-cancer-day/page": [
       "static/chunks/webpack.js",

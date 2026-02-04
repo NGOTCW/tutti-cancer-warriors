@@ -2,15 +2,30 @@
   "metadata": {
   "description": "Îndeplinim vise și oferim speranță luptătorilor care se confruntă cu cancerul în fiecare zi."
 },
-  "nav": {
+"nav": {
     "home": "Acasă",
     "aboutCancer": "Despre Cancer",
     "warriors": "Luptători",
     "volunteers": "Voluntari",
-    "blog": "Blog",
     "events": "Evenimente",
-    "donate": "Donează Acum",
-    "newsletter": "Buletin Informativ"
+    "donate": "Donează",
+    "learnAboutCancer": "Învață despre Cancer",
+    "understandingDiagnosis": "Înțelegerea Diagnosticului",
+    "questionsForDoctor": "Întrebări pentru Doctor",
+    "emotionalWellBeing": "Bunăstare Emoțională",
+    "awarenessCalendar": "Calendar de Conștientizare",
+    "getInvolved": "Implică-te",
+    "volunteer": "Devino Voluntar",
+    "peerSupport": "Sprijin Reciproc",
+    "supportDream": "Susține un Vis",
+    "newsletter": "Newsletter",
+    "warriorsHub": "Centrul Luptătorilor",
+    "connectSurvivor": "Conectează-te cu un Supraviețuitor",
+    "dreamApplication": "Aplică pentru un Vis",
+    "shareJourney": "Împărtășește Povestea Ta",
+    "moodBoost": "Încurajare pentru Luptători",
+    "mensHealth": "Săptămâna Sănătății Bărbaților",
+    "kidneyCancer": "Ziua Mondială a Cancerului Renal"
   },
   "warriorsPage": {
     "title": "Vise pe care le-am",
@@ -101,7 +116,7 @@
     "donated": "Donat în 2024",
     "dreamsFulfilled": "Vise Împlinite",
     "warriorsSupported": "Luptători Sprijiniți",
-    "activeVolunteers": "Voluntari Activi"
+    "activeVolunteers": "Membrii Echipei"
   },
   "cancer": {
     "badge": "Cunoașterea este Putere",
@@ -1358,7 +1373,13 @@
   },
   "footer": {
     "description": "Împreună împotriva cancerului. Împlinim vise și oferim speranță luptătorilor care se luptă în fiecare zi.",
-    "copyright": "Tutti Cancer Warriors. Toate drepturile rezervate."
+    "copyright": "Tutti Cancer Warriors. Toate drepturile rezervate.",
+    "verified": "Verificat și Membru al",
+    "quickLinks": "Link-uri Rapide",
+    "contact": "Contact",
+    "address": "București, România",
+    "supportTitle": "Susține-ne",
+    "supportText": "Donația ta ne ajută să îndeplinim visuri și să sprijinim luptătorii zilnic."
   },
   "connectSurvivor": {
     "title": "Conectează-te cu un Supraviețuitor",
@@ -1415,13 +1436,6 @@
       "grateful": { "label": "Te simți recunoscător?", "support": "Recunoștința nu șterge durerea, dar o poate atenua pentru un moment.", "tip": "Gândește-te la un lucru mic sau o persoană pentru care ești recunoscător azi.", "quote": "“Această viață poate fi delicată... dar Dumnezeu țese o poveste frumoasă care este viața ta.”" },
       "motivated": { "label": "Te simți motivat?", "support": "Hai să folosim această scânteie. O acțiune mică azi este o victorie mare.", "tip": "Alege o sarcină minusculă azi care te face să te simți în control.", "quote": "“Nu uita niciodată cât ești de curajos. Mintea este puternică.”" }
     }
-  },
-  "footer": {
-    "description": "Împreună împotriva cancerului. Împlinim vise și oferim speranță luptătorilor care se luptă în fiecare zi.",
-    "copyright": "Toate drepturile rezervate.",
-    "privacy": "Politica de Confidențialitate",
-    "terms": "Termeni și Condiții",
-    "peerPolicy": "Politica de Sprijin între Colegi"
   },
   "legal": {
     "terms": {
@@ -1607,5 +1621,252 @@
     "socialTitle": "Conținut Social Media",
     "socialText": "Folosește aceste descrieri și hashtag-ul #WorldKidneyCancerDay.",
     "quote1": "“Crezi că cancerul renal e rar? E unul dintre cele mai comune 10 tipuri. Cunoaște semnele.”"
+  },
+  "financialsPage": {
+    "title": "Rapoarte Financiare",
+    "p1": "2024 a fost primul nostru an ca organizație nonprofit. Am fost înființați oficial de instanță în mai 2024 și înregistrați în Registrul Fundațiilor și Asociațiilor și la Instituția Financiară în iunie 2024.",
+    "p2": "Acest an fundamental s-a concentrat pe construirea rădăcinilor misiunii noastre. Am început activitatea de conștientizare a cancerului, am oferit sprijin reciproc celor afectați și am pus bazele unui impact pe termen lung.",
+    "p3": "În aprilie 2025, am deschis cu mândrie <bold>Aplicația pentru Susținerea Visurilor</bold>, oferind luptătorilor împotriva cancerului o modalitate de a-și împărtăși speranțele — un pas major în transformarea viziunii noastre de a face 'visurile să devină realitate'.",
+    "download": "Descarcă Raportul Financiar 2024 (PDF)"
+  },
+  "stories": {
+    "badge": "Povești Reale",
+    "title": "Visuri <highlight>Împlinite</highlight>",
+    "subtitle": "Fiecare luptător are o poveste unică de curaj, speranță și visuri devenite realitate",
+    "tag": "Vis Împlinit ✨",
+    "readMore": "Citește Mai Multe Povești"
+  },
+  "warriorsList": {
+    "maria": { "dream": "Să-și întâlnească autorul preferat", "story": "Luptătoare împotriva cancerului de sân care visa să-și întâlnească eroul literar. Am făcut să se întâmple." },
+    "carlos": { "dream": "Să înregistreze un cântec", "story": "Luptător cu leucemia care a dorit întotdeauna să-și înregistreze propria muzică într-un studio profesional." },
+    "ana": { "dream": "Să vadă Aurora Boreală", "story": "Supraviețuitoare a cancerului ovarian care și-a îndeplinit visul de o viață de a vedea Aurora Boreală." }
+  },
+  "testimonial": {
+    "quote": "Îndeplinirea visului mi-a dat puterea să continui lupta. Nu doar am supraviețuit, <bold>am trăit din nou</bold>.",
+    "author": "— Un Luptător Anonim"
+  },
+  "finalCta": {
+    "title": "Născuți să Reușim",
+    "subtitle": "Fiecare donație, fiecare oră de voluntariat, fiecare cuvânt de susținere contează. Împreună suntem mai puternici.",
+    "button": "Fă o Diferență Astăzi"
+  },
+  "aboutCancerPage": {
+    "heroTag": "Cunoașterea este Putere",
+    "title": "Învață despre <highlight>Cancer</highlight>",
+    "subtitle": "Informații complete despre tipurile de cancer, simptome și tratamente.",
+    "countText": "35 tipuri de cancer cu informații complete",
+    "infoGuide": "Ghid Info",
+    "medicalInfo": "Info Medical",
+    "readMore": "Citește mai mult",
+    "types": { "breast": { "title": "Cancer Mamar", "shortDesc": "Detectarea timpurie salvează vieți." } }
+  },
+  "diagnosisPage": {
+    "title": "Înțelegerea Diagnosticului",
+    "heroDesc": "Primirea unui diagnostic poate fi copleșitoare. Este normal să te simți așa.",
+    "whatIsCancerTitle": "Ce este Cancerul?",
+    "whatIsCancerDesc": "Cancerul este un cuvânt care acoperă o gamă largă de boli...",
+    "stagingTitle": "Stadializare și Grade",
+    "stagingSub": "Ce este Stadializarea?",
+    "stagingDesc": "Stadializarea arată cât de mult s-a răspândit cancerul.",
+    "gradingTitle": "Ce este Gradul?",
+    "gradingDesc": "Gradul indică cât de diferite sunt celulele canceroase de cele normale.",
+    "aloneTitle": "Nu Ești Singur",
+    "aloneDesc": "Există multe resurse și oameni care vor să te sprijine.",
+    "btnSupport": "Găsește Sprijin",
+    "btnDownload": "Descarcă Ghid (PDF)",
+    "stages": {
+      "0": "Localizat", "I": "Timpuriu", "II": "Regional", "III": "Avansat", "IV": "Metastatic"
+    }
+  },
+  "questionsPage": {
+    "title": "Întrebări pentru Doctor",
+    "subtitle": "A vorbi cu doctorul tău te poate ajuta să înțelegi ce se întâmplă.",
+    "videoTitle": "În Curând: Apeluri Video",
+    "videoDesc": "În curând vei putea vorbi direct cu specialiști medicali via Zoom.",
+    "videoNote": "Notă: Vei putea face programări prin platforma noastră.",
+    "tipsTitle": "Sfaturi pentru Îngrijire",
+    "downloadTitle": "Descarcă Ghidul Complet",
+    "downloadDesc": "Ia această listă cu tine la următoarea programare.",
+    "btnDownload": "Descarcă PDF",
+    "tips": {
+      "1": { "title": "Informează-te", "text": "Înțelege detaliile tratamentului." },
+      "2": { "title": "Alege ce e mai bun", "text": "Pune întrebări pentru a decide corect." },
+      "3": { "title": "Nu fi timid", "text": "Dacă ceva nu e clar, întreabă!" },
+      "4": { "title": "Familia", "text": "Încurajează familia să pună întrebări." }
+    },
+    "sections": {
+      "general": "Întrebări Generale",
+      "tests": "Despre Teste",
+      "treatment": "Despre Tratamente",
+      "advanced": "Dacă este Avansat",
+      "trials": "Studii Clinice"
+    },
+    "qList": {
+      "gen1": "Ce tip de cancer am exact?",
+      "gen2": "Cât de repede crește?",
+      "gen3": "Unde este localizat?",
+      "gen4": "Se poate vindeca sau doar controla?",
+      "test1": "Ce implică acest test?",
+      "test2": "Ce ne va spune rezultatul?",
+      "test3": "Care sunt riscurile?",
+      "test4": "Va schimba tratamentul meu?",
+      "test5": "Există costuri extra?",
+      "treat1": "Care este scopul tratamentului?",
+      "treat2": "Cum îmi va afecta viața?",
+      "treat3": "Cât va costa?",
+      "treat4": "Există ajutor financiar?",
+      "treat5": "Îmi va afecta fertilitatea?",
+      "treat6": "Ce efecte secundare vor fi?",
+      "treat7": "Există alte terapii?",
+      "treat8": "Cine este în echipa mea?",
+      "treat9": "Există studii clinice pentru mine?",
+      "adv1": "Ce tratamente ajută cu simptomele?",
+      "adv2": "Cine se ocupă de îngrijirea mea?",
+      "adv3": "Ce sprijin are familia mea?",
+      "adv4": "Cum accesez îngrijirea paliativă?",
+      "trial1": "Există un studiu clinic pentru mine?",
+      "trial2": "Ce implică participarea?",
+      "trial3": "Care sunt beneficiile?",
+      "trial4": "Mă pot retrage oricând?",
+      "trial5": "Este important să particip?"
+    }
+  },
+  "emotionalPage": {
+    "title": "Bunăstare Emoțională",
+    "subtitle": "Sănătatea emoțională este vitală. Iată instrumente practice.",
+    "anxiety": "Gestionarea Anxietății",
+    "depression": "Gestionarea Depresiei",
+    "positivity": "Menținerea Pozitivității",
+    "network": "Rețele de Suport",
+    "signsTitle": "Semne ale Depresiei:",
+    "helpTitle": "Caută Ajutor:",
+    "downloadTitle": "Descarcă Ghidul",
+    "downloadDesc": "Ia aceste strategii cu tine.",
+    "btnDownload": "Descarcă PDF",
+    "techniques": {
+      "deepBreath": "Respirație Profundă",
+      "deepBreathSteps": "Găsește liniște. Închide ochii. Inspiră pe nas. Expiră pe gură.",
+      "breath478": "Respirație 4-7-8",
+      "breath478Steps": "Inspiră 4 sec. Ține 7 sec. Expiră 8 sec.",
+      "thoughts": "Provocarea Gândurilor",
+      "thoughtsSteps": "Identifică gândurile negative. Sunt reale? Înlocuiește-le.",
+      "mindfulness": "Mindfulness",
+      "mindfulnessSteps": "Concentrează-te pe prezent. Observă. Redu frica de viitor."
+    },
+    "signs": {
+      "1": "Tristețe persistentă",
+      "2": "Pierderea interesului",
+      "3": "Oboseală extremă",
+      "4": "Schimbări de apetit",
+      "5": "Dificultăți de concentrare"
+    },
+    "help": {
+      "counseling": "Consiliere: Vorbește cu un specialist.",
+      "peer": "Suport Reciproc: Conectează-te cu alții.",
+      "meds": "Medicație: Consultă doctorul."
+    },
+    "practices": {
+      "gratitude": "Jurnal de Recunoștință: Scrie 3 lucruri bune.",
+      "notes": "Bilete de Mulțumire: Mulțumește cuiva.",
+      "enjoy": "Bucurie Zilnică: Citește, ascultă muzică.",
+      "creative": "Expresie Creativă: Desenează sau scrie."
+    },
+    "networkPoints": {
+      "family": "Familie și Prieteni: Comunică deschis.",
+      "groups": "Grupuri de Suport: Împărtășește experiențe."
+    }
+  },
+  "calendarPage": {
+    "title": "Calendar de Conștientizare",
+    "subtitle": "Fiecare lună este dedicată luptei împotriva cancerului.",
+    "awarenessMonth": "Luna Conștientizării",
+    "keyDates": "Date Cheie",
+    "months": {
+      "jan": "Ianuarie", "feb": "Februarie", "mar": "Martie", "apr": "Aprilie", "may": "Mai", "jun": "Iunie",
+      "jul": "Iulie", "aug": "August", "sep": "Septembrie", "oct": "Octombrie", "nov": "Noiembrie", "dec": "Decembrie"
+    },
+    "events": {
+      "cancerDay": "Ziua Mondială a Cancerului",
+      "rare": "Ziua Bolilor Rare",
+      "hpv": "Ziua Intl. HPV",
+      "health": "Ziua Mondială a Sănătății",
+      "melanoma": "Lunea Melanomului",
+      "ovarian": "Ziua Cancerului Ovarian",
+      "survivors": "Ziua Supraviețuitorilor",
+      "headNeck": "Ziua Cancer Cap și Gât",
+      "lung": "Ziua Mondială Cancer Pulmonar",
+      "research": "Ziua Cercetării Cancerului",
+      "metaBreast": "Ziua Cancer Mamar Metastatic",
+      "pancreatic": "Ziua Cancerului Pancreatic"
+    },
+    "types": {
+      "cervical": "Cancer Cervical",
+      "gallbladder": "Cancer Veziculă Biliară",
+      "colorectal": "Cancer Colorectal",
+      "kidney": "Cancer Renal",
+      "testicular": "Cancer Testicular",
+      "skin": "Cancer de Piele",
+      "brain": "Cancer Cerebral",
+      "mens": "Sănătatea Bărbaților",
+      "sarcoma": "Sarcom",
+      "bone": "Cancer Osos",
+      "thyroid": "Cancer Tiroidian",
+      "ovarian": "Cancer Ovarian",
+      "breast": "Cancer Mamar",
+      "liver": "Cancer Ficat",
+      "lung": "Cancer Pulmonar",
+      "pancreatic": "Cancer Pancreatic",
+      "bladder": "Cancer Vezică"
+    }
+  },
+  "connectSurvivorPage": {
+    "title": "Conectează-te cu un Supraviețuitor",
+    "subtitle": "A vorbi cu cineva care a fost acolo contează enorm.",
+    "step1Title": "Înregistrează-te",
+    "step1Desc": "Spune-ne despre tine.",
+    "step2Title": "Găsește partener",
+    "step2Desc": "Te conectăm cu cineva similar.",
+    "step3Title": "Conectează-te",
+    "step3Desc": "Începe o conversație de suport.",
+    "readyTitle": "Gata să te conectezi?",
+    "btnConnect": "Conectează-te",
+    "btnPolicy": "Citește Politica"
+  },
+  "supportDreamPage": {
+    "title": "Susține un Vis",
+    "subtitle": "Ajutorul tău împlinește dorințe.",
+    "dream1": "Chitară",
+    "dream2": "Călătorie",
+    "dream3": "Cântec",
+    "dream4": "Artă",
+    "waysTitle": "Moduri de a Ajuta",
+    "way1": "Donație Directă",
+    "way1Desc": "Orice sumă ajută.",
+    "way2": "Sponsorizează un Vis",
+    "way2Desc": "Finanțează un vis complet.",
+    "way3": "Strângere de Fonduri",
+    "way3Desc": "Creează o campanie.",
+    "susanTitle": "Donează pentru Susan",
+    "susanDesc": "Ajută-ne să-i îndeplinim dorința.",
+    "btnSusan": "Donează lui Susan",
+    "btnGeneral": "Donație Generală"
+  },
+  "diagnosisPage": {
+    "title": "Înțelegerea Diagnosticului",
+    "heroDesc": "Este normal să fii copleșit. Informația îți dă putere.",
+    "whatIsCancerTitle": "Ce este Cancerul?",
+    "whatIsCancerDesc": "Creșterea necontrolată a celulelor.",
+    "stagingTitle": "Stadializare",
+    "stagingSub": "Ce este stadiul?",
+    "stagingDesc": "Arată răspândirea cancerului.",
+    "stages": {
+      "0": "Localizat", "I": "Timpuriu", "II": "Regional", "III": "Avansat", "IV": "Metastatic"
+    },
+    "gradingTitle": "Ce este Gradul?",
+    "gradingDesc": "Arată diferența celulelor.",
+    "aloneTitle": "Nu Ești Singur",
+    "aloneDesc": "Suntem aici să te ajutăm.",
+    "btnSupport": "Găsește Sprijin",
+    "btnDownload": "Descarcă Ghid (PDF)"
   }
 }

@@ -2,15 +2,30 @@
   "metadata": {
   "description": "Cumplimos sueños y damos esperanza a warriors que luchan contra el cáncer cada día. Únete a nuestra misión."
 },
-  "nav": {
+"nav": {
     "home": "Inicio",
     "aboutCancer": "Sobre el Cáncer",
     "warriors": "Warriors",
     "volunteers": "Voluntarios",
-    "blog": "Blog",
     "events": "Eventos",
-    "donate": "Donar Ahora",
-    "newsletter": "Boletín"
+    "donate": "Donar",
+    "learnAboutCancer": "Aprende sobre el Cáncer",
+    "understandingDiagnosis": "Entendiende tu Diagnóstico",
+    "questionsForDoctor": "Pregunta a tu Doctor",
+    "emotionalWellBeing": "Bienestar Emocional",
+    "awarenessCalendar": "Calendario de Concienciación",
+    "getInvolved": "Involúcrate",
+    "volunteer": "Ser Voluntario",
+    "peerSupport": "Apoyo entre Pares",
+    "supportDream": "Apoya un Sueño",
+    "newsletter": "Newsletter",
+    "warriorsHub": "Conecta con un Warrior",
+    "connectSurvivor": "Conecta con un Superviviente",
+    "dreamApplication": "Solicita un Sueño",
+    "shareJourney": "Comparte tu Historia",
+    "moodBoost": "Ánima a Warriors",
+    "mensHealth": "Semana de la Salud Masculina",
+    "kidneyCancer": "Cáncer de Riñón"
   },
   "warriorsPage": {
     "title": "Sueños que hemos",
@@ -101,7 +116,7 @@
     "donated": "Donado en 2024",
     "dreamsFulfilled": "Sueños Cumplidos",
     "warriorsSupported": "Warriors Apoyados",
-    "activeVolunteers": "Voluntarios Activos"
+    "activeVolunteers": "Miembros del Equipo"
   },
   "cancer": {
     "badge": "Conocimiento es Poder",
@@ -1356,10 +1371,6 @@
     "impactText": "sueños hechos realidad gracias a personas como tú",
     "donateButton": "Donar Ahora"
   },
-  "footer": {
-    "description": "Juntos contra el cáncer. Cumplimos sueños y damos esperanza a warriors que luchan cada día.",
-    "copyright": "Tutti Cancer Warriors. Todos los derechos reservados."
-  },
   "connectSurvivor": {
     "title": "Conecta con un Superviviente",
     "subtitle": "Hablar con alguien que ha estado en tu lugar puede cambiarlo todo.",
@@ -1421,7 +1432,14 @@
     "copyright": "Todos los derechos reservados.",
     "privacy": "Política de Privacidad",
     "terms": "Términos y Condiciones",
-    "peerPolicy": "Política de Apoyo entre Pares"
+    "peerPolicy": "Política de Apoyo",
+    "financials": "Reportes Financieros",
+    "verified": "Verificado y Miembro de",
+    "quickLinks": "Enlaces Rápidos",
+    "contact": "Contacto",
+    "address": "Bucarest, Rumanía",
+    "supportTitle": "Apóyanos",
+    "supportText": "Tu donación nos ayuda a cumplir sueños y apoyar a los guerreros cada día."
   },
   "legal": {
     "terms": {
@@ -1607,5 +1625,252 @@
     "socialTitle": "Contenido para Redes",
     "socialText": "Usa estos textos y el hashtag #WorldKidneyCancerDay.",
     "quote1": "“¿Crees que el cáncer de riñón es raro? Es uno de los 10 más comunes. Conoce los signos.”"
+  },
+  "financialsPage": {
+    "title": "Reportes Financieros",
+    "p1": "2024 fue nuestro primer año como organización sin fines de lucro. Fuimos establecidos oficialmente por la corte en mayo de 2024 y registrados bajo el Registro de Fundaciones y Asociaciones y la Institución Financiera en junio de 2024.",
+    "p2": "Este año fundacional se centró en construir las raíces de nuestra misión. Comenzamos nuestro trabajo en la concienciación sobre el cáncer, ofrecimos apoyo entre pares a los afectados y sentamos las bases para un impacto a largo plazo.",
+    "p3": "En abril de 2025, abrimos con orgullo la <bold>Solicitud de Apoyo de Sueños</bold>, dando a los guerreros contra el cáncer una forma de compartir sus esperanzas, un paso importante para hacer realidad nuestra visión de 'hacer los sueños realidad'.",
+    "download": "Descargar Informe Financiero 2024 (PDF)"
+  },
+  "stories": {
+    "badge": "Historias Reales",
+    "title": "Sueños <highlight>Cumplidos</highlight>",
+    "subtitle": "Cada guerrero tiene una historia única de coraje, esperanza y sueños hechos realidad",
+    "tag": "Sueño Cumplido ✨",
+    "readMore": "Leer Más Historias"
+  },
+  "warriorsList": {
+    "maria": { "dream": "Conocer a su autor favorito", "story": "Guerrera de cáncer de mama que soñaba con conocer a su héroe literario. Lo hicimos realidad." },
+    "carlos": { "dream": "Grabar una canción", "story": "Luchador contra la leucemia que siempre quiso grabar su propia música en un estudio profesional." },
+    "ana": { "dream": "Ver la Aurora Boreal", "story": "Superviviente de cáncer de ovario que cumplió el sueño de su vida de ver la Aurora Boreal." }
+  },
+  "testimonial": {
+    "quote": "Cumplir mi sueño me dio fuerzas para seguir luchando. No solo sobreviví, <bold>volví a vivir</bold>.",
+    "author": "— Un Guerrero Anónimo"
+  },
+  "finalCta": {
+    "title": "Nacidos para Prosperar",
+    "subtitle": "Cada donación, cada hora de voluntariado, cada palabra de apoyo cuenta. Juntos somos más fuertes.",
+    "button": "Marca la Diferencia Hoy"
+  },
+  "aboutCancerPage": {
+    "heroTag": "El Conocimiento es Poder",
+    "title": "Aprende sobre el <highlight>Cáncer</highlight>",
+    "subtitle": "Información completa sobre tipos de cáncer, síntomas y tratamientos. Estamos aquí para apoyarte.",
+    "countText": "35 tipos de cáncer con información completa",
+    "infoGuide": "Guía Info",
+    "medicalInfo": "Info Médica",
+    "readMore": "Leer más",
+    "types": { "breast": { "title": "Cáncer de Mama", "shortDesc": "La detección temprana salva vidas." } }
+  },
+  "diagnosisPage": {
+    "title": "Entendiendo tu Diagnóstico",
+    "heroDesc": "Recibir un diagnóstico puede sentirse como una tormenta. Es normal sentirse abrumado.",
+    "whatIsCancerTitle": "¿Qué es el Cáncer?",
+    "whatIsCancerDesc": "Cáncer es una palabra que cubre una amplia gama de enfermedades...",
+    "stagingTitle": "Etapificación y Grados",
+    "stagingSub": "¿Qué es la Etapa?",
+    "stagingDesc": "La etapa es como un mapa que muestra cuánto ha viajado el cáncer.",
+    "gradingTitle": "¿Qué es el Grado?",
+    "gradingDesc": "El grado indica cuánto se diferencian las células cancerosas de las normales.",
+    "aloneTitle": "No Estás Solo",
+    "aloneDesc": "Es esencial recordar que no tienes que pasar por esto solo.",
+    "btnSupport": "Buscar Apoyo",
+    "btnDownload": "Descargar Guía (PDF)",
+    "stages": {
+      "0": "Localizado", "I": "Temprano", "II": "Regional", "III": "Avanzado", "IV": "Metastásico"
+    }
+  },
+  "questionsPage": {
+    "title": "Preguntas para tu Doctor",
+    "subtitle": "Recibir un diagnóstico puede ser abrumador. Hablar con tu médico te ayudará a entender el proceso.",
+    "videoTitle": "Próximamente: Videollamadas",
+    "videoDesc": "Pronto podrás hablar directamente con especialistas vía Zoom o Google Meet.",
+    "videoNote": "Cómo activar: Podrás reservar citas a través de nuestra plataforma.",
+    "tipsTitle": "Consejos para tu Cuidado",
+    "downloadTitle": "Descarga la Guía Completa",
+    "downloadDesc": "Lleva esta lista contigo a tu próxima cita.",
+    "btnDownload": "Descargar PDF",
+    "tips": {
+      "1": { "title": "Infórmate", "text": "Asegúrate de entender los detalles de tu tratamiento." },
+      "2": { "title": "Elige lo Mejor", "text": "Pregunta para tomar la mejor decisión posible." },
+      "3": { "title": "No seas Tímido", "text": "Si algo no está claro, ¡pregunta de nuevo!" },
+      "4": { "title": "Familia", "text": "Anima a tus seres queridos a preguntar también." }
+    },
+    "sections": {
+      "general": "Preguntas Generales",
+      "tests": "Sobre Pruebas",
+      "treatment": "Sobre Tratamientos",
+      "advanced": "Si el Cáncer es Avanzado",
+      "trials": "Ensayos Clínicos"
+    },
+    "qList": {
+      "gen1": "¿Qué tipo de cáncer tengo exactamente?",
+      "gen2": "¿A qué velocidad está creciendo?",
+      "gen3": "¿Dónde está ubicado?",
+      "gen4": "¿Se puede curar o el objetivo es controlarlo?",
+      "test1": "¿En qué consiste esta prueba?",
+      "test2": "¿Qué nos dirá esta prueba?",
+      "test3": "¿Cuáles son los beneficios y riesgos?",
+      "test4": "¿Cambiarán los resultados mi plan de tratamiento?",
+      "test5": "¿Tiene algún coste extra?",
+      "treat1": "¿Cuál es el objetivo de este tratamiento?",
+      "treat2": "¿Cómo afectará a mi vida diaria?",
+      "treat3": "¿Cuál será el coste?",
+      "treat4": "¿Hay ayuda financiera disponible?",
+      "treat5": "¿Afectará a mi fertilidad?",
+      "treat6": "¿Qué efectos secundarios debo esperar?",
+      "treat7": "¿Hay otras terapias complementarias?",
+      "treat8": "¿Quién formará parte de mi equipo médico?",
+      "treat9": "¿Hay ensayos clínicos adecuados para mí?",
+      "adv1": "¿Qué tratamientos pueden ayudar con mis síntomas?",
+      "adv2": "¿Quién gestionará mi cuidado continuo?",
+      "adv3": "¿Qué apoyo pueden recibir mi familia y amigos?",
+      "adv4": "¿Cómo puedo acceder a cuidados paliativos?",
+      "trial1": "¿Hay algún ensayo clínico para mí?",
+      "trial2": "¿Qué implicaría participar?",
+      "trial3": "¿Cuáles son los beneficios y riesgos?",
+      "trial4": "¿Puedo retirarme si cambio de opinión?",
+      "trial5": "¿Es importante para mí o para otros participar?"
+    }
+  },
+  "emotionalPage": {
+    "title": "Bienestar Emocional",
+    "subtitle": "Cuidar tu salud emocional es tan importante como la física. Aquí tienes herramientas prácticas.",
+    "anxiety": "Manejando la Ansiedad",
+    "depression": "Lidiando con la Depresión",
+    "positivity": "Manteniendo la Positividad",
+    "network": "Redes de Apoyo",
+    "signsTitle": "Signos de Depresión:",
+    "helpTitle": "Buscar Ayuda:",
+    "downloadTitle": "Descarga la Guía Completa",
+    "downloadDesc": "Lleva estas estrategias contigo.",
+    "btnDownload": "Descargar PDF",
+    "techniques": {
+      "deepBreath": "Respiración Profunda",
+      "deepBreathSteps": "Busca un lugar tranquilo. Cierra los ojos. Inhala lento por la nariz. Exhala por la boca.",
+      "breath478": "Respiración 4-7-8",
+      "breath478Steps": "Inhala en 4 segundos. Mantén 7 segundos. Exhala en 8 segundos. Ayuda a dormir.",
+      "thoughts": "Desafiar Pensamientos",
+      "thoughtsSteps": "Identifica pensamientos negativos. Pregúntate si son reales. Cámbialos por realistas.",
+      "mindfulness": "Mindfulness",
+      "mindfulnessSteps": "Céntrate en el presente. Observa tu entorno. Reduce la ansiedad del futuro."
+    },
+    "signs": {
+      "1": "Tristeza Persistente o desesperanza",
+      "2": "Pérdida de Interés en actividades",
+      "3": "Fatiga extrema",
+      "4": "Cambios de Apetito o peso",
+      "5": "Dificultad para Concentrarse"
+    },
+    "help": {
+      "counseling": "Terapia: Hablar con un profesional ayuda.",
+      "peer": "Apoyo de Pares: Conectar con otros guerreros.",
+      "meds": "Medicación: Consulta siempre a tu médico."
+    },
+    "practices": {
+      "gratitude": "Diario de Gratitud: Escribe 3 cosas buenas al día.",
+      "notes": "Notas de Agradecimiento: Da las gracias a alguien.",
+      "enjoy": "Disfrute Diario: Lee, escucha música o pasea.",
+      "creative": "Expresión Creativa: Dibuja, escribe o crea."
+    },
+    "networkPoints": {
+      "family": "Familia y Amigos: Comunícate abiertamente con ellos.",
+      "groups": "Grupos de Apoyo: Comparte experiencias en un espacio seguro."
+    }
+  },
+  "calendarPage": {
+    "title": "Calendario de Concienciación",
+    "subtitle": "Cada mes nos unimos a la lucha contra diferentes tipos de cáncer.",
+    "awarenessMonth": "Mes de Concienciación",
+    "keyDates": "Fechas Clave",
+    "months": {
+      "jan": "Enero", "feb": "Febrero", "mar": "Marzo", "apr": "Abril", "may": "Mayo", "jun": "Junio",
+      "jul": "Julio", "aug": "Agosto", "sep": "Septiembre", "oct": "Octubre", "nov": "Noviembre", "dec": "Diciembre"
+    },
+    "events": {
+      "cancerDay": "Día Mundial del Cáncer",
+      "rare": "Día de Enfermedades Raras",
+      "hpv": "Día Intl. Concienciación VPH",
+      "health": "Día Mundial de la Salud",
+      "melanoma": "Lunes del Melanoma",
+      "ovarian": "Día Mundial Cáncer Ovario",
+      "survivors": "Día del Superviviente",
+      "headNeck": "Día Cáncer Cabeza y Cuello",
+      "lung": "Día Mundial Cáncer Pulmón",
+      "research": "Día Investigación Cáncer",
+      "metaBreast": "Día Cáncer Mama Metastásico",
+      "pancreatic": "Día Mundial Cáncer Páncreas"
+    },
+    "types": {
+      "cervical": "Cáncer Cervical",
+      "gallbladder": "Cáncer de Vesícula",
+      "colorectal": "Cáncer Colorrectal",
+      "kidney": "Cáncer de Riñón",
+      "testicular": "Cáncer Testicular",
+      "skin": "Cáncer de Piel",
+      "brain": "Cáncer Cerebral",
+      "mens": "Salud Masculina",
+      "sarcoma": "Sarcoma",
+      "bone": "Cáncer de Huesos",
+      "thyroid": "Cáncer de Tiroides",
+      "ovarian": "Cáncer de Ovario",
+      "breast": "Cáncer de Mama",
+      "liver": "Cáncer de Hígado",
+      "lung": "Cáncer de Pulmón",
+      "pancreatic": "Cáncer de Páncreas",
+      "bladder": "Cáncer de Vejiga"
+    }
+  },
+  "connectSurvivorPage": {
+    "title": "Conecta con un Superviviente",
+    "subtitle": "Hablar con alguien que ha estado en tu lugar puede cambiarlo todo.",
+    "step1Title": "Regístrate",
+    "step1Desc": "Cuéntanos un poco sobre ti.",
+    "step2Title": "Encuentra tu par",
+    "step2Desc": "Te conectamos con alguien similar.",
+    "step3Title": "Conecta",
+    "step3Desc": "Inicia una conversación de apoyo.",
+    "readyTitle": "¿Listo para conectar?",
+    "btnConnect": "Conecta con un Survivor",
+    "btnPolicy": "Leer Política y Guías"
+  },
+  "supportDreamPage": {
+    "title": "Apoya un Sueño",
+    "subtitle": "Tu ayuda hace realidad deseos que dan esperanza.",
+    "dream1": "Guitarra",
+    "dream2": "Viaje Familiar",
+    "dream3": "Grabar Canción",
+    "dream4": "Kit de Arte",
+    "waysTitle": "Formas de Apoyar",
+    "way1": "Donación Directa",
+    "way1Desc": "Contribuye con cualquier cantidad.",
+    "way2": "Patrocina un Sueño",
+    "way2Desc": "Financia un sueño completo.",
+    "way3": "Organiza una Colecta",
+    "way3Desc": "Crea una campaña con amigos.",
+    "susanTitle": "Dona al Sueño de Susan",
+    "susanDesc": "Ayúdanos a cumplir su deseo.",
+    "btnSusan": "Donar a Susan",
+    "btnGeneral": "Donación General"
+  },
+  "diagnosisPage": {
+    "title": "Entendiendo tu Diagnóstico",
+    "heroDesc": "Es normal sentirse abrumado. Entender tu diagnóstico te dará control.",
+    "whatIsCancerTitle": "¿Qué es el Cáncer?",
+    "whatIsCancerDesc": "Crecimiento descontrolado de células en el cuerpo.",
+    "stagingTitle": "Etapas y Grados",
+    "stagingSub": "¿Qué es la Etapa?",
+    "stagingDesc": "Indica cuánto se ha extendido el cáncer.",
+    "stages": {
+      "0": "Localizado", "I": "Temprano", "II": "Regional", "III": "Avanzado", "IV": "Metastásico"
+    },
+    "gradingTitle": "¿Qué es el Grado?",
+    "gradingDesc": "Indica qué tan diferentes son las células.",
+    "aloneTitle": "No Estás Solo",
+    "aloneDesc": "Hay recursos y personas para apoyarte.",
+    "btnSupport": "Buscar Apoyo",
+    "btnDownload": "Descargar Guía (PDF)"
   }
 }

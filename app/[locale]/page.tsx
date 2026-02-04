@@ -9,51 +9,42 @@ export default function HomePage() {
   const locale = useLocale();
   const prefix = locale === 'es' ? '' : `/${locale}`;
   
-  //Testimonios de los Warriors
+  // ✅ AHORA LOS DATOS VIENEN DE LAS TRADUCCIONES, NO ESTÁN EN INGLÉS
   const warriors = [
     {
       name: "María",
       age: 34,
-      dream: "Meet her favorite author",
-      story: "Breast cancer warrior who dreamed of meeting her literary hero. We made it happen.",
+      dream: t('warriorsList.maria.dream'),
+      story: t('warriorsList.maria.story'),
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400"
     },
     {
       name: "Carlos",
       age: 28,
-      dream: "Record a song",
-      story: "Leukemia fighter who always wanted to record his own music in a professional studio.",
+      dream: t('warriorsList.carlos.dream'),
+      story: t('warriorsList.carlos.story'),
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400"
     },
     {
       name: "Ana",
       age: 45,
-      dream: "See the Northern Lights",
-      story: "Ovarian cancer survivor who fulfilled her lifelong dream of seeing the Aurora Borealis.",
+      dream: t('warriorsList.ana.dream'),
+      story: t('warriorsList.ana.story'),
       image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400"
     }
   ];
 
   return (
     <>
-      {/* ✅ HERO CON VIDEO DE FONDO */}
+      {/* HERO SECTION */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Video Background */}
         <div className="absolute inset-0 z-0">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover"
-          >
+          <video autoPlay loop muted playsInline className="w-full h-full object-cover">
             <source src="https://cdn.pixabay.com/video/2023/03/01/152798-803733100_large.mp4" type="video/mp4" />
           </video>
-          {/* Overlay oscuro para legibilidad */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
         </div>
 
-        {/* Contenido encima del video */}
         <div className="relative z-10 container mx-auto px-4 py-32 text-center">
           <div className="inline-flex items-center gap-2 px-5 py-2 bg-white/20 backdrop-blur-md rounded-full text-white text-sm font-medium mb-8 shadow-lg border border-white/30 animate-pulse">
             <Sparkles className="w-4 h-4" />
@@ -85,16 +76,9 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-2 bg-white/70 rounded-full"></div>
-          </div>
-        </div>
       </section>
 
-      {/* IMPACT */}
+      {/* IMPACT SECTION */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -104,11 +88,12 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Stats Items */}
             <div className="group bg-gradient-to-br from-white to-brand-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border border-brand-100">
               <div className="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 mb-4 group-hover:scale-110 transition-transform">
                 <TrendingUp className="w-7 h-7" />
               </div>
-              <div className="text-4xl font-bold text-brand-600 mb-2">3.5 k€</div>
+              <div className="text-4xl font-bold text-brand-600 mb-2">4,500 €</div>
               <div className="text-neutral-600 font-medium">{t('impact.donated')}</div>
             </div>
 
@@ -116,7 +101,7 @@ export default function HomePage() {
               <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-4 group-hover:scale-110 transition-transform">
                 <Target className="w-7 h-7" />
               </div>
-              <div className="text-4xl font-bold text-purple-600 mb-2">45</div>
+              <div className="text-4xl font-bold text-purple-600 mb-2">9</div>
               <div className="text-neutral-600 font-medium">{t('impact.dreamsFulfilled')}</div>
             </div>
 
@@ -124,7 +109,7 @@ export default function HomePage() {
               <div className="w-14 h-14 bg-pink-100 rounded-xl flex items-center justify-center text-pink-600 mb-4 group-hover:scale-110 transition-transform">
                 <Heart className="w-7 h-7" fill="currentColor" />
               </div>
-              <div className="text-4xl font-bold text-pink-600 mb-2">45</div>
+              <div className="text-4xl font-bold text-pink-600 mb-2">9</div>
               <div className="text-neutral-600 font-medium">{t('impact.warriorsSupported')}</div>
             </div>
 
@@ -132,25 +117,30 @@ export default function HomePage() {
               <div className="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 mb-4 group-hover:scale-110 transition-transform">
                 <Users className="w-7 h-7" />
               </div>
-              <div className="text-4xl font-bold text-indigo-600 mb-2">60</div>
+              <div className="text-4xl font-bold text-indigo-600 mb-2">3</div>
               <div className="text-neutral-600 font-medium">{t('impact.activeVolunteers')}</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* WARRIOR STORIES */}
+      {/* WARRIOR STORIES SECTION (AHORA TRADUCIDA) */}
       <section className="py-24 bg-gradient-to-b from-white to-neutral-50">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-block px-4 py-2 bg-brand-100 text-brand-600 rounded-full text-sm font-medium mb-4">
-              Real Stories
+              {t('stories.badge')}
             </div>
+            
+            {/* Uso de Rich Text para el color */}
             <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
-              Dreams We've <span className="text-brand-600">Fulfilled</span>
+              {t.rich('stories.title', {
+                highlight: (chunks) => <span className="text-brand-600">{chunks}</span>
+              })}
             </h2>
+            
             <p className="text-xl text-neutral-600">
-              Every warrior has a unique story of courage, hope, and dreams come true
+              {t('stories.subtitle')}
             </p>
           </div>
 
@@ -164,7 +154,7 @@ export default function HomePage() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute top-4 right-4 px-3 py-1 bg-brand-600 text-white text-xs font-semibold rounded-full">
-                    Dream Fulfilled ✨
+                     {t('stories.tag')}
                   </div>
                 </div>
                 <div className="p-6">
@@ -181,42 +171,45 @@ export default function HomePage() {
               href={`${prefix}/warriors`}
               className="inline-flex items-center gap-2 px-8 py-4 bg-brand-600 text-white font-semibold rounded-full hover:bg-brand-700 hover:shadow-lg transition-all"
             >
-              Read More Stories
+              {t('stories.readMore')}
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* TESTIMONIAL */}
+      {/* TESTIMONIAL SECTION (AHORA TRADUCIDA) */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Quote className="w-16 h-16 text-brand-200 mx-auto mb-6" />
             <blockquote className="text-2xl md:text-3xl font-medium text-neutral-800 mb-8 leading-relaxed">
-              "Fulfilling my dream gave me the strength to keep fighting. I didn't just survive, I <span className="text-brand-600 font-bold">lived again</span>."
+               {/* Uso de Rich Text para la negrita */}
+               "{t.rich('testimonial.quote', {
+                  bold: (chunks) => <span className="text-brand-600 font-bold">{chunks}</span>
+               })}"
             </blockquote>
-            <cite className="text-neutral-500 not-italic">— An Anonymous Warrior</cite>
+            <cite className="text-neutral-500 not-italic">{t('testimonial.author')}</cite>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* CTA FINAL (AHORA TRADUCIDA) */}
       <section className="py-24 bg-gradient-to-br from-brand-600 via-purple-600 to-brand-700 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,255,255,0.1),transparent_60%)]"></div>
         
         <div className="relative container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Born to Thrive 💜
+            {t('finalCta.title')} 💜
           </h2>
           <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Every donation, every hour of volunteering, every word of support counts. Together we are stronger.
+            {t('finalCta.subtitle')}
           </p>
           <Link
             href={`${prefix}/donar`}
             className="inline-flex items-center gap-2 px-10 py-5 bg-white text-brand-600 font-bold rounded-full shadow-2xl hover:shadow-white/30 hover:scale-105 transition-all"
           >
-            Make a Difference Today
+            {t('finalCta.button')}
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
