@@ -1,70 +1,70 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { Calendar, Ribbon, Star } from 'lucide-react';
+import { Calendar, Ribbon } from 'lucide-react';
 
 export default function CancerCalendarPage() {
-  const t = useTranslations('calendar');
+  const t = useTranslations('calendarPage');
 
-  // Estructura de datos mejorada con "events" para días específicos
+  // Estructura de datos dinámica usando las traducciones
   const months = [
     { 
-      name: t('january'), 
-      cancers: [{ type: t('cervical'), color: 'text-teal-600 bg-teal-50' }],
+      name: t('months.jan'), 
+      cancers: [{ type: t('cancers.cervical'), color: 'text-teal-600 bg-teal-50' }],
       events: [] 
     },
     { 
-      name: t('february'), 
-      cancers: [{ type: t('gallbladder'), color: 'text-green-600 bg-green-50' }],
-      events: [{ day: '04', name: 'World Cancer Day' }, { day: '28', name: 'Rare Disease Day' }]
+      name: t('months.feb'), 
+      cancers: [{ type: t('cancers.gallbladder'), color: 'text-green-600 bg-green-50' }],
+      events: [{ day: '04', name: t('events.cancerDay') }, { day: '28', name: t('events.rareDisease') }]
     },
     { 
-      name: t('march'), 
-      cancers: [{ type: t('colorectal'), color: 'text-blue-600 bg-blue-50' }, { type: t('kidney'), color: 'text-orange-500 bg-orange-50' }],
-      events: [{ day: '04', name: 'Intl. HPV Awareness Day' }]
+      name: t('months.mar'), 
+      cancers: [{ type: t('cancers.colorectal'), color: 'text-blue-600 bg-blue-50' }, { type: t('cancers.kidney'), color: 'text-orange-500 bg-orange-50' }],
+      events: [{ day: '04', name: t('events.hpv') }]
     },
     { 
-      name: t('april'), 
-      cancers: [{ type: t('testicular'), color: 'text-violet-500 bg-violet-50' }],
-      events: [{ day: '07', name: 'World Health Day' }]
+      name: t('months.apr'), 
+      cancers: [{ type: t('cancers.testicular'), color: 'text-violet-500 bg-violet-50' }],
+      events: [{ day: '07', name: t('events.health') }]
     },
     { 
-      name: t('may'), 
-      cancers: [{ type: t('skin'), color: 'text-neutral-800 bg-neutral-100' }, { type: t('brain'), color: 'text-gray-500 bg-gray-100' }],
-      events: [{ day: '04', name: 'Melanoma Monday' }, { day: '08', name: 'World Ovarian Cancer Day' }]
+      name: t('months.may'), 
+      cancers: [{ type: t('cancers.skin'), color: 'text-neutral-800 bg-neutral-100' }, { type: t('cancers.brain'), color: 'text-gray-500 bg-gray-100' }],
+      events: [{ day: '04', name: t('events.melanoma') }, { day: '08', name: t('events.ovarian') }]
     },
     { 
-      name: t('june'), 
-      cancers: [{ type: t('mensHealth'), color: 'text-blue-500 bg-blue-50' }],
-      events: [{ day: '07', name: 'Cancer Survivors Day' }]
+      name: t('months.jun'), 
+      cancers: [{ type: t('cancers.mensHealth'), color: 'text-blue-500 bg-blue-50' }],
+      events: [{ day: '07', name: t('events.survivors') }]
     },
     { 
-      name: t('july'), 
-      cancers: [{ type: t('sarcoma'), color: 'text-yellow-500 bg-yellow-50' }],
-      events: [{ day: '27', name: 'Head & Neck Cancer Day' }]
+      name: t('months.jul'), 
+      cancers: [{ type: t('cancers.sarcoma'), color: 'text-yellow-500 bg-yellow-50' }],
+      events: [{ day: '27', name: t('events.headNeck') }]
     },
     { 
-      name: t('august'), 
-      cancers: [{ type: t('bone'), color: 'text-amber-600 bg-amber-50' }],
-      events: [{ day: '01', name: 'World Lung Cancer Day' }]
+      name: t('months.aug'), 
+      cancers: [{ type: t('cancers.bone'), color: 'text-amber-600 bg-amber-50' }],
+      events: [{ day: '01', name: t('events.lung') }]
     },
     { 
-      name: t('september'), 
-      cancers: [{ type: t('thyroid'), color: 'text-purple-500 bg-purple-50' }, { type: t('ovarian'), color: 'text-teal-500 bg-teal-50' }],
-      events: [{ day: '24', name: 'World Cancer Research Day' }]
+      name: t('months.sep'), 
+      cancers: [{ type: t('cancers.thyroid'), color: 'text-purple-500 bg-purple-50' }, { type: t('cancers.ovarian'), color: 'text-teal-500 bg-teal-50' }],
+      events: [{ day: '24', name: t('events.research') }]
     },
     { 
-      name: t('october'), 
-      cancers: [{ type: t('breast'), color: 'text-pink-500 bg-pink-50' }, { type: t('liver'), color: 'text-emerald-600 bg-emerald-50' }],
-      events: [{ day: '13', name: 'Metastatic Breast Cancer Day' }]
+      name: t('months.oct'), 
+      cancers: [{ type: t('cancers.breast'), color: 'text-pink-500 bg-pink-50' }, { type: t('cancers.liver'), color: 'text-emerald-600 bg-emerald-50' }],
+      events: [{ day: '13', name: t('events.metastatic') }]
     },
     { 
-      name: t('november'), 
-      cancers: [{ type: t('lung'), color: 'text-slate-600 bg-slate-100' }, { type: t('pancreatic'), color: 'text-purple-700 bg-purple-100' }],
-      events: [{ day: '19', name: 'World Pancreatic Cancer Day' }]
+      name: t('months.nov'), 
+      cancers: [{ type: t('cancers.lung'), color: 'text-slate-600 bg-slate-100' }, { type: t('cancers.pancreatic'), color: 'text-purple-700 bg-purple-100' }],
+      events: [{ day: '19', name: t('events.pancreatic') }]
     },
     { 
-      name: t('december'), 
-      cancers: [{ type: t('bladder'), color: 'text-yellow-500 bg-yellow-50' }],
+      name: t('months.dec'), 
+      cancers: [{ type: t('cancers.bladder'), color: 'text-yellow-500 bg-yellow-50' }],
       events: [] 
     },
   ];
@@ -103,7 +103,7 @@ export default function CancerCalendarPage() {
 
                 {/* Lista de Cánceres (Mes Completo) */}
                 <div className="space-y-3 mb-6 flex-grow">
-                  <p className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">Awareness Month</p>
+                  <p className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">{t('awarenessMonth')}</p>
                   {month.cancers.map((cancer, cIdx) => (
                     <div key={cIdx} className={`flex items-center gap-3 p-3 rounded-xl ${cancer.color}`}>
                       <Ribbon className="w-5 h-5 flex-shrink-0" />
@@ -115,8 +115,8 @@ export default function CancerCalendarPage() {
                 {/* Fechas Específicas (Si las hay) */}
                 {month.events.length > 0 && (
                   <div className="mt-auto bg-neutral-50 rounded-xl p-4 border border-neutral-100">
-                     <p className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-3">Key Dates</p>
-                     <ul className="space-y-3">
+                      <p className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-3">{t('keyDates')}</p>
+                      <ul className="space-y-3">
                         {month.events.map((evt, eIdx) => (
                             <li key={eIdx} className="flex items-center gap-3 text-sm text-neutral-700">
                                 <span className="flex-shrink-0 w-8 h-8 bg-white rounded-lg flex items-center justify-center font-bold text-brand-600 shadow-sm border border-neutral-100">
@@ -125,7 +125,7 @@ export default function CancerCalendarPage() {
                                 <span className="leading-tight">{evt.name}</span>
                             </li>
                         ))}
-                     </ul>
+                      </ul>
                   </div>
                 )}
 

@@ -1598,26 +1598,133 @@
       "trial5": "Is it important for me or others to participate?"
     }
   }, 
-    "emotionalPage": {
-    "title": "Emotional Well-Being",
-    "subtitle": "Caring for your emotional health is just as important as managing the physical side of cancer.",
-    "anxiety": "Coping with Anxiety",
-    "depression": "Dealing with Depression",
-    "positivity": "Maintaining Positivity",
-    "network": "Support Networks",
-    "signs": "Signs of Depression:",
-    "help": "Seeking Help:",
-    "downloadTitle": "Download the Complete Guide",
-    "downloadDesc": "Take these emotional well-being strategies with you.",
-    "btnDownload": "Download PDF Guide"
+"emotionalPage": {
+    "title": "Emotional Well-Being for Cancer Warriors",
+    "desc": "Caring for your emotional health is just as important as managing the physical side of cancer. This guide offers practical tools to help you stay mentally and emotionally strong throughout your journey.",
+    "ctaTitle": "Download the Complete Guide",
+    "ctaDesc": "Take these emotional well-being strategies with you. Print or save for easy reference during difficult times.",
+    "btnDownload": "Download PDF Guide",
+    "sections": {
+      "anxiety": {
+        "title": "Coping with Anxiety",
+        "tech1_name": "Deep Breathing",
+        "tech1_steps": [
+          "Find a quiet space, sit or lie down comfortably",
+          "Close your eyes and take a slow, deep breath in through your nose",
+          "Allow your abdomen to rise, hold for a few seconds",
+          "Exhale slowly through your mouth",
+          "Repeat several times, focusing on the sensation of your breath"
+        ],
+        "tech2_name": "4-7-8 Breathing",
+        "tech2_steps": [
+          "Inhale through your nose for a count of 4",
+          "Hold the breath for a count of 7",
+          "Exhale through your mouth for a count of 8",
+          "This helps slow your breathing and can be effective before sleep"
+        ],
+        "tech3_name": "Challenging Negative Thoughts",
+        "tech3_steps": [
+          "When anxious thoughts creep in, identify and challenge them",
+          "Ask if thoughts are based on facts or assumptions",
+          "Replace negative thoughts with balanced, realistic ones"
+        ],
+        "tech4_name": "Mindfulness Practice",
+        "tech4_steps": [
+          "Focus on the present moment rather than worrying about the future",
+          "Engage fully in activities: eating, walking, observing",
+          "Mindfulness reduces anxiety by anchoring you in the here and now"
+        ]
+      },
+      "depression": {
+        "title": "Dealing with Depression",
+        "signsTitle": "Signs of Depression:",
+        "signs": [
+          "Persistent Sadness: Feeling sad or hopeless for extended periods",
+          "Loss of Interest: Lack of interest in activities you once enjoyed",
+          "Fatigue: Feeling exhausted even after adequate rest",
+          "Changes in Appetite: Significant weight loss or gain",
+          "Difficulty Concentrating: Trouble focusing or making decisions"
+        ],
+        "helpTitle": "Seeking Help:",
+        "help1_type": "Counseling",
+        "help1_desc": "Speaking with a mental health professional provides strategies to manage depression",
+        "help2_type": "Peer Support",
+        "help2_desc": "Connecting with others who have faced similar challenges can be incredibly comforting",
+        "help3_type": "Medication",
+        "help3_desc": "In some cases, medication may be necessary. Always consult with a healthcare professional"
+      },
+      "positivity": {
+        "title": "Maintaining Positivity",
+        "prac1_name": "Gratitude Journal",
+        "prac1_desc": "Each day, write down three things you are grateful for. These can be small things like a warm cup of tea or a kind word from a friend",
+        "prac2_name": "Thank You Notes",
+        "prac2_desc": "Expressing gratitude to others can lift your spirits. Writing a thank you note fosters positive emotions",
+        "prac3_name": "Daily Enjoyment",
+        "prac3_desc": "Engage in activities that bring you joy: reading, listening to music, or spending time in nature",
+        "prac4_name": "Creative Expression",
+        "prac4_desc": "Explore creative outlets like drawing, writing, or crafting to process emotions"
+      },
+      "support": {
+        "title": "Support Networks",
+        "pt1_title": "Family and Friends",
+        "pt1_items": [
+          "Open Communication: Let loved ones know how they can support you",
+          "Quality Time: Spend time with those who make you feel good",
+          "Engaging in activities together provides comfort and normalcy"
+        ],
+        "pt2_title": "Peer Support Groups",
+        "pt2_items": [
+          "Shared Experiences: Connect with others who understand what you are going through",
+          "Safe Space: Share stories, ask for advice, and receive encouragement",
+          "Mentorship: Some programs match you with a survivor mentor"
+        ]
+      }
+    }
   },
-  "calendarPage": {
+"calendarPage": {
     "title": "Awareness Calendar",
     "subtitle": "Each month is dedicated to raising awareness about different types of cancer. Join the fight.",
     "awarenessMonth": "Awareness Month",
-    "keyDates": "Key Dates"
+    "keyDates": "Key Dates",
+    "months": {
+      "jan": "January", "feb": "February", "mar": "March", "apr": "April", "may": "May", "jun": "June",
+      "jul": "July", "aug": "August", "sep": "September", "oct": "October", "nov": "November", "dec": "December"
+    },
+    "events": {
+      "cancerDay": "World Cancer Day",
+      "rareDisease": "Rare Disease Day",
+      "hpv": "Intl. HPV Awareness Day",
+      "health": "World Health Day",
+      "melanoma": "Melanoma Monday",
+      "ovarian": "World Ovarian Cancer Day",
+      "survivors": "Cancer Survivors Day",
+      "headNeck": "Head & Neck Cancer Day",
+      "lung": "World Lung Cancer Day",
+      "research": "World Cancer Research Day",
+      "metastatic": "Metastatic Breast Cancer Day",
+      "pancreatic": "World Pancreatic Cancer Day"
+    },
+    "cancers": {
+       "cervical": "Cervical Cancer",
+       "gallbladder": "Gallbladder Cancer",
+       "colorectal": "Colorectal Cancer",
+       "kidney": "Kidney Cancer",
+       "testicular": "Testicular Cancer",
+       "skin": "Skin Cancer",
+       "brain": "Brain Tumor",
+       "mensHealth": "Men's Health",
+       "sarcoma": "Sarcoma",
+       "bone": "Bone Cancer",
+       "thyroid": "Thyroid Cancer",
+       "ovarian": "Ovarian Cancer",
+       "breast": "Breast Cancer",
+       "liver": "Liver Cancer",
+       "lung": "Lung Cancer",
+       "pancreatic": "Pancreatic Cancer",
+       "bladder": "Bladder Cancer"
+    }
   },
-  "donatePage": {
+    "donatePage": {
     "title": "Donate Now",
     "subtitle": "Your support transforms lives. Every donation helps us fulfill dreams.",
     "betterGivingTitle": "Donate via Better Giving",

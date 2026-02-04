@@ -1771,52 +1771,90 @@
       "trial5": "Este important să particip?"
     }
   },
-  "emotionalPage": {
-    "title": "Bunăstare Emoțională",
-    "subtitle": "Sănătatea emoțională este vitală. Iată instrumente practice.",
-    "anxiety": "Gestionarea Anxietății",
-    "depression": "Gestionarea Depresiei",
-    "positivity": "Menținerea Pozitivității",
-    "network": "Rețele de Suport",
-    "signsTitle": "Semne ale Depresiei:",
-    "helpTitle": "Caută Ajutor:",
-    "downloadTitle": "Descarcă Ghidul",
-    "downloadDesc": "Ia aceste strategii cu tine.",
-    "btnDownload": "Descarcă PDF",
-    "techniques": {
-      "deepBreath": "Respirație Profundă",
-      "deepBreathSteps": "Găsește liniște. Închide ochii. Inspiră pe nas. Expiră pe gură.",
-      "breath478": "Respirație 4-7-8",
-      "breath478Steps": "Inspiră 4 sec. Ține 7 sec. Expiră 8 sec.",
-      "thoughts": "Provocarea Gândurilor",
-      "thoughtsSteps": "Identifică gândurile negative. Sunt reale? Înlocuiește-le.",
-      "mindfulness": "Mindfulness",
-      "mindfulnessSteps": "Concentrează-te pe prezent. Observă. Redu frica de viitor."
-    },
-    "signs": {
-      "1": "Tristețe persistentă",
-      "2": "Pierderea interesului",
-      "3": "Oboseală extremă",
-      "4": "Schimbări de apetit",
-      "5": "Dificultăți de concentrare"
-    },
-    "help": {
-      "counseling": "Consiliere: Vorbește cu un specialist.",
-      "peer": "Suport Reciproc: Conectează-te cu alții.",
-      "meds": "Medicație: Consultă doctorul."
-    },
-    "practices": {
-      "gratitude": "Jurnal de Recunoștință: Scrie 3 lucruri bune.",
-      "notes": "Bilete de Mulțumire: Mulțumește cuiva.",
-      "enjoy": "Bucurie Zilnică: Citește, ascultă muzică.",
-      "creative": "Expresie Creativă: Desenează sau scrie."
-    },
-    "networkPoints": {
-      "family": "Familie și Prieteni: Comunică deschis.",
-      "groups": "Grupuri de Suport: Împărtășește experiențe."
+"emotionalPage": {
+    "title": "Bunăstare Emoțională pentru Luptători",
+    "desc": "Îngrijirea sănătății emoționale este la fel de importantă ca gestionarea laturii fizice a cancerului. Acest ghid oferă instrumente practice pentru a rămâne puternic mental și emoțional pe parcursul călătoriei.",
+    "ctaTitle": "Descarcă Ghidul Complet",
+    "ctaDesc": "Ia aceste strategii de bunăstare emoțională cu tine. Printează-le sau salvează-le pentru referință în momentele dificile.",
+    "btnDownload": "Descarcă Ghid PDF",
+    "sections": {
+      "anxiety": {
+        "title": "Gestionarea Anxietății",
+        "tech1_name": "Respirație Profundă",
+        "tech1_steps": [
+          "Găsește un loc liniștit, așază-te sau întinde-te confortabil",
+          "Închide ochii și inspiră lent și adânc pe nas",
+          "Lasă abdomenul să se ridice, ține aerul câteva secunde",
+          "Expiră lent pe gură",
+          "Repetă de câteva ori, concentrându-te pe senzația respirației"
+        ],
+        "tech2_name": "Respirația 4-7-8",
+        "tech2_steps": [
+          "Inspiră pe nas numărând până la 4",
+          "Ține respirația numărând până la 7",
+          "Expiră pe gură numărând până la 8",
+          "Acest lucru ajută la încetinirea respirației și este eficient înainte de somn"
+        ],
+        "tech3_name": "Provocarea Gândurilor Negative",
+        "tech3_steps": [
+          "Când apar gânduri anxioase, identifică-le și provoacă-le",
+          "Întreabă-te dacă gândurile se bazează pe fapte sau presupuneri",
+          "Înlocuiește gândurile negative cu unele echilibrate și realiste"
+        ],
+        "tech4_name": "Practica Mindfulness",
+        "tech4_steps": [
+          "Concentrează-te pe momentul prezent în loc să te îngrijorezi de viitor",
+          "Implică-te complet în activități: mâncat, mers pe jos, observare",
+          "Mindfulness reduce anxietatea ancorându-te în aici și acum"
+        ]
+      },
+      "depression": {
+        "title": "Confruntarea cu Depresia",
+        "signsTitle": "Semne ale Depresiei:",
+        "signs": [
+          "Tristețe Persistentă: Te simți trist sau fără speranță perioade lungi",
+          "Pierderea Interesului: Lipsa interesului pentru activități care îți plăceau",
+          "Oboseală: Te simți epuizat chiar și după odihnă",
+          "Schimbări ale Apetitului: Pierdere sau creștere semnificativă în greutate",
+          "Dificultăți de Concentrare: Probleme în a te concentra sau a lua decizii"
+        ],
+        "helpTitle": "Căutarea Ajutorului:",
+        "help1_type": "Consiliere",
+        "help1_desc": "Discuția cu un profesionist în sănătate mintală oferă strategii pentru a gestiona depresia",
+        "help2_type": "Sprijin de la Egal la Egal",
+        "help2_desc": "Conectarea cu alții care au întâmpinat provocări similare poate fi incredibil de reconfortantă",
+        "help3_type": "Medicație",
+        "help3_desc": "În unele cazuri poate fi necesară. Consultă întotdeauna un profesionist în sănătate"
+      },
+      "positivity": {
+        "title": "Menținerea Pozitivității",
+        "prac1_name": "Jurnalul Recunoștinței",
+        "prac1_desc": "În fiecare zi, scrie trei lucruri pentru care ești recunoscător. Pot fi lucruri mici, cum ar fi un ceai cald",
+        "prac2_name": "Bilețele de Mulțumire",
+        "prac2_desc": "Exprimarea recunoștinței față de alții îți poate ridica moralul",
+        "prac3_name": "Bucurie Zilnică",
+        "prac3_desc": "Implică-te în activități care îți aduc bucurie: citit, muzică sau timp în natură",
+        "prac4_name": "Expresie Creativă",
+        "prac4_desc": "Explorează metode creative precum desenul sau scrisul pentru a procesa emoțiile"
+      },
+      "support": {
+        "title": "Rețele de Sprijin",
+        "pt1_title": "Familie și Prieteni",
+        "pt1_items": [
+          "Comunicare Deschisă: Spune celor dragi cum te pot sprijini",
+          "Timp de Calitate: Petrece timp cu cei care te fac să te simți bine",
+          "Activitățile comune oferă confort și normalitate"
+        ],
+        "pt2_title": "Grupuri de Sprijin",
+        "pt2_items": [
+          "Experiențe Împărtășite: Conectează-te cu alții care înțeleg prin ce treci",
+          "Spațiu Sigur: Împărtășește povești și primește încurajări",
+          "Mentorat: Unele programe te potrivesc cu un mentor supraviețuitor"
+        ]
+      }
     }
   },
-  "calendarPage": {
+"calendarPage": {
     "title": "Calendar de Conștientizare",
     "subtitle": "Fiecare lună este dedicată luptei împotriva cancerului.",
     "awarenessMonth": "Luna Conștientizării",
@@ -1827,39 +1865,39 @@
     },
     "events": {
       "cancerDay": "Ziua Mondială a Cancerului",
-      "rare": "Ziua Bolilor Rare",
-      "hpv": "Ziua Intl. HPV",
+      "rareDisease": "Ziua Bolilor Rare",
+      "hpv": "Ziua Intl. Conștientizare HPV",
       "health": "Ziua Mondială a Sănătății",
       "melanoma": "Lunea Melanomului",
-      "ovarian": "Ziua Cancerului Ovarian",
-      "survivors": "Ziua Supraviețuitorilor",
-      "headNeck": "Ziua Cancer Cap și Gât",
+      "ovarian": "Ziua Mondială Cancer Ovarian",
+      "survivors": "Ziua Supraviețuitorilor de Cancer",
+      "headNeck": "Ziua Cancerului Cap și Gât",
       "lung": "Ziua Mondială Cancer Pulmonar",
-      "research": "Ziua Cercetării Cancerului",
-      "metaBreast": "Ziua Cancer Mamar Metastatic",
-      "pancreatic": "Ziua Cancerului Pancreatic"
+      "research": "Ziua Mondială Cercetare Cancer",
+      "metastatic": "Ziua Cancerului Mamar Metastatic",
+      "pancreatic": "Ziua Mondială Cancer Pancreatic"
     },
-    "types": {
-      "cervical": "Cancer Cervical",
-      "gallbladder": "Cancer Veziculă Biliară",
-      "colorectal": "Cancer Colorectal",
-      "kidney": "Cancer Renal",
-      "testicular": "Cancer Testicular",
-      "skin": "Cancer de Piele",
-      "brain": "Cancer Cerebral",
-      "mens": "Sănătatea Bărbaților",
-      "sarcoma": "Sarcom",
-      "bone": "Cancer Osos",
-      "thyroid": "Cancer Tiroidian",
-      "ovarian": "Cancer Ovarian",
-      "breast": "Cancer Mamar",
-      "liver": "Cancer Ficat",
-      "lung": "Cancer Pulmonar",
-      "pancreatic": "Cancer Pancreatic",
-      "bladder": "Cancer Vezică"
+    "cancers": {
+       "cervical": "Cancer Cervical",
+       "gallbladder": "Cancer de Vezică Biliară",
+       "colorectal": "Cancer Colorectal",
+       "kidney": "Cancer Renal",
+       "testicular": "Cancer Testicular",
+       "skin": "Cancer de Piele",
+       "brain": "Tumoră Cerebrală",
+       "mensHealth": "Sănătatea Bărbaților",
+       "sarcoma": "Sarcom",
+       "bone": "Cancer Osos",
+       "thyroid": "Cancer Tiroidian",
+       "ovarian": "Cancer Ovarian",
+       "breast": "Cancer Mamar",
+       "liver": "Cancer Hepatic",
+       "lung": "Cancer Pulmonar",
+       "pancreatic": "Cancer Pancreatic",
+       "bladder": "Cancer de Vezică Urinară"
     }
   },
-  "connectSurvivorPage": {
+    "connectSurvivorPage": {
     "title": "Conectează-te cu un Supraviețuitor",
     "subtitle": "A vorbi cu cineva care a fost acolo contează enorm.",
     "step1Title": "Înregistrează-te",

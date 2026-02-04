@@ -1775,52 +1775,90 @@
       "trial5": "¿Es importante para mí o para otros participar?"
     }
   },
-  "emotionalPage": {
-    "title": "Bienestar Emocional",
-    "subtitle": "Cuidar tu salud emocional es tan importante como la física. Aquí tienes herramientas prácticas.",
-    "anxiety": "Manejando la Ansiedad",
-    "depression": "Lidiando con la Depresión",
-    "positivity": "Manteniendo la Positividad",
-    "network": "Redes de Apoyo",
-    "signsTitle": "Signos de Depresión:",
-    "helpTitle": "Buscar Ayuda:",
-    "downloadTitle": "Descarga la Guía Completa",
-    "downloadDesc": "Lleva estas estrategias contigo.",
-    "btnDownload": "Descargar PDF",
-    "techniques": {
-      "deepBreath": "Respiración Profunda",
-      "deepBreathSteps": "Busca un lugar tranquilo. Cierra los ojos. Inhala lento por la nariz. Exhala por la boca.",
-      "breath478": "Respiración 4-7-8",
-      "breath478Steps": "Inhala en 4 segundos. Mantén 7 segundos. Exhala en 8 segundos. Ayuda a dormir.",
-      "thoughts": "Desafiar Pensamientos",
-      "thoughtsSteps": "Identifica pensamientos negativos. Pregúntate si son reales. Cámbialos por realistas.",
-      "mindfulness": "Mindfulness",
-      "mindfulnessSteps": "Céntrate en el presente. Observa tu entorno. Reduce la ansiedad del futuro."
-    },
-    "signs": {
-      "1": "Tristeza Persistente o desesperanza",
-      "2": "Pérdida de Interés en actividades",
-      "3": "Fatiga extrema",
-      "4": "Cambios de Apetito o peso",
-      "5": "Dificultad para Concentrarse"
-    },
-    "help": {
-      "counseling": "Terapia: Hablar con un profesional ayuda.",
-      "peer": "Apoyo de Pares: Conectar con otros guerreros.",
-      "meds": "Medicación: Consulta siempre a tu médico."
-    },
-    "practices": {
-      "gratitude": "Diario de Gratitud: Escribe 3 cosas buenas al día.",
-      "notes": "Notas de Agradecimiento: Da las gracias a alguien.",
-      "enjoy": "Disfrute Diario: Lee, escucha música o pasea.",
-      "creative": "Expresión Creativa: Dibuja, escribe o crea."
-    },
-    "networkPoints": {
-      "family": "Familia y Amigos: Comunícate abiertamente con ellos.",
-      "groups": "Grupos de Apoyo: Comparte experiencias en un espacio seguro."
+"emotionalPage": {
+    "title": "Bienestar Emocional para Guerreros",
+    "desc": "Cuidar tu salud emocional es tan importante como gestionar el lado físico del cáncer. Esta guía ofrece herramientas prácticas para mantenerte mental y emocionalmente fuerte durante tu viaje.",
+    "ctaTitle": "Descarga la Guía Completa",
+    "ctaDesc": "Lleva estas estrategias de bienestar emocional contigo. Imprímelas o guárdalas para consultarlas en momentos difíciles.",
+    "btnDownload": "Descargar Guía PDF",
+    "sections": {
+      "anxiety": {
+        "title": "Manejo de la Ansiedad",
+        "tech1_name": "Respiración Profunda",
+        "tech1_steps": [
+          "Busca un lugar tranquilo, siéntate o túmbate cómodamente",
+          "Cierra los ojos e inhala lenta y profundamente por la nariz",
+          "Deja que tu abdomen se eleve, mantén el aire unos segundos",
+          "Exhala lentamente por la boca",
+          "Repite varias veces, concentrándote en la sensación de respirar"
+        ],
+        "tech2_name": "Respiración 4-7-8",
+        "tech2_steps": [
+          "Inhala por la nariz contando hasta 4",
+          "Mantén la respiración contando hasta 7",
+          "Exhala por la boca contando hasta 8",
+          "Esto ayuda a ralentizar la respiración y es efectivo antes de dormir"
+        ],
+        "tech3_name": "Desafiar Pensamientos Negativos",
+        "tech3_steps": [
+          "Cuando aparezcan pensamientos ansiosos, identifícalos y desafíalos",
+          "Pregúntate si se basan en hechos o en suposiciones",
+          "Reemplaza los pensamientos negativos por otros realistas y equilibrados"
+        ],
+        "tech4_name": "Práctica de Mindfulness",
+        "tech4_steps": [
+          "Concéntrate en el momento presente en lugar de preocuparte por el futuro",
+          "Participa plenamente en las actividades: comer, caminar, observar",
+          "El Mindfulness reduce la ansiedad anclándote en el aquí y el ahora"
+        ]
+      },
+      "depression": {
+        "title": "Lidiando con la Depresión",
+        "signsTitle": "Signos de Depresión:",
+        "signs": [
+          "Tristeza Persistente: Sentirse triste o sin esperanza durante largos periodos",
+          "Pérdida de Interés: Falta de interés en actividades que antes disfrutabas",
+          "Fatiga: Sentirse agotado incluso después de descansar",
+          "Cambios en el Apetito: Pérdida o ganancia de peso significativa",
+          "Dificultad para Concentrarse: Problemas para enfocarse o tomar decisiones"
+        ],
+        "helpTitle": "Buscar Ayuda:",
+        "help1_type": "Terapia",
+        "help1_desc": "Hablar con un profesional de la salud mental proporciona estrategias para gestionar la depresión",
+        "help2_type": "Apoyo de Pares",
+        "help2_desc": "Conectar con otros que han enfrentado desafíos similares puede ser increíblemente reconfortante",
+        "help3_type": "Medicación",
+        "help3_desc": "En algunos casos puede ser necesaria. Consulta siempre con un profesional de la salud"
+      },
+      "positivity": {
+        "title": "Mantener la Positividad",
+        "prac1_name": "Diario de Gratitud",
+        "prac1_desc": "Cada día, escribe tres cosas por las que estés agradecido. Pueden ser cosas pequeñas como un té caliente o una palabra amable",
+        "prac2_name": "Notas de Agradecimiento",
+        "prac2_desc": "Expresar gratitud a los demás puede levantar tu ánimo. Escribir una nota de agradecimiento fomenta emociones positivas",
+        "prac3_name": "Disfrute Diario",
+        "prac3_desc": "Participa en actividades que te den alegría: leer, escuchar música o pasar tiempo en la naturaleza",
+        "prac4_name": "Expresión Creativa",
+        "prac4_desc": "Explora salidas creativas como dibujar, escribir o hacer manualidades para procesar emociones"
+      },
+      "support": {
+        "title": "Redes de Apoyo",
+        "pt1_title": "Familia y Amigos",
+        "pt1_items": [
+          "Comunicación Abierta: Haz saber a tus seres queridos cómo pueden apoyarte",
+          "Tiempo de Calidad: Pasa tiempo con quienes te hacen sentir bien",
+          "Realizar actividades juntos proporciona confort y normalidad"
+        ],
+        "pt2_title": "Grupos de Apoyo",
+        "pt2_items": [
+          "Experiencias Compartidas: Conecta con otros que entienden por lo que estás pasando",
+          "Espacio Seguro: Comparte historias, pide consejo y recibe ánimo",
+          "Mentoría: Algunos programas te emparejan con un mentor superviviente"
+        ]
+      }
     }
   },
-  "calendarPage": {
+"calendarPage": {
     "title": "Calendario de Concienciación",
     "subtitle": "Cada mes nos unimos a la lucha contra diferentes tipos de cáncer.",
     "awarenessMonth": "Mes de Concienciación",
@@ -1830,37 +1868,37 @@
       "jul": "Julio", "aug": "Agosto", "sep": "Septiembre", "oct": "Octubre", "nov": "Noviembre", "dec": "Diciembre"
     },
     "events": {
-      "cancerDay": "Día Mundial del Cáncer",
-      "rare": "Día de Enfermedades Raras",
+      "cancerDay": "Día Mundial contra el Cáncer",
+      "rareDisease": "Día de las Enfermedades Raras",
       "hpv": "Día Intl. Concienciación VPH",
       "health": "Día Mundial de la Salud",
       "melanoma": "Lunes del Melanoma",
-      "ovarian": "Día Mundial Cáncer Ovario",
-      "survivors": "Día del Superviviente",
+      "ovarian": "Día Mundial Cáncer de Ovario",
+      "survivors": "Día del Superviviente de Cáncer",
       "headNeck": "Día Cáncer Cabeza y Cuello",
-      "lung": "Día Mundial Cáncer Pulmón",
-      "research": "Día Investigación Cáncer",
-      "metaBreast": "Día Cáncer Mama Metastásico",
-      "pancreatic": "Día Mundial Cáncer Páncreas"
+      "lung": "Día Mundial Cáncer de Pulmón",
+      "research": "Día Mundial Investigación Cáncer",
+      "metastatic": "Día Cáncer de Mama Metastásico",
+      "pancreatic": "Día Mundial Cáncer de Páncreas"
     },
-    "types": {
-      "cervical": "Cáncer Cervical",
-      "gallbladder": "Cáncer de Vesícula",
-      "colorectal": "Cáncer Colorrectal",
-      "kidney": "Cáncer de Riñón",
-      "testicular": "Cáncer Testicular",
-      "skin": "Cáncer de Piel",
-      "brain": "Cáncer Cerebral",
-      "mens": "Salud Masculina",
-      "sarcoma": "Sarcoma",
-      "bone": "Cáncer de Huesos",
-      "thyroid": "Cáncer de Tiroides",
-      "ovarian": "Cáncer de Ovario",
-      "breast": "Cáncer de Mama",
-      "liver": "Cáncer de Hígado",
-      "lung": "Cáncer de Pulmón",
-      "pancreatic": "Cáncer de Páncreas",
-      "bladder": "Cáncer de Vejiga"
+    "cancers": {
+       "cervical": "Cáncer Cervical",
+       "gallbladder": "Cáncer de Vesícula",
+       "colorectal": "Cáncer Colorrectal",
+       "kidney": "Cáncer de Riñón",
+       "testicular": "Cáncer Testicular",
+       "skin": "Cáncer de Piel",
+       "brain": "Tumor Cerebral",
+       "mensHealth": "Salud Masculina",
+       "sarcoma": "Sarcoma",
+       "bone": "Cáncer de Hueso",
+       "thyroid": "Cáncer de Tiroides",
+       "ovarian": "Cáncer de Ovario",
+       "breast": "Cáncer de Mama",
+       "liver": "Cáncer de Hígado",
+       "lung": "Cáncer de Pulmón",
+       "pancreatic": "Cáncer de Páncreas",
+       "bladder": "Cáncer de Vejiga"
     }
   },
   "connectSurvivorPage": {
