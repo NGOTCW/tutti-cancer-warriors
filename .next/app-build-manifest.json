@@ -11,30 +11,30 @@
       "static/css/app/[locale]/layout.css",
       "static/chunks/app/[locale]/layout.js"
     ],
-    "/[locale]/warriors/page": [
+    "/[locale]/sobre-cancer/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/warriors/page.js"
+      "static/chunks/app/[locale]/sobre-cancer/page.js"
+    ],
+    "/[locale]/sobre-cancer/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/sobre-cancer/[id]/page.js"
     ],
     "/[locale]/donar/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/donar/page.js"
     ],
-    "/[locale]/sobre-cancer/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/sobre-cancer/page.js"
-    ],
     "/[locale]/entender-diagnostico/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/entender-diagnostico/page.js"
     ],
-    "/[locale]/sobre-cancer/[id]/page": [
+    "/[locale]/voluntarios/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/sobre-cancer/[id]/page.js"
+      "static/chunks/app/[locale]/voluntarios/page.js"
     ],
     "/[locale]/preguntas-doctor/page": [
       "static/chunks/webpack.js",

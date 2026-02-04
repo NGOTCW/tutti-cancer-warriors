@@ -3197,17 +3197,11 @@ video {
   --tw-text-opacity: 1;
   color: rgb(202 138 4 / var(--tw-text-opacity, 1));
 }
-.decoration-brand-500{
-  text-decoration-color: #a855f7;
-}
 .decoration-2{
   text-decoration-thickness: 2px;
 }
 .underline-offset-2{
   text-underline-offset: 2px;
-}
-.underline-offset-4{
-  text-underline-offset: 4px;
 }
 .antialiased{
   -webkit-font-smoothing: antialiased;

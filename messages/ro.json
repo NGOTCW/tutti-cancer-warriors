@@ -1650,7 +1650,7 @@
     "subtitle": "Fiecare donație, fiecare oră de voluntariat, fiecare cuvânt de susținere contează. Împreună suntem mai puternici.",
     "button": "Fă o Diferență Astăzi"
   },
-  "aboutCancerPage": {
+"aboutCancerPage": {
     "heroTag": "Cunoașterea este Putere",
     "title": "Învață despre <highlight>Cancer</highlight>",
     "subtitle": "Informații complete despre tipurile de cancer, simptome, detectare timpurie și tratamente. Suntem aici să te sprijinim la fiecare pas.",
@@ -1658,27 +1658,67 @@
     "infoGuide": "Ghid Info",
     "medicalInfo": "Info Medical",
     "readMore": "Citește mai mult",
-    "types": { "breast": { "title": "Cancer Mamar", "shortDesc": "Detectarea timpurie salvează vieți." } }
-  },
-  "diagnosisPage": {
-    "title": "Înțelegerea Diagnosticului",
-    "heroDesc": "Primirea unui diagnostic poate fi copleșitoare. Este normal să te simți așa.",
-    "whatIsCancerTitle": "Ce este Cancerul?",
-    "whatIsCancerDesc": "Cancerul este un cuvânt care acoperă o gamă largă de boli...",
-    "stagingTitle": "Stadializare și Grade",
-    "stagingSub": "Ce este Stadializarea?",
-    "stagingDesc": "Stadializarea arată cât de mult s-a răspândit cancerul.",
-    "gradingTitle": "Ce este Gradul?",
-    "gradingDesc": "Gradul indică cât de diferite sunt celulele canceroase de cele normale.",
-    "aloneTitle": "Nu Ești Singur",
-    "aloneDesc": "Există multe resurse și oameni care vor să te sprijine.",
-    "btnSupport": "Găsește Sprijin",
-    "btnDownload": "Descarcă Ghid (PDF)",
-    "stages": {
-      "0": "Localizat", "I": "Timpuriu", "II": "Regional", "III": "Avansat", "IV": "Metastatic"
+    "types": {
+      "breast": { "title": "Cancer Mamar", "shortDesc": "Detectarea timpurie salvează vieți." },
+      "lung": { "title": "Cancer Pulmonar", "shortDesc": "Înțelegerea factorilor de risc." },
+      "colorectal": { "title": "Cancer Colorectal", "shortDesc": "Screeningul previne dezvoltarea." },
+      "prostate": { "title": "Cancer de Prostată", "shortDesc": "Sănătatea bărbaților și prevenție." },
+      "skin": { "title": "Cancer de Piele", "shortDesc": "Protejează-ți pielea, protejează viața." },
+      "kidney": { "title": "Cancer Renal", "shortDesc": "Simptome silențioase de urmărit." },
+      "leukemia": { "title": "Leucemie", "shortDesc": "Cancerul celulelor sanguine." },
+      "liver": { "title": "Cancer Hepatic", "shortDesc": "Sănătatea ficatului contează." },
+      "pancreatic": { "title": "Cancer Pancreatic", "shortDesc": "Greu de detectat, crucial de tratat." },
+      "ovarian": { "title": "Cancer Ovarian", "shortDesc": "Cunoaște semnele subtile." },
+      "childhood": { "title": "Cancer Infantil", "shortDesc": "Susținem micii noștri luptători." },
+      "brain": { "title": "Tumori Cerebrale", "shortDesc": "Afectând centrul de control." },
+      "bladder": { "title": "Cancer de Vezică", "shortDesc": "Atenție la schimbările urinare." },
+      "cervical": { "title": "Cancer Cervical", "shortDesc": "Prevenibil prin vaccinare și teste." },
+      "stomach": { "title": "Cancer Gastric", "shortDesc": "Sănătatea digestivă și semnale." },
+      "testicular": { "title": "Cancer Testicular", "shortDesc": "Autoexaminarea este vitală." },
+      "thyroid": { "title": "Cancer Tiroidian", "shortDesc": "Glandă mică, impact mare." },
+      "uterine": { "title": "Cancer Uterin", "shortDesc": "Cunoașterea corpului este putere." },
+      "lymphoma": { "title": "Limfom", "shortDesc": "Afectând sistemul imunitar." },
+      "myeloma": { "title": "Mielom Multiplu", "shortDesc": "Cancerul celulelor plasmatice." },
+      "esophageal": { "title": "Cancer Esofagian", "shortDesc": "Dificultăți la înghițire și riscuri." },
+      "head-neck": { "title": "Cap și Gât", "shortDesc": "Gură, gât și glande." },
+      "bone": { "title": "Cancer Osos", "shortDesc": "Dureri osoase și tratamente." },
+      "sarcoma": { "title": "Sarcom", "shortDesc": "Țesuturi moi ale corpului." },
+      "gallbladder": { "title": "Vezica Biliară", "shortDesc": "Rar dar important." },
+      "bile-duct": { "title": "Căi Biliare", "shortDesc": "Afectând digestia." },
+      "anal": { "title": "Cancer Anal", "shortDesc": "Rupând stigmatul." },
+      "penile": { "title": "Cancer Penian", "shortDesc": "Sănătatea intimă masculină." },
+      "vaginal": { "title": "Cancer Vaginal", "shortDesc": "Detectare ginecologică." },
+      "vulvar": { "title": "Cancer Vulvar", "shortDesc": "Semne externe de urmărit." },
+      "eye": { "title": "Cancer Ocular", "shortDesc": "Melanom și retinoblastom." },
+      "oral": { "title": "Cancer Oral", "shortDesc": "Gură, limbă și gingii." },
+      "throat": { "title": "Cancer de Gât", "shortDesc": "Faringe și laringe." },
+      "small-intestine": { "title": "Intestin Subțire", "shortDesc": "Un cancer mai puțin frecvent." },
+      "thymus": { "title": "Timus", "shortDesc": "Glanda din piept." }
     }
   },
-  "questionsPage": {
+"diagnosisPage": {
+    "title": "Înțelegerea Diagnosticului Tău",
+    "heroDesc": "Primirea unui diagnostic de cancer poate fi copleșitoare. Suntem aici să te ajutăm să înțelegi termenii medicali, stadiile și următorii pași.",
+    "whatIsCancerTitle": "Ce este Cancerul?",
+    "whatIsCancerDesc": "Cancerul este un grup de boli care implică o creștere anormală a celulelor cu potențialul de a invada sau de a se răspândi în alte părți ale corpului. Înțelegerea bazelor este primul pas în preluarea controlului.",
+    "stagingTitle": "Stadializare",
+    "stagingSub": "Înțelegerea Răspândirii",
+    "stagingDesc": "Stadiul descrie extinderea cancerului în corp. De obicei se bazează pe mărimea tumorii, dacă ganglionii limfatici sunt afectați și dacă cancerul s-a răspândit de la locul original.",
+    "stages": {
+      "0": "Celule anormale prezente, dar fără răspândire.",
+      "I": "Cancer mic și limitat la o zonă.",
+      "II": "Cancerul a crescut, dar este încă localizat.",
+      "III": "Cancerul s-a răspândit la ganglionii apropiați.",
+      "IV": "Cancerul s-a răspândit în alte părți ale corpului."
+    },
+    "gradingTitle": "Gradare",
+    "gradingDesc": "Gradul descrie cum arată celulele canceroase comparativ cu cele normale la microscop. Oferă o idee despre cât de rapid poate crește și se poate răspândi cancerul.",
+    "aloneTitle": "Nu Ești Singur",
+    "aloneDesc": "Diagnosticul este doar începutul călătoriei tale ca luptător. Comunitatea noastră este aici să te sprijine, să te asculte și să lupte alături de tine în fiecare zi.",
+    "btnSupport": "Obține Sprijin",
+    "btnDownload": "Descarcă Ghidul"
+  },
+    "questionsPage": {
     "title": "Întrebări pentru Doctor",
     "subtitle": "A vorbi cu doctorul tău te poate ajuta să înțelegi ce se întâmplă.",
     "videoTitle": "În Curând: Apeluri Video",
@@ -1850,23 +1890,5 @@
     "susanDesc": "Ajută-ne să-i îndeplinim dorința.",
     "btnSusan": "Donează lui Susan",
     "btnGeneral": "Donație Generală"
-  },
-  "diagnosisPage": {
-    "title": "Înțelegerea Diagnosticului",
-    "heroDesc": "Este normal să fii copleșit. Informația îți dă putere.",
-    "whatIsCancerTitle": "Ce este Cancerul?",
-    "whatIsCancerDesc": "Creșterea necontrolată a celulelor.",
-    "stagingTitle": "Stadializare",
-    "stagingSub": "Ce este stadiul?",
-    "stagingDesc": "Arată răspândirea cancerului.",
-    "stages": {
-      "0": "Localizat", "I": "Timpuriu", "II": "Regional", "III": "Avansat", "IV": "Metastatic"
-    },
-    "gradingTitle": "Ce este Gradul?",
-    "gradingDesc": "Arată diferența celulelor.",
-    "aloneTitle": "Nu Ești Singur",
-    "aloneDesc": "Suntem aici să te ajutăm.",
-    "btnSupport": "Găsește Sprijin",
-    "btnDownload": "Descarcă Ghid (PDF)"
   }
 }

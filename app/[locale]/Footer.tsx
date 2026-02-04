@@ -98,7 +98,7 @@ export default function Footer() {
                     <span className="text-xs text-neutral-500 mt-1 block">CIF: 50156252</span>
                 </div>
               </li>
-              {/* 🗑️ ELIMINADO EL BLOQUE DE TELÉFONO AQUÍ */}
+              {/* ELIMINADO EL BLOQUE DE TELÉFONO */}
             </ul>
           </div>
 

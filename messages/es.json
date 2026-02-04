@@ -1662,27 +1662,67 @@
     "infoGuide": "Guía Info",
     "medicalInfo": "Info Médica",
     "readMore": "Leer más",
-    "types": { "breast": { "title": "Cáncer de Mama", "shortDesc": "La detección temprana salva vidas." } }
+    "types": {
+      "breast": { "title": "Cáncer de Mama", "shortDesc": "La detección temprana salva vidas." },
+      "lung": { "title": "Cáncer de Pulmón", "shortDesc": "Entender los riesgos es clave." },
+      "colorectal": { "title": "Cáncer Colorrectal", "shortDesc": "El cribado previene el desarrollo." },
+      "prostate": { "title": "Cáncer de Próstata", "shortDesc": "Salud masculina y prevención." },
+      "skin": { "title": "Cáncer de Piel", "shortDesc": "Protege tu piel, protege tu vida." },
+      "kidney": { "title": "Cáncer de Riñón", "shortDesc": "Síntomas silenciosos a vigilar." },
+      "leukemia": { "title": "Leucemia", "shortDesc": "Cáncer de las células sanguíneas." },
+      "liver": { "title": "Cáncer de Hígado", "shortDesc": "La salud hepática importa." },
+      "pancreatic": { "title": "Cáncer de Páncreas", "shortDesc": "Difícil de detectar, crucial de tratar." },
+      "ovarian": { "title": "Cáncer de Ovario", "shortDesc": "Conoce los signos sutiles." },
+      "childhood": { "title": "Cáncer Infantil", "shortDesc": "Apoyando a nuestros pequeños guerreros." },
+      "brain": { "title": "Tumor Cerebral", "shortDesc": "Afectando el centro de control." },
+      "bladder": { "title": "Cáncer de Vejiga", "shortDesc": "Atención a los cambios urinarios." },
+      "cervical": { "title": "Cáncer Cervical", "shortDesc": "Prevenible con vacunas y tests." },
+      "stomach": { "title": "Cáncer de Estómago", "shortDesc": "Salud digestiva y señales." },
+      "testicular": { "title": "Cáncer Testicular", "shortDesc": "El autoexamen es vital." },
+      "thyroid": { "title": "Cáncer de Tiroides", "shortDesc": "Glándula pequeña, gran impacto." },
+      "uterine": { "title": "Cáncer de Útero", "shortDesc": "Conocer tu cuerpo es poder." },
+      "lymphoma": { "title": "Linfoma", "shortDesc": "Afectando el sistema inmune." },
+      "myeloma": { "title": "Mieloma Múltiple", "shortDesc": "Cáncer de células plasmáticas." },
+      "esophageal": { "title": "Cáncer de Esófago", "shortDesc": "Dificultad al tragar y riesgos." },
+      "head-neck": { "title": "Cabeza y Cuello", "shortDesc": "Boca, garganta y glándulas." },
+      "bone": { "title": "Cáncer de Huesos", "shortDesc": "Dolor óseo y tratamientos." },
+      "sarcoma": { "title": "Sarcoma", "shortDesc": "Tejidos blandos del cuerpo." },
+      "gallbladder": { "title": "Vesícula Biliar", "shortDesc": "Poco común pero importante." },
+      "bile-duct": { "title": "Conducto Biliar", "shortDesc": "Afectando la digestión." },
+      "anal": { "title": "Cáncer Anal", "shortDesc": "Rompiendo el estigma." },
+      "penile": { "title": "Cáncer de Pene", "shortDesc": "Salud íntima masculina." },
+      "vaginal": { "title": "Cáncer Vaginal", "shortDesc": "Detección ginecológica." },
+      "vulvar": { "title": "Cáncer de Vulva", "shortDesc": "Signos externos a vigilar." },
+      "eye": { "title": "Cáncer Ocular", "shortDesc": "Melanoma y retinoblastoma." },
+      "oral": { "title": "Cáncer Oral", "shortDesc": "Boca, lengua y encías." },
+      "throat": { "title": "Cáncer de Garganta", "shortDesc": "Faringe y laringe." },
+      "small-intestine": { "title": "Intestino Delgado", "shortDesc": "Un cáncer poco frecuente." },
+      "thymus": { "title": "Timo", "shortDesc": "Glándula del pecho." }
+      }
   },
-  "diagnosisPage": {
+"diagnosisPage": {
     "title": "Entendiendo tu Diagnóstico",
-    "heroDesc": "Recibir un diagnóstico puede sentirse como una tormenta. Es normal sentirse abrumado.",
+    "heroDesc": "Recibir un diagnóstico de cáncer puede ser abrumador. Estamos aquí para ayudarte a entender los términos médicos, las etapas y los siguientes pasos.",
     "whatIsCancerTitle": "¿Qué es el Cáncer?",
-    "whatIsCancerDesc": "Cáncer es una palabra que cubre una amplia gama de enfermedades...",
-    "stagingTitle": "Etapificación y Grados",
-    "stagingSub": "¿Qué es la Etapa?",
-    "stagingDesc": "La etapa es como un mapa que muestra cuánto ha viajado el cáncer.",
-    "gradingTitle": "¿Qué es el Grado?",
-    "gradingDesc": "El grado indica cuánto se diferencian las células cancerosas de las normales.",
-    "aloneTitle": "No Estás Solo",
-    "aloneDesc": "Es esencial recordar que no tienes que pasar por esto solo.",
-    "btnSupport": "Buscar Apoyo",
-    "btnDownload": "Descargar Guía (PDF)",
+    "whatIsCancerDesc": "El cáncer es un grupo de enfermedades que implican un crecimiento celular anormal con el potencial de invadir o extenderse a otras partes del cuerpo. Entender los conceptos básicos es el primer paso para tomar el control.",
+    "stagingTitle": "Etapas (Staging)",
+    "stagingSub": "Entendiendo la Propagación",
+    "stagingDesc": "La etapa describe la extensión del cáncer en el cuerpo. Generalmente se basa en el tamaño del tumor, si los ganglios linfáticos están afectados y si el cáncer se ha diseminado desde el sitio original.",
     "stages": {
-      "0": "Localizado", "I": "Temprano", "II": "Regional", "III": "Avanzado", "IV": "Metastásico"
-    }
+      "0": "Células anormales presentes, pero sin extenderse.",
+      "I": "Cáncer pequeño y contenido en un área.",
+      "II": "El cáncer ha crecido, pero sigue localizado.",
+      "III": "El cáncer se ha extendido a ganglios cercanos.",
+      "IV": "El cáncer se ha extendido a otras partes del cuerpo."
+    },
+    "gradingTitle": "Grados (Grading)",
+    "gradingDesc": "El grado describe cómo se ven las células cancerosas comparadas con las normales al microscopio. Da una idea de qué tan rápido puede crecer y propagarse el cáncer.",
+    "aloneTitle": "No Estás Solo",
+    "aloneDesc": "El diagnóstico es solo el comienzo de tu viaje como guerrero. Nuestra comunidad está aquí para apoyarte, escucharte y luchar a tu lado cada día.",
+    "btnSupport": "Obtener Apoyo",
+    "btnDownload": "Descargar Guía"
   },
-  "questionsPage": {
+    "questionsPage": {
     "title": "Preguntas para tu Doctor",
     "subtitle": "Recibir un diagnóstico puede ser abrumador. Hablar con tu médico te ayudará a entender el proceso.",
     "videoTitle": "Próximamente: Videollamadas",
@@ -1854,23 +1894,5 @@
     "susanDesc": "Ayúdanos a cumplir su deseo.",
     "btnSusan": "Donar a Susan",
     "btnGeneral": "Donación General"
-  },
-  "diagnosisPage": {
-    "title": "Entendiendo tu Diagnóstico",
-    "heroDesc": "Es normal sentirse abrumado. Entender tu diagnóstico te dará control.",
-    "whatIsCancerTitle": "¿Qué es el Cáncer?",
-    "whatIsCancerDesc": "Crecimiento descontrolado de células en el cuerpo.",
-    "stagingTitle": "Etapas y Grados",
-    "stagingSub": "¿Qué es la Etapa?",
-    "stagingDesc": "Indica cuánto se ha extendido el cáncer.",
-    "stages": {
-      "0": "Localizado", "I": "Temprano", "II": "Regional", "III": "Avanzado", "IV": "Metastásico"
-    },
-    "gradingTitle": "¿Qué es el Grado?",
-    "gradingDesc": "Indica qué tan diferentes son las células.",
-    "aloneTitle": "No Estás Solo",
-    "aloneDesc": "Hay recursos y personas para apoyarte.",
-    "btnSupport": "Buscar Apoyo",
-    "btnDownload": "Descargar Guía (PDF)"
   }
 }
