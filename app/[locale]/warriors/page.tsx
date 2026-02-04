@@ -1,8 +1,42 @@
 'use client';
 import { useTranslations, useLocale } from 'next-intl';
-import { useState } from 'react';
-import { X, Heart, Sparkles, ArrowRight } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { X, Heart, Sparkles, ArrowRight, TrendingUp, Target, Users } from 'lucide-react';
 import Link from 'next/link';
+
+// --- COMPONENTE CONTADOR ANIMADO ---
+// Este pequeño componente hace que los números suban solitos
+function AnimatedCounter({ end, duration = 2000, prefix = '' }: { end: number, duration?: number, prefix?: string }) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let startTime: number | null = null;
+    let animationFrameId: number;
+
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+      const percentage = Math.min(progress / duration, 1);
+      
+      // Función "easeOut" para que empiece rápido y frene suave al final
+      const ease = (x: number) => 1 - Math.pow(1 - x, 3);
+      
+      setCount(Math.floor(ease(percentage) * end));
+
+      if (progress < duration) {
+        animationFrameId = requestAnimationFrame(animate);
+      }
+    };
+
+    animationFrameId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [end, duration]);
+
+  // Formatear número con comas (ej: 4,500)
+  const formatted = new Intl.NumberFormat('en-US').format(count);
+  
+  return <>{prefix}{formatted}</>;
+}
 
 export default function WarriorsPage() {
   const t = useTranslations('warriorsPage');
@@ -10,7 +44,7 @@ export default function WarriorsPage() {
   const prefix = locale === 'es' ? '' : `/${locale}`;
   const [selectedStory, setSelectedStory] = useState<null | any>(null);
 
-// ✅ CONFIGURACIÓN FINAL DE LAS 6 HISTORIAS
+  // ✅ CONFIGURACIÓN FINAL DE LAS 6 HISTORIAS
   const stories = [
     {
       id: '1',
@@ -53,7 +87,7 @@ export default function WarriorsPage() {
       shortDesc: t('featured.susan.shortDesc'),
       fullStory: t('featured.susan.fullStory'),
       image: '/susan.jpg', 
-      position: 'object-[center_35%]', // Ajuste para los ojos de Susan
+      position: 'object-[center_35%]', 
       color: 'bg-pink-100 text-pink-700',
     },
     {
@@ -74,13 +108,13 @@ export default function WarriorsPage() {
       dream: t('featured.anonymous.dream'),
       shortDesc: t('featured.anonymous.shortDesc'),
       fullStory: t('featured.anonymous.fullStory'),
-      // FOTO NUEVA (Chica del top blanco - Matheus Ferrero/Unsplash)
       image: '/warrior.jpg', 
       position: 'object-center',
       color: 'bg-indigo-100 text-indigo-700',
     }
   ];
-    return (
+
+  return (
     <div className="pt-20 min-h-screen bg-neutral-50">
       {/* Header Section */}
       <section className="py-20 bg-white">
@@ -92,9 +126,53 @@ export default function WarriorsPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-neutral-900 mb-6">
             {t('title')}
           </h1>
-          <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-xl text-neutral-600 max-w-2xl mx-auto mb-12">
             {t('subtitle')}
           </p>
+
+          {/* ✅ BARRA DE ESTADÍSTICAS ANIMADA */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {/* Tarjeta 1: Fondos */}
+            <div className="bg-neutral-50 rounded-2xl p-6 border border-neutral-100 flex items-center justify-center gap-4 shadow-sm hover:shadow-md transition-shadow">
+                <div className="p-3 bg-white rounded-xl text-brand-600 shadow-sm">
+                    <TrendingUp className="w-6 h-6" />
+                </div>
+                <div className="text-left">
+                    <div className="text-3xl font-bold text-neutral-900 tabular-nums">
+                        {/* Aquí usamos el contador animado */}
+                        <AnimatedCounter end={4500} prefix="€" />
+                    </div>
+                    <div className="text-sm text-neutral-500 font-medium uppercase tracking-wide">{t('stats.investment')}</div>
+                </div>
+            </div>
+
+            {/* Tarjeta 2: Sueños */}
+            <div className="bg-neutral-50 rounded-2xl p-6 border border-neutral-100 flex items-center justify-center gap-4 shadow-sm hover:shadow-md transition-shadow">
+                <div className="p-3 bg-white rounded-xl text-purple-600 shadow-sm">
+                    <Target className="w-6 h-6" />
+                </div>
+                <div className="text-left">
+                    <div className="text-3xl font-bold text-neutral-900 tabular-nums">
+                        <AnimatedCounter end={9} />
+                    </div>
+                    <div className="text-sm text-neutral-500 font-medium uppercase tracking-wide">{t('stats.dreams')}</div>
+                </div>
+            </div>
+
+            {/* Tarjeta 3: Equipo */}
+            <div className="bg-neutral-50 rounded-2xl p-6 border border-neutral-100 flex items-center justify-center gap-4 shadow-sm hover:shadow-md transition-shadow">
+                <div className="p-3 bg-white rounded-xl text-indigo-600 shadow-sm">
+                    <Users className="w-6 h-6" />
+                </div>
+                <div className="text-left">
+                    <div className="text-3xl font-bold text-neutral-900 tabular-nums">
+                        <AnimatedCounter end={3} />
+                    </div>
+                    <div className="text-sm text-neutral-500 font-medium uppercase tracking-wide">{t('stats.team')}</div>
+                </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -149,14 +227,12 @@ export default function WarriorsPage() {
       {/* Modal / Popup de Historia Completa */}
       {selectedStory && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-          {/* Fondo oscuro al hacer clic cierra el modal */}
           <div 
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setSelectedStory(null)}
           />
           
           <div className="relative bg-white rounded-3xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto animate-in fade-in zoom-in duration-300">
-            {/* Botón Cerrar (X) */}
             <button 
               onClick={() => setSelectedStory(null)}
               className="absolute top-4 right-4 p-2 bg-white/50 hover:bg-white rounded-full transition-colors z-10"
@@ -165,7 +241,6 @@ export default function WarriorsPage() {
             </button>
 
             <div className="grid md:grid-cols-2">
-              {/* Imagen en el Modal */}
               <div className="h-64 md:h-auto relative">
                 <img 
                   src={selectedStory.image} 
@@ -174,7 +249,6 @@ export default function WarriorsPage() {
                 />
               </div>
               
-              {/* Texto en el Modal */}
               <div className="p-8 md:p-12">
                 <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-6 ${selectedStory.color}`}>
                   {t('dreamFulfilled')}
@@ -187,12 +261,10 @@ export default function WarriorsPage() {
                   {selectedStory.dream}
                 </h3>
 
-                {/* Historia completa con saltos de línea */}
                 <div className="prose prose-neutral mb-8 text-neutral-600 whitespace-pre-line leading-relaxed">
                   {selectedStory.fullStory}
                 </div>
 
-                {/* Botón de Donar */}
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link 
                     href={`${prefix}/donar`}

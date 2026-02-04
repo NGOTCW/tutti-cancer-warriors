@@ -31,6 +31,11 @@
     "title": "Redăm Speranța,",
     "titleHighlight": "Un Vis pe Rând",
     "subtitle": "În spatele fiecărui diagnostic există un spirit uman care refuză să cedeze. Fii martorul puterii bunătății tale în viețile acestor luptători curajoși.",
+    "stats": {
+      "dreams": "Vise Împlinite",
+      "investment": "Fonduri Strânse", 
+      "team": "Membri ai Echipei"
+    },
     "readStory": "Citește Povestea",
     "dreamFulfilled": "Vis Împlinit ✨",
     "close": "Închide povestea",

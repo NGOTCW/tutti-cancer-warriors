@@ -31,6 +31,11 @@
     "title": "Restoring Hope,",
     "titleHighlight": "One Dream at a Time",
     "subtitle": "Behind every diagnosis, there is a human spirit refusing to break. Witness the power of your kindness in the lives of these brave warriors.",
+    "stats": {
+      "dreams": "Dreams Fulfilled",
+      "investment": "Funds Raised", 
+      "team": "Team Members"
+    },
     "readStory": "Read Story",
     "dreamFulfilled": "Dream Fulfilled ✨",
     "close": "Close story",

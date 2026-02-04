@@ -31,6 +31,11 @@
     "title": "Restaurando la Esperanza,",
     "titleHighlight": "Un Sueño a la Vez",
     "subtitle": "Detrás de cada diagnóstico hay un espíritu humano que se niega a romperse. Sé testigo del poder de tu bondad en las vidas de estos valientes guerreros.",
+"stats": {
+      "dreams": "Sueños Cumplidos",
+      "investment": "Fondos Recaudados", 
+      "team": "Miembros del Equipo"
+    },    
     "readStory": "Leer Historia",
     "dreamFulfilled": "Sueño Cumplido ✨",
     "close": "Cerrar historia",
