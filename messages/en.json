@@ -1765,7 +1765,15 @@
     "btnSusan": "Donate to Susan",
     "btnGeneral": "General Donation"
   },
-    "connectSurvivorPage": {
+"connectSurvivorPage": {
+    "title": "Connect with a Survivor",
+    "subtitle": "Talking to someone who has been there can change everything.",
+    "step1Title": "Register",
+    "step1Desc": "Tell us a bit about yourself and your diagnosis.",
+    "step2Title": "Get Matched",
+    "step2Desc": "We connect you with someone with a similar experience.",
+    "step3Title": "Connect",
+    "step3Desc": "Start a safe and supportive conversation.",
     "readyTitle": "Ready to connect?",
     "btnConnect": "Connect with a Survivor",
     "btnPolicy": "Read Policy & Guidelines"

@@ -3,5 +3,6 @@
   "/[locale]/connect-survivor/page": "app/[locale]/connect-survivor/page.js",
   "/[locale]/dream-application/page": "app/[locale]/dream-application/page.js",
   "/[locale]/share-journey/page": "app/[locale]/share-journey/page.js",
-  "/[locale]/warrior-mood-boost/page": "app/[locale]/warrior-mood-boost/page.js"
+  "/[locale]/warrior-mood-boost/page": "app/[locale]/warrior-mood-boost/page.js",
+  "/[locale]/peer-policy/page": "app/[locale]/peer-policy/page.js"
 }

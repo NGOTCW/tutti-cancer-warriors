@@ -1,12 +1,11 @@
 'use client';
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
-import { UserPlus, FileText, ArrowRight, ShieldCheck } from 'lucide-react';
+import { UserPlus, ArrowRight, ShieldCheck } from 'lucide-react';
 
 export default function ConnectSurvivorPage() {
-  const t = useTranslations('connectSurvivor');
+  const t = useTranslations('connectSurvivorPage'); // Asegúrate que coincida con tu JSON
   
-  // Obtenemos el idioma actual para construir el enlace interno correctamente
   const locale = useLocale();
   const prefix = locale === 'es' ? '' : `/${locale}`;
 
@@ -35,26 +34,28 @@ export default function ConnectSurvivorPage() {
             </div>
 
             <div className="bg-white rounded-3xl p-10 shadow-xl border border-indigo-100 text-center">
-                <h2 className="text-3xl font-bold text-neutral-900 mb-8">Ready to connect?</h2>
+                {/* AQUI ESTABA EL ERROR: Ahora usa traducción */}
+                <h2 className="text-3xl font-bold text-neutral-900 mb-8">{t('readyTitle')}</h2>
+                
                 <div className="flex flex-col md:flex-row gap-6 justify-center">
-                    {/* Botón externo al Google Form (se queda igual) */}
+                    {/* Botón externo al Google Form */}
                     <a 
                         href="https://docs.google.com/forms/d/e/1FAIpQLSeZUQy99dDIVPANAOwnA75LIeStuVYooZ3T1iqmM-K9pBvsjA/viewform"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-3 px-8 py-4 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition-all shadow-lg hover:shadow-indigo-200"
                     >
-                        <span>Connect with a Survivor</span>
+                        <span>{t('btnConnect')}</span>
                         <ArrowRight className="w-5 h-5" />
                     </a>
                     
-                    {/* Botón interno a Peer Policy (ACTUALIZADO CON LINK) */}
+                    {/* Botón interno a Peer Policy */}
                     <Link 
                         href={`${prefix}/peer-policy`}
                         className="flex items-center justify-center gap-3 px-8 py-4 bg-white text-neutral-700 font-bold rounded-xl border-2 border-neutral-200 hover:border-indigo-600 hover:text-indigo-600 transition-all"
                     >
                         <ShieldCheck className="w-5 h-5" />
-                        <span>Read Policy & Guidelines</span>
+                        <span>{t('btnPolicy')}</span>
                     </Link>
                 </div>
             </div>
