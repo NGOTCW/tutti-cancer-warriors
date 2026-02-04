@@ -26,9 +26,9 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       siteName: 'Tutti Cancer Warriors',
       images: [
         {
-          url: '/og-image.png', // La imagen 1200x630 que vas a crear en /public
-          width: 1200,
-          height: 630,
+          url: '/TCW_LOGO.png', // La imagen 1200x630 que vas a crear en /public
+          width: 800,
+          height: 600,
           alt: 'Tutti Cancer Warriors NGO',
         },
       ],
