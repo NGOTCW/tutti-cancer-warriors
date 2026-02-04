@@ -35,7 +35,6 @@ const ButterflyIcon = ({ className }: { className?: string }) => (
     <DrawIcon 
         className={className} 
         path="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z M12 6v12 M17 10l-5 2-5-2"
-        // Un path simplificado abstracto tipo mariposa/flor para la demo
     />
 );
 
@@ -154,18 +153,20 @@ export default function WarriorsPage() {
         </motion.div>
       </section>
 
-{/* --- STATS SECTION --- */}
+      {/* --- STATS SECTION (AQUÍ ESTÁ EL CAMBIO) --- */}
       <section className="py-12 bg-white border-y border-neutral-100">
           <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-               {/* value={45}    -> 45 Sueños Cumplidos (Número creíble y bueno)
-                  value={3500} -> 3500€ Recaudados (Impresionante pero posible)
-                  value={60}    -> 60 Voluntarios (Comunidad fuerte)
-               */}
-               <Counter value={45} label={t('stats.dreams')} />
-               <Counter value={3500} label={t('stats.investment')} />
-               <Counter value={60} label={t('stats.volunteers')} />
+               {/* 9 Sueños */}
+               <Counter value={9} label={t('stats.dreams')} />
+               
+               {/* 4500€ Recaudados */}
+               <Counter value={4500} label={t('stats.investment')} />
+               
+               {/*  CAMBIO: 3 MIEMBROS */}
+               <Counter value={3} label={t('stats.team')} />
           </div>
       </section>
+
       {/* --- FILTER & GRID --- */}
       <section className="py-24 px-4 container mx-auto">
         {/* Filters */}
@@ -209,7 +210,7 @@ export default function WarriorsPage() {
                         <div className="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-neutral-100 relative h-[500px]">
                             <Image 
                                 src={warrior.src} 
-                                alt={t(`stories.${warrior.id}.name`)} 
+                                alt={t.has(`stories.${warrior.id}.name`) ? t(`stories.${warrior.id}.name`) : "Warrior"} 
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-110"
                             />
@@ -219,9 +220,11 @@ export default function WarriorsPage() {
                                 <div className="text-brand-300 font-bold uppercase tracking-wider text-sm mb-2">
                                     {t('dreamFulfilled')}
                                 </div>
-                                <h3 className="text-4xl font-bold mb-2">{t(`stories.${warrior.id}.name`)}</h3>
+                                <h3 className="text-4xl font-bold mb-2">
+                                    {t.has(`stories.${warrior.id}.name`) ? t(`stories.${warrior.id}.name`) : "Warrior Story"}
+                                </h3>
                                 <p className="text-white/80 line-clamp-2 mb-4">
-                                    {t(`stories.${warrior.id}.dream`)}
+                                    {t.has(`stories.${warrior.id}.dream`) ? t(`stories.${warrior.id}.dream`) : ""}
                                 </p>
                                 <div className="flex items-center gap-2 text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity delay-100">
                                     Read Story <ChevronRight className="w-4 h-4" />
@@ -262,31 +265,32 @@ export default function WarriorsPage() {
                     <div className="w-full md:w-1/2 h-64 md:h-auto relative">
                         <Image 
                             src={selectedWarrior.src} 
-                            alt={t(`stories.${selectedWarrior.id}.name`)} 
+                            alt={t.has(`stories.${selectedWarrior.id}.name`) ? t(`stories.${selectedWarrior.id}.name`) : "Warrior"} 
                             fill
                             className="object-cover"
                         />
                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:hidden" />
                          <div className="absolute bottom-6 left-6 text-white md:hidden">
-                            <h2 className="text-4xl font-bold">{t(`stories.${selectedWarrior.id}.name`)}</h2>
+                            <h2 className="text-4xl font-bold">
+                                {t.has(`stories.${selectedWarrior.id}.name`) ? t(`stories.${selectedWarrior.id}.name`) : "Warrior"}
+                            </h2>
                          </div>
                     </div>
 
                     {/* Right: Content */}
                     <div className="w-full md:w-1/2 p-8 md:p-12 overflow-y-auto bg-white">
                         <div className="hidden md:block mb-8">
-                            <h2 className="text-5xl font-bold text-neutral-900 mb-2">{t(`stories.${selectedWarrior.id}.name`)}</h2>
-                            <div className="inline-block px-4 py-1 bg-brand-100 text-brand-700 rounded-full font-bold text-sm">
-                                {t(`stories.${selectedWarrior.id}.age`)} years old
-                            </div>
+                            <h2 className="text-5xl font-bold text-neutral-900 mb-2">
+                                {t.has(`stories.${selectedWarrior.id}.name`) ? t(`stories.${selectedWarrior.id}.name`) : "Warrior"}
+                            </h2>
                         </div>
 
                         <h3 className="text-2xl font-bold text-brand-600 mb-6 border-l-4 border-brand-200 pl-4">
-                            "{t(`stories.${selectedWarrior.id}.dream`)}"
+                            "{t.has(`stories.${selectedWarrior.id}.dream`) ? t(`stories.${selectedWarrior.id}.dream`) : "A special dream"}"
                         </h3>
 
                         <p className="text-xl text-neutral-600 leading-relaxed mb-10">
-                            {t(`stories.${selectedWarrior.id}.desc`)}
+                            {t.has(`stories.${selectedWarrior.id}.desc`) ? t(`stories.${selectedWarrior.id}.desc`) : "..."}
                         </p>
 
                         {/* Mini Gallery inside Modal */}

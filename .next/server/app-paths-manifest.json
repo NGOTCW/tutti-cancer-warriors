@@ -1,8 +1,7 @@
 {
-  "/[locale]/share-journey/page": "app/[locale]/share-journey/page.js",
-  "/[locale]/warrior-mood-boost/page": "app/[locale]/warrior-mood-boost/page.js",
-  "/[locale]/world-kidney-cancer-day/page": "app/[locale]/world-kidney-cancer-day/page.js",
   "/[locale]/page": "app/[locale]/page.js",
+  "/[locale]/warriors/page": "app/[locale]/warriors/page.js",
+  "/[locale]/sobre-cancer/page": "app/[locale]/sobre-cancer/page.js",
   "/[locale]/entender-diagnostico/page": "app/[locale]/entender-diagnostico/page.js",
-  "/[locale]/bienestar-emocional/page": "app/[locale]/bienestar-emocional/page.js"
+  "/[locale]/sobre-cancer/[id]/page": "app/[locale]/sobre-cancer/[id]/page.js"
 }

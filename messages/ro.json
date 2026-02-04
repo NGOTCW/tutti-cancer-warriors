@@ -36,7 +36,7 @@
     "stats": {
       "dreams": "Vise Împlinite",
       "investment": "Fonduri Strânse (€)",
-      "volunteers": "Voluntari Activi"
+      "team": "Miembri ai Echipei"
     },
     "filters": {
       "all": "Toate Poveștile",
@@ -1653,7 +1653,7 @@
   "aboutCancerPage": {
     "heroTag": "Cunoașterea este Putere",
     "title": "Învață despre <highlight>Cancer</highlight>",
-    "subtitle": "Informații complete despre tipurile de cancer, simptome și tratamente.",
+    "subtitle": "Informații complete despre tipurile de cancer, simptome, detectare timpurie și tratamente. Suntem aici să te sprijinim la fiecare pas.",
     "countText": "35 tipuri de cancer cu informații complete",
     "infoGuide": "Ghid Info",
     "medicalInfo": "Info Medical",

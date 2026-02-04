@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
-import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, Heart, FileText } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Mail, MapPin, Heart, FileText } from 'lucide-react';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -78,10 +78,6 @@ export default function Footer() {
               <li><Link href={`${prefix}/sobre-cancer`} className="hover:text-brand-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-brand-500 rounded-full"></span>{tNav('aboutCancer')}</Link></li>
               <li><Link href={`${prefix}/warriors`} className="hover:text-brand-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-brand-500 rounded-full"></span>{tNav('warriors')}</Link></li>
               <li><Link href={`${prefix}/voluntarios`} className="hover:text-brand-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-brand-500 rounded-full"></span>{tNav('volunteers')}</Link></li>
-              
-              {/* OCULTADO TEMPORALMENTE (EVENTS) */}
-              {/* <li><Link href={`${prefix}/events`} className="hover:text-brand-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-brand-500 rounded-full"></span>{tNav('events')}</Link></li> */}
-            
             </ul>
           </div>
 
@@ -102,12 +98,7 @@ export default function Footer() {
                     <span className="text-xs text-neutral-500 mt-1 block">CIF: 50156252</span>
                 </div>
               </li>
-              <li className="flex items-start gap-3">
-                <div className="p-2 bg-neutral-800 rounded-lg text-brand-500 shrink-0"><Phone className="w-4 h-4" /></div>
-                <a href="tel:+40721048183" className="mt-1 hover:text-white transition-colors hover:underline decoration-brand-500 underline-offset-4">
-                    +40 721 048 183
-                </a>
-              </li>
+              {/* 🗑️ ELIMINADO EL BLOQUE DE TELÉFONO AQUÍ */}
             </ul>
           </div>
 
