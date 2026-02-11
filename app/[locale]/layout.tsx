@@ -41,7 +41,9 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       description: t('description'),
       images: ['/og-image.png'], // La misma imagen
     },
-
+    icons: {
+      icon: '/favicon.ico', // Asegúrate de tener el icono también
+    },
   };
 }
 
