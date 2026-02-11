@@ -1,6 +1,7 @@
 {
   "name": "tutti-cancer-warriors",
   "version": "1.0.0",
+  "packageManager": "pnpm@10.28.0",
   "description": "Website for Tutti Cancer Warriors NGO - Multilingual (ES, EN, RO)",
   "scripts": {
     "dev": "next dev",
