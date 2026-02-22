@@ -1438,7 +1438,17 @@
         "title": "Make a wish come true for Elena",
         "description": "Elena has been fighting ovarian cancer for 3 years. Her dream is to gather her extended family for a reunion dinner."
       }
+    },
+    "teamPage": {
+    "title": "Our Team",
+    "subtitle": "Meet the dedicated hearts working behind the scenes to fulfill dreams.",
+    "members": {
+      "1": { "name": "Andrea", "role": "Founder / President", "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400" },
+      "2": { "name": "Name Surname", "role": "Vice President", "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400" },
+      "3": { "name": "Name Surname", "role": "Coordinator", "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400" },
+      "4": { "name": "Name Surname", "role": "Volunteer", "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400" }
     }
+  }
   },
       "connectSurvivor": {
     "title": "Connect with a Survivor",

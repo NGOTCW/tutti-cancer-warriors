@@ -1971,5 +1971,15 @@
         "description": "Elena se luptă cu cancerul ovarian de 3 ani. Visul ei este să-și adune familia extinsă pentru o cină de reuniune."
       }
     }
+  },
+  "teamPage": {
+    "title": "Echipa Noastră",
+    "subtitle": "Cunoaște inimile dedicate care lucrează în culise pentru a împlini vise.",
+    "members": {
+      "1": { "name": "Andrea", "role": "Fondator / Președinte", "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400" },
+      "2": { "name": "Nume Prenume", "role": "Vicepreședinte", "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400" },
+      "3": { "name": "Nume Prenume", "role": "Coordonator", "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400" },
+      "4": { "name": "Nume Prenume", "role": "Voluntar", "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400" }
+    }
   }
 }

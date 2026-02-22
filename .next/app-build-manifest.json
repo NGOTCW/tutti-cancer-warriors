@@ -11,6 +11,11 @@
       "static/css/app/[locale]/layout.css",
       "static/chunks/app/[locale]/layout.js"
     ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/layout.js"
+    ],
     "/[locale]/support-dream/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -21,20 +26,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/donar/page.js"
     ],
-    "/[locale]/involucrate/page": [
+    "/[locale]/warriors/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/involucrate/page.js"
+      "static/chunks/app/[locale]/warriors/page.js"
     ],
-    "/[locale]/peer-support/page": [
+    "/[locale]/team/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/peer-support/page.js"
-    ],
-    "/[locale]/voluntarios/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/voluntarios/page.js"
+      "static/chunks/app/[locale]/team/page.js"
     ]
   }
 }

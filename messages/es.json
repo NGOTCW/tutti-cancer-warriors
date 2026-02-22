@@ -1974,5 +1974,15 @@
         "description": "Elena lleva 3 años luchando contra el cáncer de ovario. Su sueño es reunir a toda su familia para una cena de reencuentro."
       }
     }
+  },
+  "teamPage": {
+    "title": "Nuestro Equipo",
+    "subtitle": "Conoce a los corazones dedicados que trabajan entre bastidores para cumplir sueños.",
+    "members": {
+      "1": { "name": "Andrea", "role": "Fundadora / Presidenta", "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400" },
+      "2": { "name": "Nombre Apellido", "role": "Vicepresidente/a", "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400" },
+      "3": { "name": "Nombre Apellido", "role": "Coordinador/a", "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400" },
+      "4": { "name": "Nombre Apellido", "role": "Voluntario/a", "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400" }
+    }
   }
 }
