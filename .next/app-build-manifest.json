@@ -11,35 +11,30 @@
       "static/css/app/[locale]/layout.css",
       "static/chunks/app/[locale]/layout.js"
     ],
-    "/[locale]/warriors/page": [
+    "/[locale]/support-dream/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/warriors/page.js"
+      "static/chunks/app/[locale]/support-dream/page.js"
     ],
     "/[locale]/donar/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/donar/page.js"
     ],
-    "/[locale]/sobre-cancer/page": [
+    "/[locale]/involucrate/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/sobre-cancer/page.js"
+      "static/chunks/app/[locale]/involucrate/page.js"
     ],
-    "/[locale]/sobre-cancer/[id]/page": [
+    "/[locale]/peer-support/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/sobre-cancer/[id]/page.js"
+      "static/chunks/app/[locale]/peer-support/page.js"
     ],
-    "/[locale]/preguntas-doctor/page": [
+    "/[locale]/voluntarios/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/preguntas-doctor/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/[locale]/voluntarios/page.js"
     ]
   }
 }

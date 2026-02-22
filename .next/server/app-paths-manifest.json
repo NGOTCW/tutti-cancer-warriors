@@ -1,7 +1,7 @@
 {
-  "/[locale]/page": "app/[locale]/page.js",
-  "/[locale]/warriors/page": "app/[locale]/warriors/page.js",
+  "/[locale]/support-dream/page": "app/[locale]/support-dream/page.js",
   "/[locale]/donar/page": "app/[locale]/donar/page.js",
-  "/[locale]/sobre-cancer/[id]/page": "app/[locale]/sobre-cancer/[id]/page.js",
-  "/[locale]/preguntas-doctor/page": "app/[locale]/preguntas-doctor/page.js"
+  "/[locale]/involucrate/page": "app/[locale]/involucrate/page.js",
+  "/[locale]/peer-support/page": "app/[locale]/peer-support/page.js",
+  "/[locale]/voluntarios/page": "app/[locale]/voluntarios/page.js"
 }

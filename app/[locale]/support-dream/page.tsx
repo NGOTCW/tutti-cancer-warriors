@@ -1,79 +1,92 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
-import { Star, Heart, Gift } from 'lucide-react';
+import { Heart, Sparkles } from 'lucide-react';
 
 export default function SupportDreamPage() {
   const t = useTranslations('supportDream');
 
-  const ways = [
-    { title: t('way1'), desc: t('way1Desc'), icon: Heart },
-    { title: t('way2'), desc: t('way2Desc'), icon: Gift },
-    { title: t('way3'), desc: t('way3Desc'), icon: Star },
+  // ✅ DATOS "DUMMY" TRADUCIDOS DINÁMICAMENTE
+  const futureWarriors = [
+    {
+      id: 1,
+      title: t('cases.1.title'),
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800",
+      description: t('cases.1.description'),
+      goal: "€1,500"
+    },
+    {
+      id: 2,
+      title: t('cases.2.title'),
+      image: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=800",
+      description: t('cases.2.description'),
+      goal: "€800"
+    },
+    {
+      id: 3,
+      title: t('cases.3.title'),
+      image: "https://images.unsplash.com/photo-1544569975-8e155329f348?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=800",
+      description: t('cases.3.description'),
+      goal: "€2,000"
+    }
   ];
 
   return (
-    <div className="pt-20 min-h-screen bg-white">
-      <section className="py-24 bg-gradient-to-br from-amber-100 via-orange-50 to-white">
-        <div className="container mx-auto px-4 text-center">
-          <div className="inline-block p-4 bg-white rounded-full shadow-lg mb-6">
-            <Star className="w-12 h-12 text-amber-500" fill="currentColor" />
+    <section className="pt-32 pb-24 bg-neutral-50 min-h-screen">
+      <div className="container mx-auto px-4">
+        
+        {/* Encabezado */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-50 text-purple-600 rounded-full text-sm font-bold mb-6">
+            <Sparkles className="w-4 h-4" />
+            <span>Tutti Cancer Warriors</span>
           </div>
-          <h1 className="text-6xl font-bold text-neutral-900 mb-6">{t('title')}</h1>
-          <p className="text-xl text-neutral-600 max-w-2xl mx-auto">{t('subtitle')}</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+            {t('title')}
+          </h1>
+          <p className="text-xl text-neutral-600 leading-relaxed">
+            {t('subtitle')}
+          </p>
         </div>
-      </section>
 
-      <section className="py-20">
-        <div className="container mx-auto px-4 max-w-6xl">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-                {[{icon:'🎸', p:'500'}, {icon:'✈️', p:'2,000'}, {icon:'🎤', p:'800'}, {icon:'🎨', p:'1,200'}].map((d, i) => (
-                    <div key={i} className="bg-white p-6 rounded-2xl shadow-lg border border-neutral-100 text-center hover:-translate-y-2 transition-transform">
-                        <div className="text-4xl mb-4">{d.icon}</div>
-                        <div className="text-lg font-bold text-neutral-800">{t(`dream${i+1}`)}</div>
-                        <div className="text-amber-600 font-bold mt-2">€{d.p}</div>
-                    </div>
-                ))}
-            </div>
-
-            <h2 className="text-3xl font-bold text-center mb-12">{t('waysTitle')}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-                {ways.map((way, idx) => {
-                    const Icon = way.icon;
-                    return (
-                        <div key={idx} className="bg-neutral-50 p-8 rounded-3xl hover:bg-amber-50 transition-colors group">
-                            <Icon className="w-10 h-10 text-neutral-400 group-hover:text-amber-600 mb-4 transition-colors" />
-                            <h3 className="text-xl font-bold mb-3">{way.title}</h3>
-                            <p className="text-neutral-600">{way.desc}</p>
-                        </div>
-                    )
-                })}
-            </div>
-
-            {/* CTA Especial Susan - AHORA TRADUCIDO */}
-            <div className="bg-gradient-to-r from-brand-600 to-purple-800 rounded-[2.5rem] p-12 text-center text-white relative overflow-hidden shadow-2xl">
-                <div className="relative z-10">
-                    <h3 className="text-4xl font-bold mb-6">{t('susanTitle')}</h3>
-                    <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-                        {t('susanDesc')}
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                         <a 
-                            href="https://better.giving/fundraisers/TCW.SUSAN" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="px-10 py-4 bg-white text-brand-600 font-bold rounded-full hover:scale-105 transition-transform shadow-lg"
-                        >
-                            {t('btnSusan')}
-                        </a>
-                        <Link href="/donar" className="px-10 py-4 bg-brand-500/30 backdrop-blur border border-white/30 text-white font-bold rounded-full hover:bg-brand-500/50 transition-colors">
-                            {t('btnGeneral')}
-                        </Link>
-                    </div>
+        {/* Grid de Tarjetas */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {futureWarriors.map((item) => (
+            <div key={item.id} className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-neutral-100 flex flex-col group">
+              
+              {/* Imagen y Etiqueta del Objetivo */}
+              <div className="h-64 overflow-hidden relative">
+                <img 
+                  src={item.image} 
+                  alt={item.title} 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60" />
+                <div className="absolute top-4 right-4 bg-white/95 backdrop-blur px-4 py-2 rounded-full text-sm font-bold text-brand-600 shadow-sm">
+                  {t('goal')}: {item.goal}
                 </div>
+              </div>
+
+              {/* Contenido */}
+              <div className="p-8 flex flex-col flex-grow">
+                <h3 className="text-2xl font-bold text-neutral-900 mb-3">{item.title}</h3>
+                <p className="text-neutral-600 mb-8 flex-grow leading-relaxed">{item.description}</p>
+                
+                {/* Botón de Donar */}
+                <a 
+                  href="https://better.giving/donate/1293778" // URL correcta confirmada
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-4 bg-brand-600 text-white font-bold rounded-xl hover:bg-brand-700 hover:shadow-brand-200 shadow-lg transition-all flex items-center justify-center gap-2"
+                >
+                  <Heart className="w-5 h-5" fill="currentColor" />
+                  {t('donateBtn')}
+                </a>
+              </div>
+
             </div>
+          ))}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

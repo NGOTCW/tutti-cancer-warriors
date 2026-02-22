@@ -82,6 +82,27 @@
         "dream": "Essential Living Expenses",
         "shortDesc": "Carries a heavy family history of the disease. Currently unable to work due to treatment.",
         "fullStory": "Diagnosed with Stage 2B breast cancer, she carries a heavy family history of the disease, having lost her mother to it. Her treatment journey has been marked by severe chemotherapy-induced fatigue, which has prevented her from working and caused significant financial strain. Her primary focus remains on her recovery and being present for her daughter.\n\nTHE IMPACT: The grant provides immediate relief from the stress of meeting basic needs (food and bills). By easing the financial burden until she can safely return to work, this support allows her to focus entirely on completing her treatment and regaining her health."
+      },
+      "jocelyn": {
+        "name": "Jocelyn",
+        "age": "43",
+        "dream": "Utility Arrears Assistance",
+        "shortDesc": "Single mother navigating a five-year course of treatment while managing financial aftermath.",
+        "fullStory": "After a lump appeared in 2020 during the pandemic lockdowns, delayed medical access resulted in the cancer growing significantly and spreading to her underarm and shoulder blade. She underwent aggressive treatment involving three types of chemotherapy, a double mastectomy, the removal of all right-side lymph nodes, radiation, and an oophorectomy. As a single mother without a support system, she is currently navigating a five-year course of chemotherapy medication while managing the long-term physical and financial aftermath of the disease.\n\nTHE IMPACT: The grant provides an essential lifeline by preventing recurring utility shut-offs. By securing her home’s electricity, the funding reduces the constant stress of basic survival, allowing her to focus on her health and her child."
+      },
+      "monica": {
+        "name": "Monica",
+        "age": "49",
+        "dream": "Craft Workshops for Warriors",
+        "shortDesc": "Diagnosed with ovarian cancer in 2022, she aims to turn her healing into a community resource.",
+        "fullStory": "Diagnosed with ovarian cancer in September 2022 following surgery, she completed five rounds of chemotherapy between November 2022 and March 2023. This journey shifted her perspective, teaching her to prioritize her own well-being and to live with deep gratitude for her children and each new day.\n\nTHE IMPACT: The dream is to purchase supplies to host handmade craft workshops for others navigating an oncological diagnosis. The grant empowers her to turn her personal healing into a community resource, providing a creative outlet for fellow warriors and fostering connection."
+      },
+      "penny": {
+        "name": "Penny",
+        "age": "49",
+        "dream": "Trip to New York",
+        "shortDesc": "Navigating reconstructive surgeries and caring for her mother, she dreams of celebrating in NYC.",
+        "fullStory": "Diagnosed at 49, Penny’s battle has been grueling: three types of chemotherapy, immunotherapy, a mastectomy, and radiotherapy. The journey cost her her hair, a breast for two years, and her sense of physical peace. Despite suffering from anxiety, insomnia, and the weight of being a caregiver for her mother with dementia, Penny remains anchored by her daughter and her new 7-month-old granddaughter. She is currently on a 10-year medication plan.\n\nTHE IMPACT: Penny’s 50th birthday dream was a trip to New York, halted by radiotherapy. The €500 grant serves as a foundational contribution toward her flights and accommodation. This is the fulfillment of a life-long wish and a celebration of survival after years of putting her own needs second."
       }
     }
   },
@@ -1399,26 +1420,27 @@
     "ctaText": "Contact us to register or to learn more about becoming a peer supporter.",
     "ctaButton": "Contact Program"
   },
-  "supportDream": {
+"supportDream": {
     "title": "Support a Dream",
-    "subtitle": "Help make warriors' dreams come true by sponsoring experiences that bring them joy and hope.",
-    "examplesTitle": "Dream Examples",
-    "dream1": "Record a Song",
-    "dream2": "Family Trip",
-    "dream3": "Meet an Idol",
-    "dream4": "Art Experience",
-    "waysTitle": "Ways to Support",
-    "way1": "Direct Donation",
-    "way1Desc": "Contribute any amount to help fund specific dreams.",
-    "way2": "Sponsor a Complete Dream",
-    "way2Desc": "Fully fund a warrior's dream and receive updates on its fulfillment.",
-    "way3": "Organize a Fundraiser",
-    "way3Desc": "Create a fundraising campaign with your family, friends, or company.",
-    "impactTitle": "Dreams Fulfilled So Far",
-    "impactText": "dreams made reality thanks to people like you",
-    "donateButton": "Donate Now"
+    "subtitle": "Help us fund the dreams of our next warriors. Your contribution goes directly to making these moments possible.",
+    "goal": "Goal",
+    "donateBtn": "Donate Now",
+    "cases": {
+      "1": {
+        "title": "Help Sarah fight Breast Cancer",
+        "description": "Sarah is a 35-year-old mother of two. She dreams of taking her kids to the beach one last time before starting her next round of intensive chemo."
+      },
+      "2": {
+        "title": "Support David's Art Exhibition",
+        "description": "David is battling Leukemia and finds his peace in painting. We want to help him fund his very first local art exhibition to share his journey."
+      },
+      "3": {
+        "title": "Make a wish come true for Elena",
+        "description": "Elena has been fighting ovarian cancer for 3 years. Her dream is to gather her extended family for a reunion dinner."
+      }
+    }
   },
-  "connectSurvivor": {
+      "connectSurvivor": {
     "title": "Connect with a Survivor",
     "subtitle": "Talking to someone who has been there can change everything.",
     "step1Title": "Register",
@@ -1782,25 +1804,6 @@
     "copy": "COPY",
     "cryptoTitle": "Crypto Donations",
     "krakenVerified": "Verified Nonprofit on Kraken"
-  },
-"supportDream": {
-    "title": "Support a Dream",
-    "subtitle": "Help us make dreams come true for brave warriors.",
-    "dream1": "Music Lessons",
-    "dream2": "Family Trip",
-    "dream3": "Record a Song",
-    "dream4": "Art Supplies",
-    "waysTitle": "Ways to Support",
-    "way1": "Direct Donation",
-    "way1Desc": "Contribute with any amount.",
-    "way2": "Sponsor a Dream",
-    "way2Desc": "Fully fund a warrior's dream.",
-    "way3": "Host a Fundraiser",
-    "way3Desc": "Create a campaign with family or friends.",
-    "susanTitle": "Donate to Susan's Dream",
-    "susanDesc": "Help us make Susan's wish come true. Your direct support makes an immediate impact.",
-    "btnSusan": "Donate to Susan",
-    "btnGeneral": "General Donation"
   },
 "connectSurvivorPage": {
     "title": "Connect with a Survivor",

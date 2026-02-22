@@ -82,6 +82,27 @@
         "dream": "Cheltuieli Esențiale de Trai",
         "shortDesc": "Poartă o istorie familială grea a bolii. Momentan incapabilă să lucreze din cauza tratamentului.",
         "fullStory": "Diagnosticată cu cancer mamar stadiul 2B, poartă o istorie familială grea a bolii, pierzându-și mama din această cauză. Călătoria ei de tratament a fost marcată de o oboseală severă indusă de chimioterapie, care a împiedicat-o să lucreze. Obiectivul ei principal rămâne recuperarea și prezența pentru fiica ei.\n\nIMPACTUL: Bursa oferă o ușurare imediată a stresului de a satisface nevoile de bază. Prin ușurarea poverii financiare până când se poate întoarce la muncă în siguranță, acest sprijin îi permite să se concentreze pe finalizarea tratamentului."
+      },
+      "jocelyn": {
+        "name": "Jocelyn",
+        "age": "43",
+        "dream": "Asistență pentru Utilități",
+        "shortDesc": "Mamă singură care urmează un tratament de cinci ani în timp ce gestionează urmările financiare.",
+        "fullStory": "După apariția unui nodul în 2020, în timpul carantinei, accesul medical întârziat a dus la creșterea și răspândirea semnificativă a cancerului. A urmat un tratament agresiv cu trei tipuri de chimioterapie, dublă mastectomie, extirparea ganglionilor, radiații și ovarectomie. Ca mamă singură fără sprijin, în prezent urmează un plan de medicamente de cinci ani, gestionând consecințele fizice și financiare.\n\nIMPACTUL: Bursa oferă un colac de salvare esențial prin prevenirea tăierii utilităților. Asigurând electricitatea casei, fondurile reduc stresul supraviețuirii de bază, permițându-i să se concentreze pe sănătate și pe copilul ei."
+      },
+      "monica": {
+        "name": "Monica",
+        "age": "49",
+        "dream": "Ateliere de Artizanat",
+        "shortDesc": "Diagnosticată cu cancer ovarian în 2022, dorește să-și transforme vindecarea într-o resursă pentru comunitate.",
+        "fullStory": "Diagnosticată cu cancer ovarian în septembrie 2022, după o intervenție chirurgicală, a completat cinci runde de chimioterapie până în martie 2023. Această călătorie i-a schimbat perspectiva, învățând-o să-și prioritizeze propria bunăstare și să trăiască cu recunoștință pentru copiii ei.\n\nIMPACTUL: Visul este de a cumpăra materiale pentru a organiza ateliere de artizanat pentru alte persoane cu diagnostic oncologic. Bursa îi permite să-și transforme vindecarea într-o resursă comunitară, oferind un mediu creativ și încurajând conexiunea."
+      },
+      "penny": {
+        "name": "Penny",
+        "age": "49",
+        "dream": "Călătorie la New York",
+        "shortDesc": "Trecând prin operații de reconstrucție și având grijă de mama ei, visează să sărbătorească în NYC.",
+        "fullStory": "Diagnosticată la 49 de ani, lupta lui Penny a fost epuizantă: trei tipuri de chimioterapie, imunoterapie, mastectomie și radioterapie. Călătoria a costat-o părul, un sân timp de doi ani și liniștea fizică. În ciuda anxietății, insomniei și responsabilității de a-și îngriji mama cu demență, Penny rămâne ancorată de fiica ei și de nepoata ei de 7 luni.\n\nIMPACTUL: Visul ei de 50 de ani era o excursie la New York, oprită de radioterapie. Această bursă de 500 de euro este o contribuție fundamentală pentru zboruri și cazare. Este îndeplinirea unei dorințe de o viață și o sărbătoare a supraviețuirii."
       }
     }
   },
@@ -1380,25 +1401,6 @@
     "ctaText": "Contactează-ne pentru a te înregistra sau pentru a afla mai multe despre cum să devii suporter coleg.",
     "ctaButton": "Contactează Programul"
   },
-  "supportDream": {
-    "title": "Sprijină un Vis",
-    "subtitle": "Ajută să devină realitate visele luptătorilor sponsorizând experiențe care le aduc bucurie și speranță.",
-    "examplesTitle": "Exemple de Vise",
-    "dream1": "Înregistrează un Cântec",
-    "dream2": "Călătorie în Familie",
-    "dream3": "Întâlnire cu un Idol",
-    "dream4": "Experiență Artistică",
-    "waysTitle": "Modalități de Sprijin",
-    "way1": "Donație Directă",
-    "way1Desc": "Contribuie cu orice sumă pentru a ajuta la finanțarea viselor specifice.",
-    "way2": "Sponsorizează un Vis Complet",
-    "way2Desc": "Finanțează complet visul unui luptător și primește actualizări despre împlinirea lui.",
-    "way3": "Organizează o Strângere de Fonduri",
-    "way3Desc": "Creează o campanie de strângere de fonduri cu familia, prietenii sau compania ta.",
-    "impactTitle": "Vise Împlinite Până Acum",
-    "impactText": "vise transformate în realitate datorită oamenilor ca tine",
-    "donateButton": "Donează Acum"
-  },
   "footer": {
     "description": "Împreună împotriva cancerului. Împlinim vise și oferim speranță luptătorilor care se luptă în fiecare zi.",
     "copyright": "Tutti Cancer Warriors. Toate drepturile rezervate.",
@@ -1571,25 +1573,6 @@
     "ctaTitle": "Interesat?",
     "ctaText": "Contactează-ne pentru a te înregistra.",
     "ctaButton": "Contactează Programul"
-  },
-  "supportDream": {
-    "title": "Sprijină un Vis",
-    "subtitle": "Împlinește visele luptătorilor sponsorizând experiențe.",
-    "examplesTitle": "Exemple de Vise",
-    "dream1": "Înregistrează un Cântec",
-    "dream2": "Călătorie în Familie",
-    "dream3": "Întâlnire cu un Idol",
-    "dream4": "Experiență Artistică",
-    "waysTitle": "Modalități de Sprijin",
-    "way1": "Donație Directă",
-    "way1Desc": "Contribuie cu orice sumă.",
-    "way2": "Sponsorizează un Vis",
-    "way2Desc": "Finanțează complet un vis.",
-    "way3": "Strângere de Fonduri",
-    "way3Desc": "Creează o campanie cu familia.",
-    "impactTitle": "Vise Împlinite",
-    "impactText": "vise realizate datorită ție",
-    "donateButton": "Donează Acum"
   },
   "connectSurvivor": {
     "title": "Conectează-te cu un Supraviețuitor",
@@ -1971,21 +1954,22 @@
   },
 "supportDream": {
     "title": "Susține un Vis",
-    "subtitle": "Ajutorul tău împlinește dorințe și oferă speranță.",
-    "dream1": "Lecții de Muzică",
-    "dream2": "Călătorie",
-    "dream3": "Înregistrare Cântec",
-    "dream4": "Artă",
-    "waysTitle": "Moduri de a Ajuta",
-    "way1": "Donație Directă",
-    "way1Desc": "Orice sumă ajută.",
-    "way2": "Sponsorizează un Vis",
-    "way2Desc": "Finanțează un vis complet.",
-    "way3": "Strângere de Fonduri",
-    "way3Desc": "Creează o campanie cu prietenii.",
-    "susanTitle": "Donează pentru Susan",
-    "susanDesc": "Ajută-ne să-i îndeplinim dorința.",
-    "btnSusan": "Donează lui Susan",
-    "btnGeneral": "Donație Generală"
+    "subtitle": "Ajută-ne să finanțăm visele viitorilor noștri luptători. Contribuția ta merge direct spre a face aceste momente posibile.",
+    "goal": "Obiectiv",
+    "donateBtn": "Donează Acum",
+    "cases": {
+      "1": {
+        "title": "Ajut-o pe Sarah să lupte cu Cancerul de Sân",
+        "description": "Sarah are 35 de ani și este mama a doi copii. Visează să-și ducă copiii la plajă pentru ultima oară înainte de a începe următoarea rundă de chimioterapie intensivă."
+      },
+      "2": {
+        "title": "Susține Expoziția de Artă a lui David",
+        "description": "David se luptă cu leucemia și își găsește liniștea în pictură. Vrem să-l ajutăm să-și finanțeze prima sa expoziție locală de artă pentru a-și împărtăși povestea."
+      },
+      "3": {
+        "title": "Îndeplinește-i o dorință Elenei",
+        "description": "Elena se luptă cu cancerul ovarian de 3 ani. Visul ei este să-și adune familia extinsă pentru o cină de reuniune."
+      }
+    }
   }
 }

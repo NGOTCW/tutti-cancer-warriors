@@ -44,73 +44,59 @@ export default function WarriorsPage() {
   const prefix = locale === 'es' ? '' : `/${locale}`;
   const [selectedStory, setSelectedStory] = useState<null | any>(null);
 
-  // ✅ CONFIGURACIÓN FINAL DE LAS 6 HISTORIAS
+// CONFIGURACIÓN FINAL DE LAS 9 HISTORIAS
   const stories = [
     {
-      id: '1',
-      name: t('featured.anetra.name'),
-      age: t('featured.anetra.age'),
-      dream: t('featured.anetra.dream'),
-      shortDesc: t('featured.anetra.shortDesc'),
-      fullStory: t('featured.anetra.fullStory'),
-      image: '/anetra-home.jpg', 
-      position: 'object-[center_25%]', 
-      color: 'bg-purple-100 text-purple-700',
+      id: '1', name: t('featured.anetra.name'), age: t('featured.anetra.age'), dream: t('featured.anetra.dream'), shortDesc: t('featured.anetra.shortDesc'), fullStory: t('featured.anetra.fullStory'), image: '/anetra-home.jpg', position: 'object-[center_25%]', color: 'bg-purple-100 text-purple-700',
     },
     {
-      id: '2',
-      name: t('featured.janelle.name'),
-      age: t('featured.janelle.age'),
-      dream: t('featured.janelle.dream'),
-      shortDesc: t('featured.janelle.shortDesc'),
-      fullStory: t('featured.janelle.fullStory'),
-      image: '/janelle-home.jpg', 
-      position: 'object-top', 
-      color: 'bg-blue-100 text-blue-700',
+      id: '2', name: t('featured.janelle.name'), age: t('featured.janelle.age'), dream: t('featured.janelle.dream'), shortDesc: t('featured.janelle.shortDesc'), fullStory: t('featured.janelle.fullStory'), image: '/janelle-home.jpg', position: 'object-top', color: 'bg-blue-100 text-blue-700',
     },
     {
-      id: '3',
-      name: t('featured.jeanelle.name'),
-      age: t('featured.jeanelle.age'),
-      dream: t('featured.jeanelle.dream'),
-      shortDesc: t('featured.jeanelle.shortDesc'),
-      fullStory: t('featured.jeanelle.fullStory'),
-      image: '/jeanelle-home.jpg', 
+      id: '3', name: t('featured.jeanelle.name'), age: t('featured.jeanelle.age'), dream: t('featured.jeanelle.dream'), shortDesc: t('featured.jeanelle.shortDesc'), fullStory: t('featured.jeanelle.fullStory'), image: '/jeanelle-home.jpg', position: 'object-center', color: 'bg-teal-100 text-teal-700',
+    },
+    {
+      id: '4', name: t('featured.susan.name'), age: t('featured.susan.age'), dream: t('featured.susan.dream'), shortDesc: t('featured.susan.shortDesc'), fullStory: t('featured.susan.fullStory'), image: '/susan.jpg', position: 'object-[center_35%]', color: 'bg-pink-100 text-pink-700',
+    },
+    {
+      id: '5', name: t('featured.taya.name'), age: t('featured.taya.age'), dream: t('featured.taya.dream'), shortDesc: t('featured.taya.shortDesc'), fullStory: t('featured.taya.fullStory'), image: '/taya.jpg', position: 'object-center', color: 'bg-orange-100 text-orange-700',
+    },
+    {
+      id: '6', name: t('featured.anonymous.name'), age: t('featured.anonymous.age'), dream: t('featured.anonymous.dream'), shortDesc: t('featured.anonymous.shortDesc'), fullStory: t('featured.anonymous.fullStory'), image: '/warrior.jpg', position: 'object-center', color: 'bg-indigo-100 text-indigo-700',
+    },
+    // AÑADIDAS JOCELYN, MONICA Y PENNY 
+    {
+      id: '7',
+      name: t('featured.jocelyn.name'),
+      age: t('featured.jocelyn.age'),
+      dream: t('featured.jocelyn.dream'),
+      shortDesc: t('featured.jocelyn.shortDesc'),
+      fullStory: t('featured.jocelyn.fullStory'),
+      image: 'https://plus.unsplash.com/premium_photo-1708371355671-07c6bfab983c?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', // Foto recurso: hogar/cálida
       position: 'object-center',
-      color: 'bg-teal-100 text-teal-700',
+      color: 'bg-rose-100 text-rose-700',
     },
     {
-      id: '4',
-      name: t('featured.susan.name'),
-      age: t('featured.susan.age'),
-      dream: t('featured.susan.dream'),
-      shortDesc: t('featured.susan.shortDesc'),
-      fullStory: t('featured.susan.fullStory'),
-      image: '/susan.jpg', 
-      position: 'object-[center_35%]', 
-      color: 'bg-pink-100 text-pink-700',
-    },
-    {
-      id: '5',
-      name: t('featured.taya.name'),
-      age: t('featured.taya.age'),
-      dream: t('featured.taya.dream'),
-      shortDesc: t('featured.taya.shortDesc'),
-      fullStory: t('featured.taya.fullStory'),
-      image: '/taya.jpg', 
-      position: 'object-center', 
-      color: 'bg-orange-100 text-orange-700',
-    },
-    {
-      id: '6',
-      name: t('featured.anonymous.name'),
-      age: t('featured.anonymous.age'),
-      dream: t('featured.anonymous.dream'),
-      shortDesc: t('featured.anonymous.shortDesc'),
-      fullStory: t('featured.anonymous.fullStory'),
-      image: '/warrior.jpg', 
+      id: '8',
+      name: t('featured.monica.name'),
+      age: t('featured.monica.age'),
+      dream: t('featured.monica.dream'),
+      shortDesc: t('featured.monica.shortDesc'),
+      fullStory: t('featured.monica.fullStory'),
+      image: '/Monica RO (1).jpg', // Foto recurso: manualidades/arte
       position: 'object-center',
-      color: 'bg-indigo-100 text-indigo-700',
+      color: 'bg-emerald-100 text-emerald-700',
+    },
+    {
+      id: '9',
+      name: t('featured.penny.name'),
+      age: t('featured.penny.age'),
+      dream: t('featured.penny.dream'),
+      shortDesc: t('featured.penny.shortDesc'),
+      fullStory: t('featured.penny.fullStory'),
+      image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=800', // Foto recurso: Nueva York
+      position: 'object-center',
+      color: 'bg-sky-100 text-sky-700',
     }
   ];
 
@@ -130,7 +116,7 @@ export default function WarriorsPage() {
             {t('subtitle')}
           </p>
 
-          {/* ✅ BARRA DE ESTADÍSTICAS ANIMADA */}
+          {/* BARRA DE ESTADÍSTICAS ANIMADA */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {/* Tarjeta 1: Fondos */}
             <div className="bg-neutral-50 rounded-2xl p-6 border border-neutral-100 flex items-center justify-center gap-4 shadow-sm hover:shadow-md transition-shadow">

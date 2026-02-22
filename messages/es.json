@@ -81,6 +81,27 @@
         "dream": "Gastos Esenciales de Vida",
         "shortDesc": "Lleva una pesada historia familiar de la enfermedad. Actualmente no puede trabajar debido al tratamiento.",
         "fullStory": "Diagnosticada con cáncer de mama en estadio 2B, lleva una pesada historia familiar de la enfermedad, habiendo perdido a su madre por ella. Su tratamiento ha estado marcado por una fatiga severa inducida por la quimioterapia, lo que le ha impedido trabajar y ha causado una gran tensión financiera. Su enfoque principal sigue siendo su recuperación y estar presente para su hija.\n\nEL IMPACTO: La beca proporciona alivio inmediato del estrés de cubrir necesidades básicas. Al aliviar la carga financiera hasta que pueda volver a trabajar de manera segura, este apoyo le permite concentrarse completamente en completar su tratamiento."
+      },
+      "jocelyn": {
+        "name": "Jocelyn",
+        "age": "43",
+        "dream": "Asistencia para Facturas",
+        "shortDesc": "Madre soltera que afronta un tratamiento de cinco años mientras gestiona las secuelas financieras.",
+        "fullStory": "Tras la aparición de un bulto en 2020 durante los confinamientos, el retraso médico provocó que el cáncer creciera significativamente y se extendiera. Se sometió a un tratamiento agresivo con tres tipos de quimioterapia, doble mastectomía, extirpación de ganglios, radiación y ooforectomía. Como madre soltera sin red de apoyo, actualmente sigue un plan de medicación de cinco años mientras gestiona las secuelas físicas y financieras.\n\nEL IMPACTO: La beca proporciona un salvavidas esencial al evitar cortes de suministros. Al asegurar la electricidad de su hogar, los fondos reducen el estrés de la supervivencia básica, permitiéndole centrarse en su salud y en su hijo."
+      },
+      "monica": {
+        "name": "Monica",
+        "age": "49",
+        "dream": "Talleres de Manualidades",
+        "shortDesc": "Diagnosticada con cáncer de ovario en 2022, busca convertir su sanación en un recurso comunitario.",
+        "fullStory": "Diagnosticada con cáncer de ovario en septiembre de 2022 tras una cirugía, completó cinco rondas de quimioterapia hasta marzo de 2023. Este viaje cambió su perspectiva, enseñándole a priorizar su propio bienestar y a vivir con profunda gratitud por sus hijos y cada nuevo día.\n\nEL IMPACTO: Su sueño es comprar materiales para organizar talleres de manualidades para otras personas con diagnóstico oncológico. La beca le permite convertir su sanación en un recurso comunitario, ofreciendo una salida creativa y fomentando la conexión entre guerreros."
+      },
+      "penny": {
+        "name": "Penny",
+        "age": "49",
+        "dream": "Viaje a Nueva York",
+        "shortDesc": "Afrontando cirugías reconstructivas y cuidando de su madre, sueña con celebrar en Nueva York.",
+        "fullStory": "Diagnosticada a los 49, la batalla de Penny ha sido agotadora: tres tipos de quimio, inmunoterapia, mastectomía y radioterapia. El viaje le costó el pelo, un pecho durante dos años y su paz física. A pesar de la ansiedad, el insomnio y el peso de cuidar a su madre con demencia, Penny se mantiene anclada a su hija y a su nieta de 7 meses. Actualmente sigue un plan de medicación de 10 años.\n\nEL IMPACTO: Su sueño de 50 cumpleaños era un viaje a Nueva York, frenado por la radioterapia. Esta beca de 500€ es una contribución fundamental para sus vuelos y alojamiento. Es el cumplimiento de un deseo de toda la vida y una celebración de la supervivencia."
       }
     }
   },
@@ -1379,25 +1400,6 @@
     "ctaText": "Contáctanos para registrarte o para obtener más información sobre cómo convertirrte en peer supporter.",
     "ctaButton": "Contactar Programa"
   },
-  "supportDream": {
-    "title": "Apoya un Sueño",
-    "subtitle": "Ayuda a hacer realidad los sueños de warriors patrocinando experiencias que les traen alegría y esperanza.",
-    "examplesTitle": "Ejemplos de Sueños",
-    "dream1": "Grabar una Canción",
-    "dream2": "Viaje Familiar",
-    "dream3": "Conocer un Ídolo",
-    "dream4": "Experiencia Artística",
-    "waysTitle": "Formas de Apoyar",
-    "way1": "Donación Directa",
-    "way1Desc": "Contribuye con cualquier cantidad para ayudar a financiar sueños específicos.",
-    "way2": "Patrocina un Sueño Completo",
-    "way2Desc": "Financia completamente el sueño de un warrior y recibe actualizaciones sobre su cumplimiento.",
-    "way3": "Organiza una Recaudación",
-    "way3Desc": "Crea una campaña de recaudación de fondos con tu familia, amigos o empresa.",
-    "impactTitle": "Sueños Cumplidos hasta Ahora",
-    "impactText": "sueños hechos realidad gracias a personas como tú",
-    "donateButton": "Donar Ahora"
-  },
   "connectSurvivor": {
     "title": "Conecta con un Superviviente",
     "subtitle": "Hablar con alguien que ha estado en tu lugar puede cambiarlo todo.",
@@ -1574,25 +1576,6 @@
     "ctaTitle": "¿Interesado en el Programa?",
     "ctaText": "Contáctanos para registrarte o saber más.",
     "ctaButton": "Contactar Programa"
-  },
-  "supportDream": {
-    "title": "Apoya un Sueño",
-    "subtitle": "Haz realidad los sueños de warriors patrocinando experiencias.",
-    "examplesTitle": "Ejemplos de Sueños",
-    "dream1": "Grabar una Canción",
-    "dream2": "Viaje Familiar",
-    "dream3": "Conocer un Ídolo",
-    "dream4": "Experiencia Artística",
-    "waysTitle": "Formas de Apoyar",
-    "way1": "Donación Directa",
-    "way1Desc": "Contribuye con cualquier cantidad.",
-    "way2": "Patrocina un Sueño",
-    "way2Desc": "Financia completamente el sueño de un warrior.",
-    "way3": "Organiza una Recaudación",
-    "way3Desc": "Crea una campaña con tu familia o empresa.",
-    "impactTitle": "Sueños Cumplidos",
-    "impactText": "sueños hechos realidad gracias a ti",
-    "donateButton": "Donar Ahora"
   },
   "connectSurvivor": {
     "title": "Conecta con un Superviviente",
@@ -1974,21 +1957,22 @@
   },
 "supportDream": {
     "title": "Apoya un Sueño",
-    "subtitle": "Tu ayuda hace realidad deseos que dan esperanza.",
-    "dream1": "Clases de Música",
-    "dream2": "Viaje Familiar",
-    "dream3": "Grabar Canción",
-    "dream4": "Kit de Arte",
-    "waysTitle": "Formas de Apoyar",
-    "way1": "Donación Directa",
-    "way1Desc": "Contribuye con cualquier cantidad.",
-    "way2": "Patrocina un Sueño",
-    "way2Desc": "Financia un sueño completo.",
-    "way3": "Organiza una Colecta",
-    "way3Desc": "Crea una campaña con amigos.",
-    "susanTitle": "Dona al Sueño de Susan",
-    "susanDesc": "Ayúdanos a cumplir su deseo.",
-    "btnSusan": "Donar a Susan",
-    "btnGeneral": "Donación General"
+    "subtitle": "Ayúdanos a financiar los sueños de nuestros próximos guerreros. Tu contribución va directamente a hacer posibles estos momentos.",
+    "goal": "Objetivo",
+    "donateBtn": "Donar Ahora",
+    "cases": {
+      "1": {
+        "title": "Ayuda a Sarah a luchar contra el Cáncer de Mama",
+        "description": "Sarah es una madre de dos hijos de 35 años. Sueña con llevar a sus hijos a la playa una última vez antes de comenzar su próxima ronda de quimioterapia intensiva."
+      },
+      "2": {
+        "title": "Apoya la Exposición de Arte de David",
+        "description": "David lucha contra la leucemia y encuentra paz en la pintura. Queremos ayudarle a financiar su primera exposición de arte local para compartir su viaje."
+      },
+      "3": {
+        "title": "Haz realidad el deseo de Elena",
+        "description": "Elena lleva 3 años luchando contra el cáncer de ovario. Su sueño es reunir a toda su familia para una cena de reencuentro."
+      }
+    }
   }
 }
